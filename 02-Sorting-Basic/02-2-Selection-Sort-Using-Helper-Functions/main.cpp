@@ -26,7 +26,9 @@ int main() {
     SortTestHelper::printArray(arr,N);
     delete(arr);
 
-    SortTestHelper::testSort("Selection Sort", selectionSort, arr, N);
+    int *arr2 = SortTestHelper::generateRandomArray(N,0,100000);
+    SortTestHelper::testSort("Selection Sort", selectionSort, arr2, N);
+    delete(arr2);
 
     return 0;
 }
