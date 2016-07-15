@@ -6,8 +6,8 @@
 
 using namespace std;
 
-#ifndef INC_02_1_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
-#define INC_02_1_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
+#ifndef INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
+#define INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
 
 struct Student{
 
@@ -19,11 +19,11 @@ struct Student{
                score > otherStudent.score : name < otherStudent.name;
     }
 
-    friend ostream& operator<<(ostream &os, Student &student){
+    friend ostream& operator<<(ostream &os, const Student &student){
 
         os<<"Student: "<<student.name<<" "<<student.score<<endl;
         return os;
     }
 };
 
-#endif //INC_02_1_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
+#endif //INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H

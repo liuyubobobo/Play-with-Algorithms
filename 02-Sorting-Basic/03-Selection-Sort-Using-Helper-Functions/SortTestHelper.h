@@ -3,21 +3,25 @@
 //
 
 #include <iostream>
+#include <ctime>
 #include <cassert>
+
 using namespace std;
 
-#ifndef INC_02_2_SELECTION_SORT_USING_HELPER_FUNCTIONS_SORTTESTHELPER_H
-#define INC_02_2_SELECTION_SORT_USING_HELPER_FUNCTIONS_SORTTESTHELPER_H
+#ifndef INC_03_SELECTION_SORT_USING_HELPER_FUNCTIONS_SORTTESTHELPER_H
+#define INC_03_SELECTION_SORT_USING_HELPER_FUNCTIONS_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 
-    int *generateRandomArray(int n, int range_l, int range_r) {
+    int *generateRandomArray(int n, int rangeL, int rangeR) {
+
+        assert(rangeL <= rangeR);
 
         int *arr = new int[n];
 
         srand(time(NULL));
         for (int i = 0; i < n; i++)
-            arr[i] = rand() % (range_r - range_l + 1) + range_l;
+            arr[i] = rand() % (rangeR - rangeL + 1) + rangeL;
         return arr;
     }
 
@@ -47,12 +51,12 @@ namespace SortTestHelper {
         clock_t startTime = clock();
         sort(arr, n);
         clock_t endTime = clock();
-        cout << sortName << " : " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
 
         assert(isSorted(arr, n));
+        cout << sortName << " : " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
 
         return;
     }
 
 };
-#endif //INC_02_2_SELECTION_SORT_USING_HELPER_FUNCTIONS_SORTTESTHELPER_H
+#endif //INC_03_SELECTION_SORT_USING_HELPER_FUNCTIONS_SORTTESTHELPER_H
