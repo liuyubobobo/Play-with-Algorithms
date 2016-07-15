@@ -3,6 +3,8 @@
 //
 
 #include <iostream>
+#include <algorithm>
+#include <string>
 #include <ctime>
 #include <cassert>
 
@@ -36,6 +38,13 @@ namespace SortTestHelper {
             swap( arr[posx] , arr[posy] );
         }
 
+        return arr;
+    }
+
+    int *copyIntArray(int a[], int n){
+
+        int *arr = new int[n];
+        copy(a, a+n, arr);
         return arr;
     }
 
