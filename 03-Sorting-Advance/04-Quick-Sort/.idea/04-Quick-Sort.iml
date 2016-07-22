@@ -2,8 +2,10 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/InsertionSort.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MergeSort.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SortTestHelper.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

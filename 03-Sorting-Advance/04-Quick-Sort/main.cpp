@@ -1,6 +1,8 @@
 #include <iostream>
 #include <algorithm>
 #include "SortTestHelper.h"
+#include "MergeSort.h"
+#include "InsertionSort.h"
 
 using namespace std;
 
@@ -9,23 +11,13 @@ template <typename T>
 int _partition(T arr[], int l, int r){
 
     T v = arr[l];
-    int i = l+1, j = r;
-    while( true ){
-        // 从前到后找到第一个比v大的元素arr[i]
-        while( i <= r && arr[i] <= v )
-            i ++;
+    int j = l;
+    for( int i = l + 1 ; i <= r ; i ++ )
+        if( arr[i] < v ){
+            j ++;
+            swap( arr[j] , arr[i] );
+        }
 
-        // 从后到前找到第一个比v小的元素arr[j]
-        while( j >= l+1 && arr[j] >= v )
-            j --;
-
-        if( i > j )
-            break;
-
-        swap( arr[i] , arr[j] );
-    }
-
-    // j == l 或者 arr[j]为最后一个比v小的数
     swap( arr[l] , arr[j]);
 
     return j;
@@ -34,8 +26,12 @@ int _partition(T arr[], int l, int r){
 template <typename T>
 void _quickSort(T arr[], int l, int r){
 
-    if( l >= r )
+//    if( l >= r )
+//        return;
+    if( r - l <= 15 ){
+        insertionSort(arr,l,r);
         return;
+    }
 
     int p = _partition(arr, l, r);
     _quickSort(arr, l, p-1 );
@@ -53,12 +49,31 @@ int main() {
 
     int n = 1000000;
 
+    // 测试1 一般性测试
     cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
-    int* arr = SortTestHelper::generateRandomArray(n,0,n);
+    int* arr1 = SortTestHelper::generateRandomArray(n,0,n);
+    int* arr2 = SortTestHelper::copyIntArray(arr1,n);
 
-    SortTestHelper::testSort("Quick Sort", quickSort, arr, n);
+    SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+    SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
 
-    delete(arr);
+    delete(arr1);
+    delete(arr2);
+
+    cout<<endl;
+
+
+    // 测试2 测试近乎有序的数组
+    int swapTimes = 100;
+    cout<<"Test for Random Nearly Ordered Array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+    arr1 = SortTestHelper::generateNearlyOrderedArray(n,swapTimes);
+    arr2 = SortTestHelper::copyIntArray(arr1, n);
+
+    SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+    SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+
+    delete(arr1);
+    delete(arr2);
 
     return 0;
 }

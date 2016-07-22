@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 7/21/16.
+// Created by liuyubobobo on 7/22/16.
 //
 
-#ifndef INC_04_QUICK_SORT_SORTTESTHELPER_H
-#define INC_04_QUICK_SORT_SORTTESTHELPER_H
+#ifndef INC_05_QUICK_SORT_ANOTHER_PARTITION_SORTTESTHELPER_H
+#define INC_05_QUICK_SORT_ANOTHER_PARTITION_SORTTESTHELPER_H
 
 #include <iostream>
 #include <algorithm>
@@ -94,4 +94,4 @@ namespace SortTestHelper {
 
 };
 
-#endif //INC_04_QUICK_SORT_SORTTESTHELPER_H
+#endif //INC_05_QUICK_SORT_ANOTHER_PARTITION_SORTTESTHELPER_H
