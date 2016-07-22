@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 7/22/16.
+// Created by liuyubobobo on 7/23/16.
 //
 
-#ifndef INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
-#define INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
+#ifndef INC_06_QUICK_SORT_DEAL_WITH_IDENTICAL_KEYS_MERGESORT_H
+#define INC_06_QUICK_SORT_DEAL_WITH_IDENTICAL_KEYS_MERGESORT_H
 
 #include <iostream>
 #include <algorithm>
@@ -50,4 +50,4 @@ void mergeSort(T arr[], int n){
     __mergeSort( arr , 0 , n-1 );
 }
 
-#endif //INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
+#endif //INC_06_QUICK_SORT_DEAL_WITH_IDENTICAL_KEYS_MERGESORT_H
