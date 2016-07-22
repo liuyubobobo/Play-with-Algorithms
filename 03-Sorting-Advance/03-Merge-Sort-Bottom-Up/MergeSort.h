@@ -1,20 +1,20 @@
 //
-// Created by liuyubobobo on 7/21/16.
+// Created by liuyubobobo on 7/16/16.
 //
 
 #include <iostream>
+#include <algorithm>
+#include "InsertionSort.h"
 
 using namespace std;
 
 
-#ifndef INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
-#define INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
+#ifndef INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
+#define INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
 
-// 将arr[l...mid]和arr[mid+1...r]两部分进行归并
 template<typename  T>
 void __merge(T arr[], int l, int mid, int r){
 
-    // 经测试,传递aux数组的性能效果并不好
     T aux[r-l+1];
     for( int i = l ; i <= r; i ++ )
         aux[i-l] = arr[i];
@@ -29,17 +29,19 @@ void __merge(T arr[], int l, int mid, int r){
     }
 }
 
-// 递归使用归并排序,对arr[l...r]的范围进行排序
 template<typename T>
 void __mergeSort(T arr[], int l, int r){
 
-    if( l >= r )
+    if( r - l <= 15 ){
+        insertionSort(arr, l, r);
         return;
+    }
 
     int mid = (l+r)/2;
     __mergeSort(arr, l, mid);
     __mergeSort(arr, mid+1, r);
-    __merge(arr, l, mid, r);
+    if( arr[mid] > arr[mid+1] )
+        __merge(arr, l, mid, r);
 }
 
 template<typename T>
@@ -48,4 +50,4 @@ void mergeSort(T arr[], int n){
     __mergeSort( arr , 0 , n-1 );
 }
 
-#endif //INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
+#endif //INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
