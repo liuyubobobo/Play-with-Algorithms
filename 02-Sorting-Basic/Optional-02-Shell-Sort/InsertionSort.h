@@ -2,14 +2,14 @@
 // Created by liuyubobobo on 7/15/16.
 //
 
+#ifndef OPTIONAL_02_SHELL_SORT_INSERTIONSORT_H
+#define OPTIONAL_02_SHELL_SORT_INSERTIONSORT_H
+
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-
-#ifndef OPTIONAL_02_SHELL_SORT_INSERTIONSORT_H
-#define OPTIONAL_02_SHELL_SORT_INSERTIONSORT_H
 
 template<typename T>
 void insertionSort(T arr[], int n){

@@ -1,19 +1,18 @@
 //
-// Created by liuyubobobo on 7/13/16.
+// Created by liuyubobobo on 7/22/16.
 //
-
-#ifndef INC_04_INSERTION_SORT_ADVANCE_SORTTESTHELPER_H
-#define INC_04_INSERTION_SORT_ADVANCE_SORTTESTHELPER_H
 
 #include <iostream>
 #include <algorithm>
 #include <string>
 #include <ctime>
 #include <cassert>
-#include <string>
 
 using namespace std;
 
+
+#ifndef INC_06_QUICK_SORT_ADVANCE_SORTTESTHELPER_H
+#define INC_06_QUICK_SORT_ADVANCE_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 
@@ -61,6 +60,16 @@ namespace SortTestHelper {
     }
 
     template<typename T>
+    void printArray(T arr[], int l, int r) {
+
+        for (int i = l; i <= r; i++)
+            cout << arr[i] << " ";
+        cout << endl;
+
+        return;
+    }
+
+    template<typename T>
     bool isSorted(T arr[], int n) {
 
         for (int i = 0; i < n - 1; i++)
@@ -85,4 +94,4 @@ namespace SortTestHelper {
 
 };
 
-#endif //INC_04_INSERTION_SORT_ADVANCE_SORTTESTHELPER_H
+#endif //INC_06_QUICK_SORT_ADVANCE_SORTTESTHELPER_H

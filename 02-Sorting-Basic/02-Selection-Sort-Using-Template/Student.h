@@ -2,13 +2,14 @@
 // Created by liuyubobobo on 7/12/16.
 //
 
+#ifndef INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
+#define INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-#ifndef INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
-#define INC_02_SELECTION_SORT_USING_TEMPLATE_STUDENT_H
 
 struct Student{
 

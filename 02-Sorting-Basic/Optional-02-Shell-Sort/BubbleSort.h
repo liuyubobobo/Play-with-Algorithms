@@ -2,14 +2,14 @@
 // Created by liuyubobobo on 7/15/16.
 //
 
+#ifndef OPTIONAL_02_SHELL_SORT_BUBBLESORT_H
+#define OPTIONAL_02_SHELL_SORT_BUBBLESORT_H
+
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-
-#ifndef OPTIONAL_02_SHELL_SORT_BUBBLESORT_H
-#define OPTIONAL_02_SHELL_SORT_BUBBLESORT_H
 
 template<typename T>
 void bubbleSort( T arr[] , int n){

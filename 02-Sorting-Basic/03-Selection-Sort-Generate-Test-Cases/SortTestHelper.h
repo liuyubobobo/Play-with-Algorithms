@@ -2,14 +2,16 @@
 // Created by liuyubobobo on 7/12/16.
 //
 
+
+#ifndef INC_03_SELECTION_SORT_GENERATE_TEST_CASES_SORTTESTHELPER_H
+#define INC_03_SELECTION_SORT_GENERATE_TEST_CASES_SORTTESTHELPER_H
+
 #include <iostream>
 #include <ctime>
 #include <cassert>
 
 using namespace std;
 
-#ifndef INC_03_SELECTION_SORT_GENERATE_TEST_CASES_SORTTESTHELPER_H
-#define INC_03_SELECTION_SORT_GENERATE_TEST_CASES_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 

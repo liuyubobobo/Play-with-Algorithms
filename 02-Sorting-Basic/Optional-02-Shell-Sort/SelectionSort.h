@@ -2,14 +2,14 @@
 // Created by liuyubobobo on 7/15/16.
 //
 
+#ifndef OPTIONAL_02_SHELL_SORT_SELECTIONSORT_H
+#define OPTIONAL_02_SHELL_SORT_SELECTIONSORT_H
+
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-
-#ifndef OPTIONAL_02_SHELL_SORT_SELECTIONSORT_H
-#define OPTIONAL_02_SHELL_SORT_SELECTIONSORT_H
 
 template<typename T>
 void selectionSort(T arr[], int n){

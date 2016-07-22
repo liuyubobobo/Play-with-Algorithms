@@ -1,16 +1,15 @@
 //
-// Created by liuyubobobo on 7/16/16.
+// Created by liuyubobobo on 7/22/16.
 //
-
-
-#ifndef INC_01_MERGE_SORT_INSERTIONSORT_H
-#define INC_01_MERGE_SORT_INSERTIONSORT_H
 
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
+
+#ifndef INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H
+#define INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H
 
 template<typename T>
 void insertionSort(T arr[], int n){
@@ -43,4 +42,4 @@ void insertionSort(T arr[], int l, int r){
     return;
 }
 
-#endif //INC_01_MERGE_SORT_INSERTIONSORT_H
+#endif //INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H

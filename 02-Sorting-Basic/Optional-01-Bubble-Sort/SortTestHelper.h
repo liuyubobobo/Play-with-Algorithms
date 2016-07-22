@@ -2,6 +2,9 @@
 // Created by liuyubobobo on 7/15/16.
 //
 
+#ifndef OPTIONAL_01_BUBBLE_SORT_SORTTESTHELPER_H
+#define OPTIONAL_01_BUBBLE_SORT_SORTTESTHELPER_H
+
 #include <iostream>
 #include <algorithm>
 #include <ctime>
@@ -10,9 +13,6 @@
 
 using namespace std;
 
-
-#ifndef OPTIONAL_01_BUBBLE_SORT_SORTTESTHELPER_H
-#define OPTIONAL_01_BUBBLE_SORT_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 

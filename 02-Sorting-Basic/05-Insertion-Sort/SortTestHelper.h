@@ -2,6 +2,9 @@
 // Created by liuyubobobo on 7/13/16.
 //
 
+#ifndef INC_04_INSERTION_SORT_SORTTESTHELPER_H
+#define INC_04_INSERTION_SORT_SORTTESTHELPER_H
+
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -10,8 +13,6 @@
 
 using namespace std;
 
-#ifndef INC_04_INSERTION_SORT_SORTTESTHELPER_H
-#define INC_04_INSERTION_SORT_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 
