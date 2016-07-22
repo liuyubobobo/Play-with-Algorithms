@@ -2,15 +2,15 @@
 // Created by liuyubobobo on 7/22/16.
 //
 
+#ifndef INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
+#define INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
+
 #include <iostream>
 #include <algorithm>
 #include "InsertionSort.h"
 
 using namespace std;
 
-
-#ifndef INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
-#define INC_06_QUICK_SORT_ADVANCE_MERGESORT_H
 
 template<typename  T>
 void __merge(T arr[], int l, int mid, int r){

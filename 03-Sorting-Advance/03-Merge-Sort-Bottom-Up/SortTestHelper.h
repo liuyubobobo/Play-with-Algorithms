@@ -2,6 +2,9 @@
 // Created by liuyubobobo on 7/16/16.
 //
 
+#ifndef INC_03_MERGE_SORT_BOTTOM_UP_SORTTESTHELPER_H
+#define INC_03_MERGE_SORT_BOTTOM_UP_SORTTESTHELPER_H
+
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -10,9 +13,6 @@
 
 using namespace std;
 
-
-#ifndef INC_03_MERGE_SORT_BOTTOM_UP_SORTTESTHELPER_H
-#define INC_03_MERGE_SORT_BOTTOM_UP_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 

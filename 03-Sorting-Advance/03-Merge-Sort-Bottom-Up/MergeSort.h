@@ -2,15 +2,15 @@
 // Created by liuyubobobo on 7/16/16.
 //
 
+#ifndef INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
+#define INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
+
 #include <iostream>
 #include <algorithm>
 #include "InsertionSort.h"
 
 using namespace std;
 
-
-#ifndef INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
-#define INC_03_MERGE_SORT_BOTTOM_UP_MERGESORT_H
 
 template<typename  T>
 void __merge(T arr[], int l, int mid, int r){

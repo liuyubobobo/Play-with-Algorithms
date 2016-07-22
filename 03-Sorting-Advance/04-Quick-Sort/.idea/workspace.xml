@@ -44,7 +44,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
+            <state relative-caret-position="1740">
               <caret line="60" column="16" selection-start-line="53" selection-start-column="4" selection-end-line="60" selection-end-column="16" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -59,10 +59,10 @@
       <file leaf-file-name="SortTestHelper.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SortTestHelper.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="94" column="2" selection-start-line="16" selection-start-column="0" selection-end-line="94" selection-end-column="2" />
+            <state relative-caret-position="435">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <element signature="e#45#64#0" expanded="true" />
+                <element signature="e#132#151#0" expanded="true" />
                 <element signature="e#1046#1058#0" expanded="true" />
                 <element signature="e#1227#1239#0" expanded="true" />
                 <element signature="e#1416#1428#0" expanded="true" />
@@ -77,8 +77,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SortTestHelper.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/SortTestHelper.h" />
       </list>
     </option>
   </component>
@@ -89,8 +89,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1717" />
-    <option name="y" value="109" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
@@ -143,7 +142,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../05-Quick-Sort-Another-Partition" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="04_Quick_Sort" TARGET_NAME="04_Quick_Sort" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -334,7 +333,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1717" y="109" width="1440" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -377,8 +376,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1740">
+          <caret line="60" column="16" selection-start-line="53" selection-start-column="4" selection-end-line="60" selection-end-column="16" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#102#114#0" expanded="true" />
@@ -390,10 +389,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SortTestHelper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2581">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#45#64#0" expanded="true" />
+            <element signature="e#132#151#0" expanded="true" />
             <element signature="e#1046#1058#0" expanded="true" />
             <element signature="e#1227#1239#0" expanded="true" />
             <element signature="e#1416#1428#0" expanded="true" />
@@ -412,7 +411,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#102#114#0" expanded="true" />
+            <element signature="e#569#581#0" expanded="true" />
+            <element signature="e#763#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortTestHelper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2581">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#132#151#0" expanded="true" />
+            <element signature="e#1046#1058#0" expanded="true" />
+            <element signature="e#1227#1239#0" expanded="true" />
+            <element signature="e#1416#1428#0" expanded="true" />
+            <element signature="e#1614#1626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
           <caret line="60" column="16" selection-start-line="53" selection-start-column="4" selection-end-line="60" selection-end-column="16" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -425,10 +459,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SortTestHelper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="94" column="2" selection-start-line="16" selection-start-column="0" selection-end-line="94" selection-end-column="2" />
+        <state relative-caret-position="435">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#45#64#0" expanded="true" />
+            <element signature="e#132#151#0" expanded="true" />
             <element signature="e#1046#1058#0" expanded="true" />
             <element signature="e#1227#1239#0" expanded="true" />
             <element signature="e#1416#1428#0" expanded="true" />

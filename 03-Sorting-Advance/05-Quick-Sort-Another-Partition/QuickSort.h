@@ -2,14 +2,14 @@
 // Created by liuyubobobo on 7/22/16.
 //
 
+#ifndef INC_05_QUICK_SORT_ANOTHER_PARTITION_QUICKSORT_H
+#define INC_05_QUICK_SORT_ANOTHER_PARTITION_QUICKSORT_H
+
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-
-#ifndef INC_05_QUICK_SORT_ANOTHER_PARTITION_QUICKSORT_H
-#define INC_05_QUICK_SORT_ANOTHER_PARTITION_QUICKSORT_H
 
 template <typename T>
 int _partition(T arr[], int l, int r){

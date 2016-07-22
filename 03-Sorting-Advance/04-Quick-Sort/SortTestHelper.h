@@ -2,6 +2,9 @@
 // Created by liuyubobobo on 7/21/16.
 //
 
+#ifndef INC_04_QUICK_SORT_SORTTESTHELPER_H
+#define INC_04_QUICK_SORT_SORTTESTHELPER_H
+
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -10,9 +13,6 @@
 
 using namespace std;
 
-
-#ifndef INC_04_QUICK_SORT_SORTTESTHELPER_H
-#define INC_04_QUICK_SORT_SORTTESTHELPER_H
 
 namespace SortTestHelper {
 

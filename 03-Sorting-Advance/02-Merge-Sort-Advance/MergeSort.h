@@ -2,13 +2,13 @@
 // Created by liuyubobobo on 7/21/16.
 //
 
+#ifndef INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
+#define INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
+
 #include <iostream>
 
 using namespace std;
 
-
-#ifndef INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
-#define INC_02_MERGE_SORT_ADVANCE_MERGESORT_H
 
 // 将arr[l...mid]和arr[mid+1...r]两部分进行归并
 template<typename  T>

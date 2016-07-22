@@ -2,14 +2,14 @@
 // Created by liuyubobobo on 7/16/16.
 //
 
+#ifndef INC_03_MERGE_SORT_BOTTOM_UP_INSERTIONSORT_H
+#define INC_03_MERGE_SORT_BOTTOM_UP_INSERTIONSORT_H
+
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-
-#ifndef INC_03_MERGE_SORT_BOTTOM_UP_INSERTIONSORT_H
-#define INC_03_MERGE_SORT_BOTTOM_UP_INSERTIONSORT_H
 
 template<typename T>
 void insertionSort(T arr[], int n){

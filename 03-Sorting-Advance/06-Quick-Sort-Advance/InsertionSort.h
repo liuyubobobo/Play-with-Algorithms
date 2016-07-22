@@ -2,14 +2,14 @@
 // Created by liuyubobobo on 7/22/16.
 //
 
+#ifndef INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H
+#define INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H
+
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-
-#ifndef INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H
-#define INC_06_QUICK_SORT_ADVANCE_INSERTIONSORT_H
 
 template<typename T>
 void insertionSort(T arr[], int n){
