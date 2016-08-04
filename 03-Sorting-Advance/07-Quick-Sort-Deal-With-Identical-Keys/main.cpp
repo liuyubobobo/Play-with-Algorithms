@@ -31,6 +31,8 @@ int _partition2(T arr[], int l, int r){
 
     swap( arr[l] , arr[rand()%(r-l+1)+l] );
     T v = arr[l];
+
+    // arr[l+1...i) <= v; arr(j...r] >= v
     int i = l+1, j = r;
     while( true ){
         while( i <= r && arr[i] < v )

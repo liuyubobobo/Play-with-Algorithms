@@ -10,7 +10,7 @@ using namespace std;
 
 
 template <typename T>
-void _quickSort3Ways(T arr[], int l, int r){
+void __quickSort3Ways(T arr[], int l, int r){
 
     if( r - l <= 15 ){
         insertionSort(arr,l,r);
@@ -20,29 +20,30 @@ void _quickSort3Ways(T arr[], int l, int r){
     swap( arr[l], arr[rand()%(r-l+1)+l ] );
 
     T v = arr[l];
-    // arr[l+1...lt] < v ; arr[gt...r] > v
-    int lt = l, gt = r + 1;
-    int i = l+1;
+
+    int lt = l;     // arr[l+1...lt] < v
+    int gt = r + 1; // arr[gt...r] > v
+    int i = l+1;    // arr[lt+1...i) == v
     while( i < gt ){
         if( arr[i] < v )
             swap( arr[i++], arr[++lt]);
         else if( arr[i] > v )
             swap( arr[i], arr[--gt]);
-        else
+        else    // arr[i] == v
             i ++;
     }
 
-    swap( arr[l] , arr[i-1] );
+    swap( arr[l] , arr[lt] );
 
-    _quickSort3Ways(arr, l, lt);
-    _quickSort3Ways(arr, gt, r);
+    __quickSort3Ways(arr, l, lt-1);
+    __quickSort3Ways(arr, gt, r);
 }
 
 template <typename T>
 void quickSort3Ways(T arr[], int n){
 
     srand(time(NULL));
-    _quickSort3Ways( arr, 0, n-1);
+    __quickSort3Ways( arr, 0, n-1);
 }
 
 
