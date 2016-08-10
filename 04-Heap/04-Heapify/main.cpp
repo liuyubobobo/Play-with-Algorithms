@@ -1,5 +1,8 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
+#include <ctime>
+#include <cmath>
 #include <cassert>
 
 using namespace std;
@@ -10,6 +13,7 @@ class MaxHeap{
 
 private:
     Item *data;
+    int count;
 
     void shiftUp(int k){
         while( k > 1 && data[k/2] < data[k] ){
@@ -29,15 +33,14 @@ private:
     }
 
 public:
-    int count;
 
     MaxHeap(int capacity){
-        data = new Item(capacity+1);
+        data = new Item[capacity+1];
         count = 0;
     }
 
     MaxHeap(Item arr[], int n){
-        data = new Item(n+1);
+        data = new Item[n+1];
         for( int i = 0 ; i < n ; i ++ )
             data[i+1] = arr[i];
         count = n;
@@ -50,9 +53,18 @@ public:
         delete[] data;
     }
 
+    int size(){
+        return count;
+    }
+
+    bool isEmpty(){
+        return count == 0;
+    }
+
     void insert(Item item){
-        data[++count] = item;
-        shiftUp(count);
+        data[count+1] = item;
+        shiftUp(count+1);
+        count ++;
     }
 
     Item delMax(){
@@ -63,12 +75,28 @@ public:
         shiftDown(1);
         return ret;
     }
+
+    Item getMax(){
+        assert( count > 0 );
+        return data[1];
+    }
 };
+
 
 int main() {
 
-    MaxHeap<int> maxheap = MaxHeap<int>(100);
-    cout<<maxheap.count<<endl;
+    int n = 1000;
+    int *arr = new int[n];
+    srand( time(NULL) );
+    for( int i = 0 ; i < n ; i ++ )
+        arr[i] = rand()%n;
+
+    MaxHeap<int> maxheap = MaxHeap<int>(arr,n);
+    while( !maxheap.isEmpty() )
+        cout<<maxheap.delMax()<<" ";
+    cout<<endl;
+
+    delete[] arr;
 
     return 0;
 }

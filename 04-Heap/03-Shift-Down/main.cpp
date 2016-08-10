@@ -1,5 +1,8 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
+#include <ctime>
+#include <cmath>
 #include <cassert>
 
 using namespace std;
@@ -10,6 +13,7 @@ class MaxHeap{
 
 private:
     Item *data;
+    int count;
 
     void shiftUp(int k){
         while( k > 1 && data[k/2] < data[k] ){
@@ -29,10 +33,9 @@ private:
     }
 
 public:
-    int count;
 
     MaxHeap(int capacity){
-        data = new Item(capacity+1);
+        data = new Item[capacity+1];
         count = 0;
     }
 
@@ -40,9 +43,18 @@ public:
         delete[] data;
     }
 
+    int size(){
+        return count;
+    }
+
+    bool isEmpty(){
+        return count == 0;
+    }
+
     void insert(Item item){
-        data[++count] = item;
-        shiftUp(count);
+        data[count+1] = item;
+        shiftUp(count+1);
+        count ++;
     }
 
     Item delMax(){
@@ -53,12 +65,27 @@ public:
         shiftDown(1);
         return ret;
     }
+
+    Item getMax(){
+        assert( count > 0 );
+        return data[1];
+    }
+
 };
+
 
 int main() {
 
     MaxHeap<int> maxheap = MaxHeap<int>(100);
-    cout<<maxheap.count<<endl;
+
+    srand(time(NULL));
+    for( int i = 0 ; i < 63 ; i ++ ){
+        maxheap.insert( rand()%100 );
+    }
+
+    while( !maxheap.isEmpty() )
+        cout<<maxheap.delMax()<<" ";
+    cout<<endl;
 
     return 0;
 }
