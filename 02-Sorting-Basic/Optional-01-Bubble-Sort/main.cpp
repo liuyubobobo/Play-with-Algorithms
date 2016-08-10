@@ -52,9 +52,9 @@ int main() {
     SortTestHelper::testSort("Insertion Sort", insertionSort, arr2, n);
     SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
 
-    delete(arr1);
-    delete(arr2);
-    delete(arr3);
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
 
     cout<<endl;
 
@@ -72,9 +72,9 @@ int main() {
     SortTestHelper::testSort("Insertion Sort", insertionSort, arr2, n);
     SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
 
-    delete(arr1);
-    delete(arr2);
-    delete(arr3);
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
 
     return 0;
 }

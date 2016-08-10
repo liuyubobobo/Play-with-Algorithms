@@ -24,7 +24,7 @@ int main() {
     int *arr = SortTestHelper::generateRandomArray(N,0,100000);
     selectionSort(arr,N);
     SortTestHelper::printArray(arr,N);
-    delete(arr);
+    delete[] arr;
 
     return 0;
 }

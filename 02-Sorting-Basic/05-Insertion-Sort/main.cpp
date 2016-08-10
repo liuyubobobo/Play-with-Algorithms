@@ -37,8 +37,8 @@ int main() {
     SortTestHelper::testSort("Insertion Sort", insertionSort,arr1,n);
     SortTestHelper::testSort("Selection Sort", selectionSort,arr2,n);
 
-    delete(arr1);
-    delete(arr2);
+    delete[] arr1;
+    delete[] arr2;
 
     cout<<endl;
 

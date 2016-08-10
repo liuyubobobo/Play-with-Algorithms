@@ -46,9 +46,9 @@ int main() {
     SortTestHelper::testSort("Merge Sort",     mergeSort,     arr2, n);
     SortTestHelper::testSort("Merge Sort 2",   mergeSort2,    arr3, n);
 
-    delete(arr1);
-    delete(arr2);
-    delete(arr3);
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
 
     cout<<endl;
 
@@ -64,9 +64,9 @@ int main() {
     SortTestHelper::testSort("Merge Sort",     mergeSort,     arr2, n);
     SortTestHelper::testSort("Merge Sort 2",   mergeSort2,    arr3, n);
 
-    delete(arr1);
-    delete(arr2);
-    delete(arr3);
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
 
     return 0;
 }

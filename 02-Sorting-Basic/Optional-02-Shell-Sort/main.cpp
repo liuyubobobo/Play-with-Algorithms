@@ -50,10 +50,10 @@ int main() {
     SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
     SortTestHelper::testSort("Shell Sort", shellSort, arr4, n);
 
-    delete(arr1);
-    delete(arr2);
-    delete(arr3);
-    delete(arr4);
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
 
     cout<<endl;
 
@@ -73,10 +73,10 @@ int main() {
     SortTestHelper::testSort("Bubble Sort", bubbleSort, arr3, n);
     SortTestHelper::testSort("Shell Sort", shellSort, arr4, n);
 
-    delete(arr1);
-    delete(arr2);
-    delete(arr3);
-    delete(arr4);
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
 
     return 0;
 }

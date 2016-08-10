@@ -22,7 +22,7 @@ int main() {
     int n = 10000;
     int *arr = SortTestHelper::generateRandomArray(n,0,n);
     SortTestHelper::testSort("Selection Sort", selectionSort, arr, n);
-    delete(arr);
+    delete[] arr;
 
     return 0;
 }
