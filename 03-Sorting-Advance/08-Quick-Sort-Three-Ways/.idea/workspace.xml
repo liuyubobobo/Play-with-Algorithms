@@ -34,8 +34,8 @@
       <file leaf-file-name="QuickSort.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuickSort.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="-1392">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="104" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="1" />
+            <state relative-caret-position="2001">
+              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#192#204#0" expanded="true" />
@@ -61,6 +61,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/QuickSort.h" />
       </list>
     </option>
   </component>
@@ -71,8 +72,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1590" />
-    <option name="y" value="107" />
+    <option name="x" value="1617" />
+    <option name="y" value="139" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
@@ -127,7 +128,7 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../02-Sorting-Basic/Optional-01-Bubble-Sort" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../07-Quick-Sort-Deal-With-Identical-Keys" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="08_Quick_Sort_Three_Ways" TARGET_NAME="08_Quick_Sort_Three_Ways" CONFIG_NAME="Debug">
@@ -164,8 +165,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1590" y="107" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
+    <frame x="1617" y="139" width="1440" height="873" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12222222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -205,6 +206,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/QuickSort.h">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#192#204#0" expanded="true" />
+            <element signature="e#923#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuickSort.h">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -233,16 +254,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QuickSort.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="-1392">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="104" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="1" />
+        <state relative-caret-position="2001">
+          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#192#204#0" expanded="true" />
