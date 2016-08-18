@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 8/7/16.
+// Created by liuyubobobo on 8/16/16.
 //
 
-#ifndef INC_06_HEAP_SORT_SORTTESTHELPER_H
-#define INC_06_HEAP_SORT_SORTTESTHELPER_H
+#ifndef INC_08_INDEX_HEAP_SORTTESTHELPER_H
+#define INC_08_INDEX_HEAP_SORTTESTHELPER_H
 
 #include <iostream>
 #include <algorithm>
@@ -98,4 +98,4 @@ namespace SortTestHelper {
 
 };
 
-#endif //INC_06_HEAP_SORT_SORTTESTHELPER_H
+#endif //INC_08_INDEX_HEAP_SORTTESTHELPER_H
