@@ -12,8 +12,10 @@ int main() {
 
     int n = 100;
     for( int i = 0 ; i < n ; i ++ ){
-        int x = rand()%n;
-        bst.insert(x,x);
+        int key = rand()%n;
+        // 为了后续测试方便,这里value值取和key值一样
+        int value = key;
+        bst.insert(key,value);
     }
 
     cout<<"size: "<<bst.size()<<endl<<endl;
@@ -36,7 +38,7 @@ int main() {
 
     for( int i = 0 ; i < n ; i ++ ){
         if( bst.contain(i) ){
-            int* res = bst.find(i);
+            int* res = bst.search(i);
             assert( res != NULL && *res == i );
         }
     }

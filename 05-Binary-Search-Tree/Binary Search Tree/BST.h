@@ -64,8 +64,8 @@ public:
     }
 
     // 在二叉树中寻找键值为key的value值
-    Value* find(Key key){
-        return find(root, key);
+    Value* search(Key key){
+        return search(root, key);
     }
 
     // 从二叉树中删除最小值所在节点
@@ -128,6 +128,8 @@ public:
     };
 
 private:
+    // 向以node为根的二叉搜索树中,插入节点(key, value)
+    // 返回插入新节点后的二叉搜索树的根
     Node* insert(Node* node, Key key, Value value){
         if( node == NULL ){
             count += 1;
@@ -144,6 +146,7 @@ private:
         return node;
     }
 
+    // 查看以node为根的二叉搜索树中是否包含键值为key的节点
     bool contain(Node* node, Key key){
         if( node == NULL )
             return false;
@@ -156,7 +159,8 @@ private:
             return contain(node->right, key);
     }
 
-    Value* find(Node* node, Key key){
+    // 在以node为根的二叉搜索树中查找key所对应的value
+    Value* search(Node* node, Key key){
 
         if( node == NULL )
             return NULL;
@@ -164,9 +168,9 @@ private:
         if( key == node->key )
             return &(node->value);
         else if( key < node->key )
-            return find(root->left, key);
+            return search(root->left, key);
         else
-            return find(root->right, key);
+            return search(root->right, key);
     }
 
     Node* removeMin(Node* node){
