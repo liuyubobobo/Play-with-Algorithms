@@ -40,7 +40,7 @@ public:
 
     ~BST(){
         destroy(root);
-        assert( root == NULL && count == 0 );
+        assert( count == 0 );
     }
 
     // 返回二叉树的元素个数
@@ -168,9 +168,9 @@ private:
         if( key == node->key )
             return &(node->value);
         else if( key < node->key )
-            return search(root->left, key);
+            return search(node->left, key);
         else
-            return search(root->right, key);
+            return search(node->right, key);
     }
 
     Node* removeMin(Node* node){
