@@ -27,6 +27,13 @@ private:
             this->value = value;
             this->left = this->right = NULL;
         }
+
+        Node(Node *node){
+            this->key = node->key;
+            this->value = node->value;
+            this->left = node->left;
+            this->right = node->right;
+        }
     };
 
     Node *root;
@@ -178,13 +185,16 @@ private:
             return NULL;
 
         if( node->left == NULL ){
+            //cout<<"del node "<<node->key<<endl;
             Node* retNode = node->right;
             delete node;
             count --;
             return retNode;
         }
-        else
-            removeMin( node->left );
+        else{
+            node->left = removeMin( node->left );
+            return node;
+        }
     }
 
     Node* removeMax(Node* node){
@@ -192,13 +202,16 @@ private:
             return NULL;
 
         if( node->right == NULL ){
+            //cout<<"del node "<<node->key<<endl;
             Node* retNode = node->left;
             delete node;
             count --;
             return retNode;
         }
-        else
-            removeMax( node->right );
+        else{
+            node->right = removeMax( node->right );
+            return node;
+        }
     }
 
     Node* remove(Node* node, Key key){
@@ -206,10 +219,14 @@ private:
         if( node == NULL )
             return NULL;
 
-        if( key < node->key )
-            remove( node->left , key );
-        else if( key > node->key )
-            remove( node->right, key );
+        if( key < node->key ){
+            node->left = remove( node->left , key );
+            return node;
+        }
+        else if( key > node->key ){
+            node->right = remove( node->right, key );
+            return node;
+        }
         else{
 
             if( node->left == NULL){
@@ -229,8 +246,16 @@ private:
             assert( node->left != NULL && node->right != NULL );
 
             Node *delNode = node;
-            Node *successor = minimum(node->right);
+            Node *successor = new Node(minimum(node->right));
+            count ++;
 
+            successor->right = removeMin(node->right);
+            successor->left = node->left;
+
+            delete delNode;
+            count --;
+
+            return successor;
         }
     }
 
@@ -246,6 +271,7 @@ private:
         return maximum( node->right );
     }
 
+    // 对以node为根的二叉搜索树进行前序遍历
     void preOrder(Node* node){
 
         if( node != NULL){
@@ -255,6 +281,7 @@ private:
         }
     }
 
+    // 对以node为根的二叉搜索树进行中序遍历
     void inOrder(Node* node){
 
         if( node != NULL){
@@ -264,6 +291,7 @@ private:
         }
     }
 
+    // 对以node为根的二叉搜索树进行后序遍历
     void postOrder(Node* node){
 
         if( node != NULL){

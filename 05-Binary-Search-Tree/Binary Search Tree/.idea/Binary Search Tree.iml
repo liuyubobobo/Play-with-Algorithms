@@ -2,11 +2,12 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/FileOps.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main_bst_sst_cmp.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main_bst_remove.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main_bst_basics.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BST.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FileOps.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SequenceST.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
