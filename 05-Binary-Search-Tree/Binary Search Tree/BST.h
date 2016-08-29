@@ -77,12 +77,14 @@ public:
 
     // 从二叉树中删除最小值所在节点
     void removeMin(){
-        root = removeMin( root );
+        if( root )
+            root = removeMin( root );
     }
 
     // 从二叉树中删除最大值所在节点
     void removeMax(){
-        root = removeMax( root );
+        if( root )
+            root = removeMax( root );
     }
 
     // 从二叉树中删除键值为key的节点
@@ -92,15 +94,15 @@ public:
 
     // 寻找最小的键值
     Key minimum(){
+        assert( count != 0 );
         Node* minNode = minimum(root);
-        assert( minNode != NULL );
         return minNode->key;
     }
 
     // 寻找最大的键值
     Key maximum(){
+        assert( count != 0 );
         Node* maxNode = maximum(root);
-        assert( maxNode != NULL );
         return maxNode->key;
     }
 
@@ -180,38 +182,34 @@ private:
             return search(node->right, key);
     }
 
+    // 删除掉以node为根的二分搜索树中的最小节点
+    // 返回删除节点后新的二分搜索树的根
     Node* removeMin(Node* node){
-        if( node == NULL )
-            return NULL;
 
         if( node->left == NULL ){
-            //cout<<"del node "<<node->key<<endl;
             Node* retNode = node->right;
             delete node;
             count --;
             return retNode;
         }
-        else{
-            node->left = removeMin( node->left );
-            return node;
-        }
+
+        node->left = removeMin( node->left );
+        return node;
     }
 
+    // 删除掉以node为根的二分搜索树中的最大节点
+    // 返回删除节点后新的二分搜索树的根
     Node* removeMax(Node* node){
-        if( node == NULL )
-            return NULL;
 
         if( node->right == NULL ){
-            //cout<<"del node "<<node->key<<endl;
             Node* retNode = node->left;
             delete node;
             count --;
             return retNode;
         }
-        else{
-            node->right = removeMax( node->right );
-            return node;
-        }
+
+        node->right = removeMax( node->right );
+        return node;
     }
 
     Node* remove(Node* node, Key key){
@@ -259,14 +257,16 @@ private:
         }
     }
 
+    // 在以node为根的二叉搜索树中,返回最小键值的节点
     Node* minimum(Node* node){
-        if( node == NULL || node->left == NULL )
+        if( node->left == NULL )
             return node;
         return minimum( node->left );
     }
 
+    // 在以node为根的二叉搜索树中,返回最大键值的节点
     Node* maximum(Node* node){
-        if( node == NULL || node->right == NULL )
+        if( node->right == NULL )
             return node;
         return maximum( node->right );
     }
