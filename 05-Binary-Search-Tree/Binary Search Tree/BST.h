@@ -132,7 +132,7 @@ public:
             if( node->right )
                 q.push(node->right);
         }
-    };
+    }
 
 private:
     // 向以node为根的二叉搜索树中,插入节点(key, value)

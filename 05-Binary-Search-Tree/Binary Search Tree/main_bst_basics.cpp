@@ -51,9 +51,9 @@ int main() {
             //cout<<"contain "<<i<<", value: "<<*res<<endl;
             assert( res != NULL && *res == i );
         }
-        else{
-            cout<<"not conatin "<<i<<endl;
-        }
+        //else{
+        //    cout<<"not conatin "<<i<<endl;
+        //}
     }
 
     return 0;
