@@ -56,8 +56,8 @@
       <file leaf-file-name="main_bst_remove.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_bst_remove.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="46" column="5" selection-start-line="34" selection-start-column="0" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="212">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -132,8 +132,8 @@
       <file leaf-file-name="BST.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BST.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+            <state relative-caret-position="140">
+              <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
               <folding>
                 <element signature="e#112#131#0" expanded="true" />
                 <element signature="e#200#230#0" expanded="true" />
@@ -157,8 +157,8 @@
         <option value="$PROJECT_DIR$/main_bst.cpp" />
         <option value="$PROJECT_DIR$/main_bst_basics.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main_bst_remove.cpp" />
         <option value="$PROJECT_DIR$/BST.h" />
+        <option value="$PROJECT_DIR$/main_bst_remove.cpp" />
       </list>
     </option>
   </component>
@@ -419,8 +419,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="79" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="1440" y="79" width="1920" height="1057" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15745129" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -579,17 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding>
-            <element signature="e#112#131#0" expanded="true" />
-            <element signature="e#200#230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_bst_basics.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
@@ -600,10 +589,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
+          <folding>
+            <element signature="e#112#131#0" expanded="true" />
+            <element signature="e#200#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_bst_remove.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="46" column="5" selection-start-line="34" selection-start-column="0" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="212">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

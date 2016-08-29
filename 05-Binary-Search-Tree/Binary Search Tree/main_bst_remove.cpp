@@ -48,16 +48,16 @@ int main() {
 
     // test remove
     // remove elements in random order
-//    int order[n];
-//    for( int i = 0 ; i < n ; i ++ )
-//        order[i] = i;
-//    shuffle( order , n );
-//
-//    for( int i = 0 ; i < n ; i ++ )
-//        if( bst.contain( order[i] )){
-//            bst.remove( order[i] );
-//            cout<<"After remove "<<order[i]<<" size = "<<bst.size()<<endl;
-//        }
+    int order[n];
+    for( int i = 0 ; i < n ; i ++ )
+        order[i] = i;
+    shuffle( order , n );
+
+    for( int i = 0 ; i < n ; i ++ )
+        if( bst.contain( order[i] )){
+            bst.remove( order[i] );
+            cout<<"After remove "<<order[i]<<" size = "<<bst.size()<<endl;
+        }
 
     return 0;
 }
