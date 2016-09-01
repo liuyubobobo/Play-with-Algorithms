@@ -1,16 +1,15 @@
 //
-// Created by liuyubobobo on 8/31/16.
+// Created by liuyubobobo on 9/2/16.
 //
 
-#ifndef UNIONFIND_UNIONFIND2_H
-#define UNIONFIND_UNIONFIND2_H
+#ifndef INC_03_QUICK_UNION_UNIONFIND2_H
+#define INC_03_QUICK_UNION_UNIONFIND2_H
 
 #include <cassert>
 
 using namespace std;
 
 
-// Quick Union
 namespace UF2{
 
     class UnionFind{
@@ -31,19 +30,15 @@ namespace UF2{
             delete[] parent;
         }
 
-        int size(){
-            return count;
-        }
-
-        bool isConnected( int p , int q ){
-            return find(p) == find(q);
-        }
-
         int find(int p){
             assert( p >= 0 && p < count );
             while( p != parent[p] )
                 p = parent[p];
             return p;
+        }
+
+        bool isConnected( int p , int q ){
+            return find(p) == find(q);
         }
 
         void unionElements(int p, int q){
@@ -59,4 +54,4 @@ namespace UF2{
     };
 }
 
-#endif //UNIONFIND_UNIONFIND2_H
+#endif //INC_03_QUICK_UNION_UNIONFIND2_H

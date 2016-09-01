@@ -5,6 +5,11 @@
 #ifndef UNIONFIND_UNIONFIND_H
 #define UNIONFIND_UNIONFIND_H
 
+#include <cassert>
+
+using namespace std;
+
+
 // Quick Find
 namespace UF1{
 
@@ -35,6 +40,7 @@ namespace UF1{
         }
 
         int find(int p){
+            assert( p >= 0 && p < count);
             return id[p];
         }
 
