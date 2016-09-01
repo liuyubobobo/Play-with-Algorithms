@@ -1,11 +1,15 @@
 //
-// Created by liuyubobobo on 8/31/16.
+// Created by liuyubobobo on 9/2/16.
 //
 
-#ifndef UNIONFIND_UNIONFIND3_H
-#define UNIONFIND_UNIONFIND3_H
+#ifndef INC_04_OPTIMIZE_BY_SIZE_UNIONFIND3_H
+#define INC_04_OPTIMIZE_BY_SIZE_UNIONFIND3_H
 
-// Quick Union + sz
+#include <cassert>
+
+using namespace std;
+
+
 namespace UF3{
 
     class UnionFind{
@@ -31,18 +35,15 @@ namespace UF3{
             delete[] sz;
         }
 
-        int size(){
-            return count;
+        int find(int p){
+            assert( p >= 0 && p < count );
+            while( p != parent[p] )
+                p = parent[p];
+            return p;
         }
 
         bool isConnected( int p , int q ){
             return find(p) == find(q);
-        }
-
-        int find(int p){
-            while( p != parent[p] )
-                p = parent[p];
-            return p;
         }
 
         void unionElements(int p, int q){
@@ -57,7 +58,7 @@ namespace UF3{
                 parent[pRoot] = qRoot;
                 sz[qRoot] += sz[pRoot];
             }
-            else{   // sz[pRoot] >= sz[qRoot]
+            else{
                 parent[qRoot] = pRoot;
                 sz[pRoot] += sz[qRoot];
             }
@@ -65,4 +66,4 @@ namespace UF3{
     };
 }
 
-#endif //UNIONFIND_UNIONFIND3_H
+#endif //INC_04_OPTIMIZE_BY_SIZE_UNIONFIND3_H
