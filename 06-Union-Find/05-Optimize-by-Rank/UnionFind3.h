@@ -1,12 +1,16 @@
 //
-// Created by liuyubobobo on 8/31/16.
+// Created by liuyubobobo on 9/2/16.
 //
 
-#ifndef UNIONFIND_UNIONFIND4_H
-#define UNIONFIND_UNIONFIND4_H
+#ifndef INC_05_OPTIMIZE_BY_RANK_UNIONFIND3_H
+#define INC_05_OPTIMIZE_BY_RANK_UNIONFIND3_H
 
-// Quick Union + rank
-namespace UF4{
+#include <cassert>
+
+using namespace std;
+
+
+namespace UF3{
 
     class UnionFind{
 
@@ -31,18 +35,15 @@ namespace UF4{
             delete[] rank;
         }
 
-        int size(){
-            return count;
+        int find(int p){
+            assert( p >= 0 && p < count );
+            while( p != parent[p] )
+                p = parent[p];
+            return p;
         }
 
         bool isConnected( int p , int q ){
             return find(p) == find(q);
-        }
-
-        int find(int p){
-            while( p != parent[p] )
-                p = parent[p];
-            return p;
         }
 
         void unionElements(int p, int q){
@@ -53,16 +54,18 @@ namespace UF4{
             if( pRoot == qRoot )
                 return;
 
-            if( rank[pRoot] < rank[qRoot] )
+            if( rank[pRoot] < rank[qRoot] ){
                 parent[pRoot] = qRoot;
-            else if( rank[qRoot] < rank[pRoot])
+            }
+            else if( rank[qRoot] < rank[pRoot]){
                 parent[qRoot] = pRoot;
+            }
             else{ // rank[pRoot] == rank[qRoot]
                 parent[pRoot] = qRoot;
-                rank[qRoot] ++;
+                rank[qRoot] += 1;
             }
         }
     };
 }
 
-#endif //UNIONFIND_UNIONFIND4_H
+#endif //INC_05_OPTIMIZE_BY_RANK_UNIONFIND3_H
