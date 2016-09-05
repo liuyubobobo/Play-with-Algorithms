@@ -5,6 +5,11 @@
 #ifndef UNIONFIND_UNIONFIND3_H
 #define UNIONFIND_UNIONFIND3_H
 
+#include <cassert>
+
+using namespace std;
+
+
 // Quick Union + sz
 namespace UF3{
 
@@ -40,6 +45,7 @@ namespace UF3{
         }
 
         int find(int p){
+            assert( p >= 0 && p < count );
             while( p != parent[p] )
                 p = parent[p];
             return p;

@@ -5,6 +5,11 @@
 #ifndef UNIONFIND_UNIONFIND4_H
 #define UNIONFIND_UNIONFIND4_H
 
+#include <cassert>
+
+using namespace std;
+
+
 // Quick Union + rank
 namespace UF4{
 
@@ -40,6 +45,7 @@ namespace UF4{
         }
 
         int find(int p){
+            assert( p >= 0 && p < count );
             while( p != parent[p] )
                 p = parent[p];
             return p;

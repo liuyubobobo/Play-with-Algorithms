@@ -5,6 +5,11 @@
 #ifndef UNIONFIND_UNIONFIND5_H
 #define UNIONFIND_UNIONFIND5_H
 
+#include <cassert>
+
+using namespace std;
+
+
 // Quick Union + rank + path compression
 namespace UF5{
 
@@ -40,11 +45,20 @@ namespace UF5{
         }
 
         int find(int p){
+
+            assert( p >= 0 && p < count );
+
+            // path compression 1
             while( p != parent[p] ){
                 parent[p] = parent[parent[p]];
                 p = parent[p];
             }
             return p;
+
+            // path compression 2
+//            if( p != parent[p] )
+//                parent[p] = find( parent[p] );
+//            return parent[p];
         }
 
         void unionElements(int p, int q){
@@ -63,6 +77,12 @@ namespace UF5{
                 parent[pRoot] = qRoot;
                 rank[qRoot] ++;
             }
+
+        }
+
+        void show(){
+            for( int i = 0 ; i < count ; i ++ )
+                cout<<i<<" : "<<parent[i]<<endl;
         }
     };
 }
