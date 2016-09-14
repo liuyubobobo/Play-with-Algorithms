@@ -16,11 +16,9 @@ using namespace std;
 
 template <typename Graph>
 class ReadGraph{
-private:
-    Graph &G;
 
 public:
-    ReadGraph(Graph &graph, const string &filename):G(graph){
+    ReadGraph(Graph &graph, const string &filename){
 
         ifstream file(filename);
         string line;
@@ -48,6 +46,7 @@ public:
             graph.addEdge(a, b, w);
         }
 
+        //cout<<"read "<<filename<<" successfully."<<endl;
     }
 };
 

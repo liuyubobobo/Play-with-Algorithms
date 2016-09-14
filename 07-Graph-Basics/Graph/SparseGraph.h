@@ -70,8 +70,7 @@ public:
         int v;
         int index;
     public:
-        adjIterator(SparseGraph &G, int v): G(G){
-            //this->G = G;
+        adjIterator(SparseGraph &graph, int v): G(graph){
             this->v = v;
             this->index = 0;
         }

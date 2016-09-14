@@ -37,7 +37,7 @@
             <state relative-caret-position="174">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,22 +56,9 @@
       <file leaf-file-name="SparseGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2755">
-              <caret line="95" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
-              <folding>
-                <element signature="e#101#120#0" expanded="true" />
-                <marker date="1473746314000" expanded="true" signature="212:1874" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="331:497" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="517:525" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="608:792" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="827:1036" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="1053:1266" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="1289:1871" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="1422:1514" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="1535:1635" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="1655:1791" ph="{...}" />
-                <marker date="1473746314000" expanded="true" signature="1811:1865" ph="{...}" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,11 +66,9 @@
       <file leaf-file-name="DenseGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="-1392">
               <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <element signature="e#99#118#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,20 +79,18 @@
             <state relative-caret-position="203">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
               <folding>
-                <element signature="e#101#120#0" expanded="true" />
                 <element signature="e#171#187#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadGraph.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReadGraph.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReadGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="-291">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding>
-                <element signature="e#97#116#0" expanded="true" />
                 <element signature="e#225#241#0" expanded="true" />
               </folding>
             </state>
@@ -139,14 +122,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Component.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Component.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Component.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
@@ -162,7 +143,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/testG1.txt" />
-        <option value="$PROJECT_DIR$/ReadGraph.h" />
         <option value="$PROJECT_DIR$/main_component2.cpp" />
         <option value="$PROJECT_DIR$/main_component.cpp" />
         <option value="$PROJECT_DIR$/main_test.cpp" />
@@ -170,10 +150,11 @@
         <option value="$PROJECT_DIR$/main_path.cpp" />
         <option value="$PROJECT_DIR$/Path.h" />
         <option value="$PROJECT_DIR$/testG2.txt" />
-        <option value="$PROJECT_DIR$/SparseGraph.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/DenseGraph.h" />
         <option value="$PROJECT_DIR$/RandomGraph.h" />
+        <option value="$PROJECT_DIR$/SparseGraph.h" />
+        <option value="$PROJECT_DIR$/ReadGraph.h" />
       </list>
     </option>
   </component>
@@ -184,8 +165,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1620" />
-    <option name="y" value="163" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
@@ -240,6 +220,7 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Graph" TARGET_NAME="Graph" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -433,16 +414,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1620" y="163" width="1440" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18957011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -477,7 +458,7 @@
         <state relative-caret-position="174">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,20 +475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2755">
           <caret line="95" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
-          <folding>
-            <element signature="e#101#120#0" expanded="true" />
-            <marker date="1473746314000" expanded="true" signature="212:1874" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="331:497" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="517:525" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="608:792" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="827:1036" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1053:1266" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1289:1871" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1422:1514" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1535:1635" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1655:1791" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1811:1865" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -515,9 +483,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#99#118#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,7 +492,6 @@
         <state relative-caret-position="203">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
           <folding>
-            <element signature="e#101#120#0" expanded="true" />
             <element signature="e#171#187#0" expanded="true" />
           </folding>
         </state>
@@ -537,7 +502,6 @@
         <state relative-caret-position="464">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="e#97#116#0" expanded="true" />
             <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
@@ -563,9 +527,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Component.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2755">
+          <caret line="95" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#171#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#225#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_component.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_component2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,9 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-435">
           <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-          <folding>
-            <element signature="e#89#106#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,38 +681,7 @@
         <state relative-caret-position="174">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#99#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2755">
-          <caret line="95" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
-          <folding>
-            <element signature="e#101#120#0" expanded="true" />
-            <marker date="1473746314000" expanded="true" signature="212:1874" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="331:497" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="517:525" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="608:792" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="827:1036" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1053:1266" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1289:1871" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1422:1514" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1535:1635" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1655:1791" ph="{...}" />
-            <marker date="1473746314000" expanded="true" signature="1811:1865" ph="{...}" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,19 +691,7 @@
         <state relative-caret-position="203">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
           <folding>
-            <element signature="e#101#120#0" expanded="true" />
             <element signature="e#171#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#97#116#0" expanded="true" />
-            <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,9 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -717,6 +717,32 @@
         <state relative-caret-position="377">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1392">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="e#225#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
