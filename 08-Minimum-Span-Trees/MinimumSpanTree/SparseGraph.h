@@ -45,7 +45,7 @@ public:
 
         g[v].push_back(new Edge<Weight>(v, w, weight));
         if( v != w && !directed )
-            g[w].push_back(new Edge<Weight>(v, w, weight));
+            g[w].push_back(new Edge<Weight>(w, v, weight));
         m ++;
     }
 
