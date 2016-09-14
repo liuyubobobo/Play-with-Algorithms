@@ -1,61 +1,77 @@
 //
-// Created by liuyubobobo on 9/6/16.
+// Created by liuyubobobo on 9/13/16.
 //
 
-#ifndef GRAPH_DENSEGRAPH_H
-#define GRAPH_DENSEGRAPH_H
+#ifndef MINIMUMSPANTREE_DENSEGRAPH_H
+#define MINIMUMSPANTREE_DENSEGRAPH_H
 
 #include <iostream>
 #include <vector>
 #include <cassert>
+#include "Edge.h"
 
 using namespace std;
 
 // 稠密图 - 邻接矩阵
+template<typename Weight>
 class DenseGraph{
 
 private:
     int n, m;
     bool directed;
-    vector<vector<bool>> g;
+    vector<vector<Edge<Weight> *>> g;
+
 public:
     DenseGraph( int n , bool directed){
         this->n = n;
         this->m = 0;
         this->directed = directed;
+
         for( int i = 0 ; i < n ; i ++ ){
-            g.push_back( vector<bool>(n,false) );
+            g.push_back( vector<Edge<Weight> *>(n, NULL) );
         }
     }
 
     ~DenseGraph(){
-
+        for( int i = 0 ; i < n ; i ++ )
+            for( int j = 0 ; j < n ; j ++ )
+                if( g[i][j] != NULL )
+                    delete g[i][j];
     }
 
     int V(){ return n;}
     int E(){ return m;}
 
-    void addEdge( int v, int w ){
+    void addEdge( int v, int w , Weight weight){
         assert( v >= 0 && v < n );
         assert( w >= 0 && w < n );
 
-        g[v][w] = true;
+        if( g[v][w] ){
+            if( !directed )
+                delete g[w][v];
+            delete g[v][w];
+        }
+
+        g[v][w] = new Edge<Weight>(v, w, weight);
         if( !directed )
-            g[w][v] = true;
+            g[w][v] = new Edge<Weight>(w, v, weight);
         m ++;
     }
 
     bool hasEdge( int v , int w ){
         assert( v >= 0 && v < n );
         assert( w >= 0 && w < n );
-        return g[v][w];
+        return g[v][w] != NULL;
     }
 
     void show(){
 
         for( int i = 0 ; i < n ; i ++ ){
             for( int j = 0 ; j < n ; j ++ )
-                cout<<g[i][j]<<"\t";
+                if( g[i][j] )
+                    cout<<g[i][j]->wt()<<"\t";
+                else
+                    cout<<"NULL\t";
             cout<<endl;
         }
     }
@@ -71,17 +87,17 @@ public:
             this->index = -1;
         }
 
-        int begin(){
+        Edge<Weight>* begin(){
             index = -1;
             return next();
         }
 
-        int next(){
+        Edge<Weight>* next(){
             for( index += 1 ; index < G.V() ; index ++ )
                 if( G.g[v][index] )
-                    return index;
+                    return G.g[v][index];
 
-            return -1;
+            return NULL;
         }
 
         bool end(){
@@ -90,4 +106,4 @@ public:
     };
 };
 
-#endif //GRAPH_DENSEGRAPH_H
+#endif //MINIMUMSPANTREE_DENSEGRAPH_H
