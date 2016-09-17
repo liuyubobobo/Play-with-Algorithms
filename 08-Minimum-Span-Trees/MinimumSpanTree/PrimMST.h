@@ -22,7 +22,7 @@ private:
     vector<Edge<Weight>> mst;
 
     bool* marked;
-    IndexMinHeap<double> ipq;
+    IndexMinHeap<Weight> ipq;
     Edge<Weight>** edgeTo;
     Weight mstWeight;
 
