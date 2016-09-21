@@ -15,9 +15,7 @@ class Component{
 
 private:
     Graph &G;
-    int n;
     bool* visited;
-
     int ccount = 0;
     int *id;
 
@@ -33,16 +31,16 @@ private:
 
 public:
     Component(Graph &graph):G(graph){
-        n = graph.V();
-        visited = new bool[n];
-        id = new int[n];
-        for( int i = 0 ; i < n ; i ++ ){
+
+        visited = new bool[G.V()];
+        id = new int[G.V()];
+        for( int i = 0 ; i < G.V() ; i ++ ){
             visited[i] = false;
             id[i] = -1;
         }
         ccount = 0;
 
-        for( int i = 0 ; i < n ; i ++ )
+        for( int i = 0 ; i < G.V() ; i ++ )
             if( !visited[i] ){
                 dfs(i);
                 ccount += 1;
@@ -61,8 +59,8 @@ public:
 
     bool isConnected( int v , int w ){
 
-        assert( v >= 0 && v < n );
-        assert( w >= 0 && w < n );
+        assert( v >= 0 && v < G.V() );
+        assert( w >= 0 && w < G.V() );
         assert( id[v] != -1 && id[w] != -1 );
         return id[v] == id[w];
     }

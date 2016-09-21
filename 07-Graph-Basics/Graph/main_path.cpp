@@ -14,16 +14,16 @@ using namespace std;
 int main() {
 
     string filename = "testG2.txt";
-    SparseGraph g = SparseGraph(6, false);
+    SparseGraph g = SparseGraph(7, false);
     ReadGraph<SparseGraph> readGraph(g, filename);
     g.show();
     cout<<endl;
 
-    Path<SparseGraph> dfs(g,0,5);
+    Path<SparseGraph> dfs(g,0,6);
     cout<<"DFS : ";
     dfs.showPath();
 
-    ShortestPath<SparseGraph> bfs(g,0,5);
+    ShortestPath<SparseGraph> bfs(g,0,6);
     cout<<"BFS : ";
     bfs.showPath();
 
