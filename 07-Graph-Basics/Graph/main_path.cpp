@@ -19,9 +19,9 @@ int main() {
     g.show();
     cout<<endl;
 
-    Path<SparseGraph> dfs(g,0,6);
+    Path<SparseGraph> dfs(g,0);
     cout<<"DFS : ";
-    dfs.showPath();
+    dfs.showPath(6);
 
     ShortestPath<SparseGraph> bfs(g,0,6);
     cout<<"BFS : ";

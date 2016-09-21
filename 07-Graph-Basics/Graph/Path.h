@@ -19,46 +19,35 @@ class Path{
 
 private:
     Graph &G;
-    int n;
-    int v, w;
+    int s;
     bool* visited;
     int * from;
-    bool hasFoundPath;
 
-    bool dfs(int v, int w){
-
-        if( v == w )
-            return true;
+    void dfs(int v){
 
         visited[v] = true;
         typename Graph::adjIterator adj(G,v);
         for( int i = adj.begin() ; !adj.end() ; i = adj.next() )
             if( !visited[i] ){
                 from[i] = v;
-                if( dfs(i, w) )
-                    return true;
+                dfs(i);
             }
-
-        return false;
     }
 
 public:
-    Path(Graph &graph, int v, int w):G(graph){
+    Path(Graph &graph, int s):G(graph){
 
-        n = graph.V();
-        assert( v >= 0 && v < n );
-        assert( w >= 0 && w < n );
+        assert( s >= 0 && s < G.V() );
 
-        visited = new bool[n];
-        from = new int[n];
-        for( int i = 0 ; i < n ; i ++ ){
+        visited = new bool[G.V()];
+        from = new int[G.V()];
+        for( int i = 0 ; i < G.V() ; i ++ ){
             visited[i] = false;
             from[i] = -1;
         }
-        this->v = v;
-        this->w = w;
+        this->s = s;
 
-        hasFoundPath = dfs(v, w);
+        dfs(s);
     }
 
     ~Path(){
@@ -67,31 +56,32 @@ public:
         delete [] from;
     }
 
-    bool hasPath(){
-        return hasFoundPath;
+    bool hasPath(int w){
+        assert( w >= 0 && w < G.V() );
+        return visited[w];
     }
 
-    void path(vector<int> &vec){
+    void path(int w, vector<int> &vec){
 
-        stack<int> inversePath;
+        stack<int> s;
 
         int p = w;
         while( p != -1 ){
-            inversePath.push(p);
+            s.push(p);
             p = from[p];
         }
 
         vec.clear();
-        while( !inversePath.empty() ){
-            vec.push_back( inversePath.top() );
-            inversePath.pop();
+        while( !s.empty() ){
+            vec.push_back( s.top() );
+            s.pop();
         }
     }
 
-    void showPath(){
+    void showPath(int w){
 
         vector<int> vec;
-        path(vec);
+        path(w, vec);
         for( int i = 0 ; i < vec.size() ; i ++ ){
             cout<<vec[i];
             if( i == vec.size()-1 )
