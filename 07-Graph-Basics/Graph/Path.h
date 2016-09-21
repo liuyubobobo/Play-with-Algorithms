@@ -22,7 +22,7 @@ private:
     int n;
     int v, w;
     bool* visited;
-    int *from;
+    int * from;
     bool hasFoundPath;
 
     bool dfs(int v, int w){

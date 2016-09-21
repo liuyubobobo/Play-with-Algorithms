@@ -34,7 +34,7 @@
       <file leaf-file-name="main_test.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="-29">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
@@ -44,8 +44,8 @@
       <file leaf-file-name="SparseGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="e#101#120#0" expanded="true" />
               </folding>
@@ -53,40 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testG1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testG1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testG2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testG2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Path.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Path.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RandomGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RandomGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="145">
               <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="e#101#120#0" expanded="true" />
@@ -96,10 +66,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Path.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Path.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1181">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadGraph.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReadGraph.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="44" column="32" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="32" />
+              <folding>
+                <element signature="e#97#116#0" expanded="true" />
+                <element signature="e#225#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="1421">
               <caret line="49" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -108,11 +101,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="main_component.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_component.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="29">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_component2.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_component2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -121,8 +124,8 @@
       <file leaf-file-name="DenseGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            <state relative-caret-position="124">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="e#99#118#0" expanded="true" />
               </folding>
@@ -133,7 +136,7 @@
       <file leaf-file-name="Component.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Component.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="29">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
@@ -151,7 +154,6 @@
         <option value="$PROJECT_DIR$/main_test.cpp" />
         <option value="$PROJECT_DIR$/ShortestPath.h" />
         <option value="$PROJECT_DIR$/main_path.cpp" />
-        <option value="$PROJECT_DIR$/Path.h" />
         <option value="$PROJECT_DIR$/testG2.txt" />
         <option value="$PROJECT_DIR$/RandomGraph.h" />
         <option value="$PROJECT_DIR$/ReadGraph.h" />
@@ -159,6 +161,7 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/SparseGraph.h" />
+        <option value="$PROJECT_DIR$/Path.h" />
       </list>
     </option>
   </component>
@@ -169,7 +172,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+    <option name="x" value="1443" />
     <option name="y" value="79" />
     <option name="width" value="1920" />
     <option name="height" value="1053" />
@@ -419,7 +422,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="79" width="1920" height="1053" extended-state="6" />
+    <frame x="1443" y="79" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18904686" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -473,7 +476,7 @@
         <state relative-caret-position="580">
           <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding>
-            <element signature="e#225#241#0" expanded="false" />
+            <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,7 +568,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#225#241#0" expanded="false" />
+            <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,7 +660,7 @@
         <state relative-caret-position="464">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="e#225#241#0" expanded="false" />
+            <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,7 +752,7 @@
         <state relative-caret-position="464">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="e#225#241#0" expanded="false" />
+            <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,44 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_component.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_component2.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="e#225#241#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ShortestPath.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2668">
           <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Path.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -853,25 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Component.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandomGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#101#120#0" expanded="true" />
-            <element signature="e#171#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -880,10 +830,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SparseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+        <state relative-caret-position="153">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="e#101#120#0" expanded="true" />
           </folding>
@@ -892,29 +850,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DenseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="124">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="e#99#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_test.cpp">
+    <entry file="file://$PROJECT_DIR$/RandomGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="145">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#101#120#0" expanded="true" />
+            <element signature="e#171#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="32" />
+          <folding>
+            <element signature="e#97#116#0" expanded="true" />
+            <element signature="e#225#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="1421">
           <caret line="49" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_component.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_component2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Component.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1181">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
