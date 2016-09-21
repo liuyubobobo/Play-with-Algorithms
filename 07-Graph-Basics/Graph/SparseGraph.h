@@ -76,8 +76,9 @@ public:
         }
 
         int begin(){
+            index = 0;
             if( G.g[v].size() )
-                return G.g[v][0];
+                return G.g[v][index];
             return -1;
         }
 

@@ -39,6 +39,9 @@ public:
         assert( v >= 0 && v < n );
         assert( w >= 0 && w < n );
 
+        if( hasEdge( v , w  ) )
+            return;
+
         g[v][w] = true;
         if( !directed )
             g[w][v] = true;
