@@ -37,6 +37,7 @@ private:
 public:
     Path(Graph &graph, int s):G(graph){
 
+        // 算法初始化
         assert( s >= 0 && s < G.V() );
 
         visited = new bool[G.V()];
@@ -47,6 +48,7 @@ public:
         }
         this->s = s;
 
+        // 寻路算法
         dfs(s);
     }
 
@@ -62,6 +64,8 @@ public:
     }
 
     void path(int w, vector<int> &vec){
+
+        assert( w >= 0 && w < G.V() );
 
         stack<int> s;
 
@@ -79,6 +83,8 @@ public:
     }
 
     void showPath(int w){
+
+        assert( w >= 0 && w < G.V() );
 
         vector<int> vec;
         path(w, vec);

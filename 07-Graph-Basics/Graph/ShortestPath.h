@@ -20,48 +20,44 @@ class ShortestPath{
 
 private:
     Graph &G;
-    int n;
-    int v, w;
-    bool* visited;
+    int s;
+    bool *visited;
     int *from;
     int *ord;
 
 public:
-    ShortestPath(Graph &graph, int v, int w):G(graph){
+    ShortestPath(Graph &graph, int s):G(graph){
 
-        n = graph.V();
-        assert( v >= 0 && v < n );
-        assert( w >= 0 && w < n );
+        // 算法初始化
+        assert( s >= 0 && s < graph.V() );
 
-        visited = new bool[n];
-        from = new int[n];
-        ord = new int[n];
-        for( int i = 0 ; i < n ; i ++ ){
+        visited = new bool[graph.V()];
+        from = new int[graph.V()];
+        ord = new int[graph.V()];
+        for( int i = 0 ; i < graph.V() ; i ++ ){
             visited[i] = false;
             from[i] = -1;
             ord[i] = -1;
         }
-        this->v = v;
-        this->w = w;
-
+        this->s = s;
 
         queue<int> q;
-        q.push( v );
-        visited[v] = true;
-        ord[v] = 0;
+
+        // 无向图最短路径算法
+        q.push( s );
+        visited[s] = true;
+        ord[s] = 0;
         while( !q.empty() ){
-            int p = q.front();
+            int v = q.front();
             q.pop();
 
-            if( p == w )
-                break;
-
-            typename Graph::adjIterator adj(G,p);
+            typename Graph::adjIterator adj(G,v);
             for( int i = adj.begin() ; !adj.end() ; i = adj.next() )
-                if( !visited[p] ){
-                    visited[p] = true;
-                    from[i] = p;
-                    ord[i] = ord[p] + 1;
+                if( !visited[i] ){
+                    visited[i] = true;
+                    from[i] = v;
+                    ord[i] = ord[v] + 1;
+                    q.push(i);
                 }
         }
     }
@@ -73,36 +69,41 @@ public:
         delete [] ord;
     }
 
-    bool hasPath(){
+    bool hasPath(int w){
+        assert( w >= 0 && w < G.V() );
         return visited[w];
     }
 
-    int length(){
+    int length(int w){
+        assert( w >= 0 && w < G.V() );
         return ord[w];
     }
 
-    void path(vector<int> &vec){
+    void path(int w, vector<int> &vec){
 
-        stack<int> inversePath;
+        assert( w >= 0 && w < G.V() );
+
+        stack<int> s;
 
         int p = w;
         while( p != -1 ){
-            inversePath.push(p);
+            s.push(p);
             p = from[p];
         }
-        inversePath.push(v);
 
         vec.clear();
-        while( !inversePath.empty() ){
-            vec.push_back( inversePath.top() );
-            inversePath.pop();
+        while( !s.empty() ){
+            vec.push_back( s.top() );
+            s.pop();
         }
     }
 
-    void showPath(){
+    void showPath(int w){
+
+        assert( w >= 0 && w < G.V() );
 
         vector<int> vec;
-        path(vec);
+        path(w, vec);
         for( int i = 0 ; i < vec.size() ; i ++ ){
             cout<<vec[i];
             if( i == vec.size()-1 )
