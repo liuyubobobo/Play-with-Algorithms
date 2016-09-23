@@ -34,7 +34,7 @@
       <file leaf-file-name="Path.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Path.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="1131">
               <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="e#89#106#0" expanded="true" />
@@ -44,10 +44,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SparseGraph.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparseGraph.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+              <folding>
+                <element signature="e#101#120#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ShortestPath.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ShortestPath.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="1566">
               <caret line="54" column="68" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="68" />
               <folding>
                 <element signature="e#105#122#0" expanded="true" />
@@ -56,23 +68,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="DenseGraph.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1421">
-              <caret line="49" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="676">
+              <caret line="93" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="93" selection-end-column="2" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#99#118#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_component.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_component.cpp">
+      <file leaf-file-name="RandomGraph.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandomGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="203">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -81,9 +93,22 @@
       <file leaf-file-name="main_component2.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_component2.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
+            <state relative-caret-position="812">
               <caret line="28" column="68" selection-start-line="14" selection-start-column="4" selection-end-line="28" selection-end-column="68" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadGraph.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadGraph.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="48" selection-end-column="2" />
+              <folding>
+                <element signature="e#97#116#0" expanded="true" />
+                <element signature="e#225#241#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_path.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_path.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_path.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="696">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
@@ -111,32 +136,12 @@
       <file leaf-file-name="Component.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Component.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1052">
+            <state relative-caret-position="1798">
               <caret line="62" column="38" selection-start-line="61" selection-start-column="8" selection-end-line="62" selection-end-column="38" />
               <folding>
                 <element signature="e#97#116#0" expanded="true" />
                 <element signature="e#168#184#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testG1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testG1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testG2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testG2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -150,7 +155,6 @@
         <option value="$PROJECT_DIR$/main_component.cpp" />
         <option value="$PROJECT_DIR$/main_test.cpp" />
         <option value="$PROJECT_DIR$/RandomGraph.h" />
-        <option value="$PROJECT_DIR$/ReadGraph.h" />
         <option value="$PROJECT_DIR$/DenseGraph.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/SparseGraph.h" />
@@ -161,6 +165,7 @@
         <option value="$PROJECT_DIR$/Path.h" />
         <option value="$PROJECT_DIR$/ShortestPath.h" />
         <option value="$PROJECT_DIR$/main_path.cpp" />
+        <option value="$PROJECT_DIR$/ReadGraph.h" />
       </list>
     </option>
   </component>
@@ -171,8 +176,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="79" />
+    <option name="x" value="1577" />
+    <option name="y" value="151" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -421,27 +426,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="79" width="1920" height="1057" extended-state="6" />
-    <editor active="false" />
+    <frame x="1577" y="151" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18904686" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14007372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -464,9 +469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#171#187#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,6 +478,7 @@
         <state relative-caret-position="580">
           <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding>
+            <element signature="e#97#116#0" expanded="true" />
             <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
@@ -521,9 +525,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,7 +542,7 @@
         <state relative-caret-position="2088">
           <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
           <folding>
-            <element signature="e#101#120#0" expanded="false" />
+            <element signature="e#101#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -550,7 +552,7 @@
         <state relative-caret-position="261">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <element signature="e#99#118#0" expanded="false" />
+            <element signature="e#99#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -559,9 +561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#171#187#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -570,6 +570,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#97#116#0" expanded="true" />
             <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
@@ -616,9 +617,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +634,7 @@
         <state relative-caret-position="2755">
           <caret line="95" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
           <folding>
-            <element signature="e#101#120#0" expanded="false" />
+            <element signature="e#101#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,7 +644,7 @@
         <state relative-caret-position="261">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <element signature="e#99#118#0" expanded="false" />
+            <element signature="e#99#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,9 +653,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#171#187#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -665,6 +662,7 @@
         <state relative-caret-position="464">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
+            <element signature="e#97#116#0" expanded="true" />
             <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
@@ -711,9 +709,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +726,7 @@
         <state relative-caret-position="2755">
           <caret line="95" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
           <folding>
-            <element signature="e#101#120#0" expanded="false" />
+            <element signature="e#101#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -740,7 +736,7 @@
         <state relative-caret-position="261">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <element signature="e#99#118#0" expanded="false" />
+            <element signature="e#99#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,9 +745,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#171#187#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -760,6 +754,7 @@
         <state relative-caret-position="464">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
+            <element signature="e#97#116#0" expanded="true" />
             <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
@@ -810,48 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="e#101#120#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="e#99#118#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandomGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#101#120#0" expanded="false" />
-            <element signature="e#171#187#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="32" />
-          <folding>
-            <element signature="e#97#116#0" expanded="true" />
-            <element signature="e#225#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1421">
@@ -888,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_component2.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="812">
           <caret line="28" column="68" selection-start-line="14" selection-start-column="4" selection-end-line="28" selection-end-column="68" />
           <folding />
         </state>
@@ -896,7 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Component.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1052">
+        <state relative-caret-position="1798">
           <caret line="62" column="38" selection-start-line="61" selection-start-column="8" selection-end-line="62" selection-end-column="38" />
           <folding>
             <element signature="e#97#116#0" expanded="true" />
@@ -915,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Path.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="1131">
           <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="e#89#106#0" expanded="true" />
@@ -926,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ShortestPath.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="1566">
           <caret line="54" column="68" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="68" />
           <folding>
             <element signature="e#105#122#0" expanded="true" />
@@ -936,9 +889,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_path.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="696">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="93" column="2" selection-start-line="7" selection-start-column="0" selection-end-line="93" selection-end-column="2" />
+          <folding>
+            <element signature="e#99#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding>
+            <element signature="e#101#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="48" selection-end-column="2" />
+          <folding>
+            <element signature="e#97#116#0" expanded="true" />
+            <element signature="e#225#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,15 +4,15 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/DenseGraph.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MinHeap.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PrimMST.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Edge.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LazyPrimMST.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PrimMST.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IndexMinHeap.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ReadGraph.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/KruskalMST.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UF.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main_mst_performance.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SparseGraph.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

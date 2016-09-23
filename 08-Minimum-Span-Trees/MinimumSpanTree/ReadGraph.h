@@ -14,7 +14,7 @@
 using namespace std;
 
 
-template <typename Graph>
+template <typename Graph, typename Weight>
 class ReadGraph{
 
 public:
@@ -39,7 +39,7 @@ public:
             stringstream ss(line);
 
             int a, b;
-            double w;
+            Weight w;
             ss>>a>>b>>w;
             assert( a >= 0 && a < V );
             assert( b >= 0 && b < V );

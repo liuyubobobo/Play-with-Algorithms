@@ -47,4 +47,5 @@ public:
 
     }
 };
+
 #endif //GRAPH_READGRAPH_H

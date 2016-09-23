@@ -23,29 +23,19 @@ public:
         this->weight = weight;
     }
 
-    Edge(){
+    Edge(){}
 
-    }
+    ~Edge(){}
 
-    ~Edge(){
+    int v(){ return a;}
 
-    }
+    int w(){ return b;}
 
-    int v(){
-        return a;
-    }
-
-    int w(){
-        return b;
-    }
+    Weight wt(){ return weight;}
 
     int other(int x){
         assert( x == a || x == b );
         return x == a ? b : a;
-    }
-
-    Weight wt(){
-        return weight;
     }
 
     bool operator<(Edge<Weight>& e){
@@ -69,7 +59,6 @@ public:
     }
 
     friend ostream& operator<<(ostream &os, const Edge &e){
-
         os<<e.a<<"-"<<e.b<<": "<<e.weight;
         return os;
     }

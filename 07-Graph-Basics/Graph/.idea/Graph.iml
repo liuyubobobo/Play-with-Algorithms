@@ -5,9 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Component.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DenseGraph.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RandomGraph.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main_test.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Path.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ShortestPath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main_path.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SparseGraph.h" isTestSource="false" />
     </content>

@@ -18,15 +18,16 @@ int main() {
 //    int V = 250;
 
     cout<<fixed<<setprecision(2);
-    // Test Weighted Sparse Graph
-    SparseGraph<double> g1 = SparseGraph<double>(V, false);
-    ReadGraph<SparseGraph<double>> readGraph1(g1, filename);
+
+    // Test Weighted Dense Graph
+    DenseGraph<double> g1 = DenseGraph<double>(V, false);
+    ReadGraph<DenseGraph<double>,double> readGraph1(g1, filename);
     g1.show();
     cout<<endl;
 
-    // Test Weighted Dense Graph
-    DenseGraph<double> g2 = DenseGraph<double>(V, false);
-    ReadGraph<DenseGraph<double>> readGraph2(g2, filename);
+    // Test Weighted Sparse Graph
+    SparseGraph<double> g2 = SparseGraph<double>(V, false);
+    ReadGraph<SparseGraph<double>,double> readGraph2(g2, filename);
     g2.show();
     cout<<endl;
 

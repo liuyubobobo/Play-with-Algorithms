@@ -46,10 +46,11 @@ public:
         assert( v >= 0 && v < n );
         assert( w >= 0 && w < n );
 
-        if( g[v][w] ){
+        if( hasEdge( v , w ) ){
+            delete g[v][w];
             if( !directed )
                 delete g[w][v];
-            delete g[v][w];
+            m --;
         }
 
         g[v][w] = new Edge<Weight>(v, w, weight);

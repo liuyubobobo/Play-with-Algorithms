@@ -53,7 +53,7 @@ public:
         assert( v >= 0 && v < n );
         assert( w >= 0 && w < n );
         for( int i = 0 ; i < g[v].size() ; i ++ )
-            if( g[v][i]->to == w )
+            if( g[v][i]->other(v) == w )
                 return true;
         return false;
     }
@@ -80,8 +80,9 @@ public:
         }
 
         Edge<Weight>* begin(){
+            index = 0;
             if( G.g[v].size() )
-                return G.g[v][0];
+                return G.g[v][index];
             return NULL;
         }
 
