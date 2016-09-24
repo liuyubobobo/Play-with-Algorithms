@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 9/13/16.
+// Created by liuyubobobo on 9/24/16.
 //
 
-#ifndef MINIMUMSPANTREE_MINHEAP_H
-#define MINIMUMSPANTREE_MINHEAP_H
+#ifndef INC_03_LAZY_PRIM_MINHEAP_H
+#define INC_03_LAZY_PRIM_MINHEAP_H
 
 #include <algorithm>
 #include <cassert>
@@ -97,4 +97,4 @@ public:
     }
 };
 
-#endif //MINIMUMSPANTREE_MINHEAP_H
+#endif //INC_03_LAZY_PRIM_MINHEAP_H

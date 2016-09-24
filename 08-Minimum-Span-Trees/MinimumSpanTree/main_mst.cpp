@@ -28,7 +28,7 @@ int main() {
     int V = 8;
 
     SparseGraph<double> g = SparseGraph<double>(V, false);
-    ReadGraph<SparseGraph<double>> readGraph(g, filename);
+    ReadGraph<SparseGraph<double>, double> readGraph(g, filename);
     cout<<filename<<" load successfully."<<endl;
 
 

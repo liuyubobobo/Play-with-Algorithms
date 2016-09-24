@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
-      <config projectName="01_Weighted_Graph" targetName="01_Weighted_Graph" />
+      <config projectName="03_Lazy_Prim" targetName="03_Lazy_Prim" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
@@ -11,8 +11,8 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b0482f3-dc61-47c0-b7cc-1ca9f57c812a" name="Default" comment="" />
-    <ignored path="01-Weighted-Graph.iws" />
+    <list default="true" id="d62cf18b-0570-496d-b874-c31bf8ba17bd" name="Default" comment="" />
+    <ignored path="03-Lazy-Prim.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +27,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="01-Weighted-Graph" />
+    <favorites_list name="03-Lazy-Prim" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="522">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -57,8 +57,8 @@
             <state relative-caret-position="1914">
               <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
-                <element signature="e#120#139#0" expanded="true" />
-                <element signature="e#191#208#0" expanded="true" />
+                <element signature="e#110#129#0" expanded="true" />
+                <element signature="e#181#198#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,11 +67,11 @@
       <file leaf-file-name="DenseGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2928">
+            <state relative-caret-position="3132">
               <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
-                <element signature="e#132#151#0" expanded="true" />
-                <element signature="e#253#270#0" expanded="true" />
+                <element signature="e#122#141#0" expanded="true" />
+                <element signature="e#243#260#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,24 +80,50 @@
       <file leaf-file-name="SparseGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2406">
+            <state relative-caret-position="1681">
               <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
-                <element signature="e#134#153#0" expanded="true" />
-                <element signature="e#254#271#0" expanded="true" />
+                <element signature="e#124#143#0" expanded="true" />
+                <element signature="e#244#261#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadGraph.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReadGraph.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReadGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
+            <state relative-caret-position="1363">
               <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="e#130#149#0" expanded="true" />
-                <element signature="e#258#291#0" expanded="true" />
+                <element signature="e#120#139#0" expanded="true" />
+                <element signature="e#248#281#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinHeap.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinHeap.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="695">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding>
+                <element signature="e#116#136#0" expanded="true" />
+                <element signature="e#188#203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazyPrimMST.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LazyPrimMST.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+              <folding>
+                <element signature="e#124#143#0" expanded="true" />
+                <element signature="e#252#285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,6 +139,8 @@
         <option value="$PROJECT_DIR$/DenseGraph.h" />
         <option value="$PROJECT_DIR$/SparseGraph.h" />
         <option value="$PROJECT_DIR$/ReadGraph.h" />
+        <option value="$PROJECT_DIR$/MinHeap.h" />
+        <option value="$PROJECT_DIR$/LazyPrimMST.h" />
       </list>
     </option>
   </component>
@@ -123,7 +151,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -157,17 +184,17 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="01-Weighted-Graph" />
+              <option name="myItemId" value="03-Lazy-Prim" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="01-Weighted-Graph" />
+              <option name="myItemId" value="03-Lazy-Prim" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="01-Weighted-Graph" />
+              <option name="myItemId" value="03-Lazy-Prim" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -181,11 +208,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager" selected="Application.Build All">
-    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="01_Weighted_Graph" TARGET_NAME="01_Weighted_Graph" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="03_Lazy_Prim" TARGET_NAME="03_Lazy_Prim" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="01_Weighted_Graph" TARGET_NAME="01_Weighted_Graph" CONFIG_NAME="Debug">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="03_Lazy_Prim" TARGET_NAME="03_Lazy_Prim" CONFIG_NAME="Debug">
       <envs />
       <method />
     </configuration>
@@ -203,7 +230,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -218,7 +245,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -240,7 +267,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -259,7 +286,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -278,7 +305,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -299,7 +326,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -321,7 +348,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01-Weighted-Graph" />
+      <module name="03-Lazy-Prim" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -336,17 +363,17 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration default="false" name="03_Lazy_Prim" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="03_Lazy_Prim" TARGET_NAME="03_Lazy_Prim" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="03_Lazy_Prim" RUN_TARGET_NAME="03_Lazy_Prim">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="01_Weighted_Graph" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="01_Weighted_Graph" TARGET_NAME="01_Weighted_Graph" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="01_Weighted_Graph" RUN_TARGET_NAME="01_Weighted_Graph">
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="03_Lazy_Prim" TARGET_NAME="03_Lazy_Prim" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="03_Lazy_Prim" RUN_TARGET_NAME="03_Lazy_Prim">
       <envs />
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="1" class="java.lang.String" itemvalue="Application.01_Weighted_Graph" />
+      <item index="0" class="java.lang.String" itemvalue="Application.03_Lazy_Prim" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Build All" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -354,24 +381,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0b0482f3-dc61-47c0-b7cc-1ca9f57c812a" name="Default" comment="" />
-      <created>1474644303687</created>
+      <changelist id="d62cf18b-0570-496d-b874-c31bf8ba17bd" name="Default" comment="" />
+      <created>1474721928673</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1474644303687</updated>
+      <updated>1474721928673</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15433404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1627907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -401,55 +429,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Edge.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1914">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="e#120#139#0" expanded="true" />
-            <element signature="e#191#208#0" expanded="true" />
+            <element signature="e#110#129#0" expanded="true" />
+            <element signature="e#181#198#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DenseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2928">
+        <state relative-caret-position="3132">
           <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
-            <element signature="e#132#151#0" expanded="true" />
-            <element signature="e#253#270#0" expanded="true" />
+            <element signature="e#122#141#0" expanded="true" />
+            <element signature="e#243#260#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2406">
+        <state relative-caret-position="1681">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
-            <element signature="e#134#153#0" expanded="true" />
-            <element signature="e#254#271#0" expanded="true" />
+            <element signature="e#124#143#0" expanded="true" />
+            <element signature="e#244#261#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
+        <state relative-caret-position="1363">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#130#149#0" expanded="true" />
-            <element signature="e#258#291#0" expanded="true" />
+            <element signature="e#120#139#0" expanded="true" />
+            <element signature="e#248#281#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinHeap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#136#0" expanded="true" />
+            <element signature="e#188#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LazyPrimMST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding>
+            <element signature="e#124#143#0" expanded="true" />
+            <element signature="e#252#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

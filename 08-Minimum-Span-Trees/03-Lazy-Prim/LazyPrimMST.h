@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 9/13/16.
+// Created by liuyubobobo on 9/24/16.
 //
 
-#ifndef MINIMUMSPANTREE_LAZYPRIMMST_H
-#define MINIMUMSPANTREE_LAZYPRIMMST_H
+#ifndef INC_03_LAZY_PRIM_LAZYPRIMMST_H
+#define INC_03_LAZY_PRIM_LAZYPRIMMST_H
 
 #include <iostream>
 #include <vector>
@@ -19,14 +19,13 @@ class LazyPrimMST{
 
 private:
     Graph &G;
-    vector<Edge<Weight>> mst;
-
-    bool* marked;
     MinHeap<Edge<Weight>> pq;
+    bool *marked;
+    vector<Edge<Weight>> mst;
     Weight mstWeight;
 
-
     void visit(int v){
+
         assert( !marked[v] );
         marked[v] = true;
 
@@ -34,10 +33,9 @@ private:
         for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() )
             if( !marked[e->other(v)] )
                 pq.insert(*e);
-
     }
+
 public:
-    // 保证图是连通无向有权图
     LazyPrimMST(Graph &graph):G(graph), pq(MinHeap<Edge<Weight>>(graph.E())){
 
         marked = new bool[G.V()];
@@ -45,17 +43,18 @@ public:
             marked[i] = false;
         mst.clear();
 
+        // Lazy Prim
         visit(0);
         while( !pq.isEmpty() ){
             Edge<Weight> e = pq.extractMin();
-            if( marked[e.v()] && marked[e.w()] )
+            if( marked[e.v()] == marked[e.w()] )
                 continue;
 
-            mst.push_back(e);
+            mst.push_back( e );
             if( !marked[e.v()] )
-                visit(e.v());
-            if( !marked[e.w()] )
-                visit(e.w());
+                visit( e.v() );
+            else
+                visit( e.w() );
         }
 
         mstWeight = mst[0].wt();
@@ -76,4 +75,4 @@ public:
     };
 };
 
-#endif //MINIMUMSPANTREE_LAZYPRIMMST_H
+#endif //INC_03_LAZY_PRIM_LAZYPRIMMST_H
