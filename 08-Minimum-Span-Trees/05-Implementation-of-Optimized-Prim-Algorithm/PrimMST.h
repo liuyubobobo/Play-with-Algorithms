@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 9/13/16.
+// Created by liuyubobobo on 9/26/16.
 //
 
-#ifndef MINIMUMSPANTREE_PRIMMST_H
-#define MINIMUMSPANTREE_PRIMMST_H
+#ifndef INC_05_IMPLEMENTATION_OF_OPTIMIZED_PRIM_ALGORITHM_PRIMMST_H
+#define INC_05_IMPLEMENTATION_OF_OPTIMIZED_PRIM_ALGORITHM_PRIMMST_H
 
 #include <iostream>
 #include <vector>
@@ -86,4 +86,4 @@ public:
     };
 };
 
-#endif //MINIMUMSPANTREE_PRIMMST_H
+#endif //INC_05_IMPLEMENTATION_OF_OPTIMIZED_PRIM_ALGORITHM_PRIMMST_H

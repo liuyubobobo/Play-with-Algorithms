@@ -8,7 +8,6 @@
 #include "ReadGraph.h"
 #include "LazyPrimMST.h"
 #include "PrimMST.h"
-#include "KruskalMST.h"
 
 using namespace std;
 
@@ -115,35 +114,6 @@ int main() {
 //    cout<<"Test for G5: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
     cout<<endl;
-
-
-    // Test Kruskal MST
-    cout<<"Test Kruskal MST:"<<endl;
-
-    startTime = clock();
-    KruskalMST<SparseGraph<double>, double> KruskalMST1(g1);
-    endTime = clock();
-    cout<<"Test for G1: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
-
-    startTime = clock();
-    KruskalMST<SparseGraph<double>, double> KruskalMST2(g2);
-    endTime = clock();
-    cout<<"Test for G2: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
-
-    startTime = clock();
-    KruskalMST<SparseGraph<double>, double> KruskalMST3(g3);
-    endTime = clock();
-    cout<<"Test for G3: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
-
-    startTime = clock();
-    KruskalMST<SparseGraph<double>, double> KruskalMST4(g4);
-    endTime = clock();
-    cout<<"Test for G4: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
-
-//    startTime = clock();
-//    KruskalMST<SparseGraph<double>, double> KruskalMST5(g5);
-//    endTime = clock();
-//    cout<<"Test for G5: "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<" s."<<endl;
 
 
     return 0;
