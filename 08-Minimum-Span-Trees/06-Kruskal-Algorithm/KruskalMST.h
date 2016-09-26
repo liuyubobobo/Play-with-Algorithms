@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 9/14/16.
+// Created by liuyubobobo on 9/26/16.
 //
 
-#ifndef MINIMUMSPANTREE_KRUSKALMST_H
-#define MINIMUMSPANTREE_KRUSKALMST_H
+#ifndef INC_06_KRUSKAL_ALGORITHM_KRUSKALMST_H
+#define INC_06_KRUSKAL_ALGORITHM_KRUSKALMST_H
 
 #include <iostream>
 #include <vector>
@@ -61,4 +61,4 @@ public:
     };
 };
 
-#endif //MINIMUMSPANTREE_KRUSKALMST_H
+#endif //INC_06_KRUSKAL_ALGORITHM_KRUSKALMST_H
