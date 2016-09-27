@@ -13,7 +13,7 @@
 using namespace std;
 
 // 稠密图 - 邻接矩阵
-template<typename Weight>
+template <typename Weight>
 class DenseGraph{
 
 private:
@@ -26,13 +26,13 @@ public:
         this->n = n;
         this->m = 0;
         this->directed = directed;
-
         for( int i = 0 ; i < n ; i ++ ){
-            g.push_back( vector<Edge<Weight> *>(n, NULL) );
+            g.push_back( vector<Edge<Weight> *>(n,NULL) );
         }
     }
 
     ~DenseGraph(){
+
         for( int i = 0 ; i < n ; i ++ )
             for( int j = 0 ; j < n ; j ++ )
                 if( g[i][j] != NULL )
@@ -42,14 +42,15 @@ public:
     int V(){ return n;}
     int E(){ return m;}
 
-    void addEdge( int v, int w , Weight weight){
+    void addEdge( int v, int w , Weight weight ){
         assert( v >= 0 && v < n );
         assert( w >= 0 && w < n );
 
-        if( g[v][w] ){
+        if( hasEdge( v , w  ) ){
+            delete  g[v][w];
             if( !directed )
                 delete g[w][v];
-            delete g[v][w];
+            m --;
         }
 
         g[v][w] = new Edge<Weight>(v, w, weight);

@@ -21,37 +21,44 @@ private:
     Graph &G;
     int s;
     Weight *distTo;
-    Edge<Weight> **edgeTo;
+    bool *marked;
+    vector<Edge<Weight>*> from;
 
 public:
     Dijkstra(Graph &graph, int s):G(graph){
 
         this->s = s;
         distTo = new Weight[G.V()];
-        edgeTo = new Edge*[G.V()];
-        for( int i = 0 ; i < G.V() ; i ++ )
-            edgeTo[i] = NULL;
+        marked = new bool[G.V()];
+        for( int i = 0 ; i < G.V() ; i ++ ){
+            distTo[i] = Weight();
+            marked[i] = false;
+            from.push_back(NULL);
+        }
 
         IndexMinHeap<Weight> ipq(G.V());
 
         // start dijkstra
-        edgeTo[s] = new Edge<Weight>(s,s,Weight());
+        from[s] = new Edge<Weight>(s,s,Weight());
         distTo[s] = Weight();
         ipq.insert(s, distTo[s] );
-
+        marked[s] = true;
         while( !ipq.isEmpty() ){
             int v = ipq.extractMinIndex();
-
+            marked[v] = true;
+            //cout<<v<<endl;
             typename Graph::adjIterator adj(G, v);
             for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() ){
                 int w = e->other(v);
-                if( edgeTo[w] == NULL || distTo[v] + e->wt() < distTo[w] ){
-                    distTo[w] = distTo[v] + e->wt();
-                    edgeTo[w] = e;
-                    if( ipq.contain(w) )
-                        ipq.change(w, distTo[w] );
-                    else
-                        ipq.insert(w, distTo[w] );
+                if( !marked[w] ){
+                    if( from[w] == NULL || distTo[v] + e->wt() < distTo[w] ){
+                        distTo[w] = distTo[v] + e->wt();
+                        from[w] = e;
+                        if( ipq.contain(w) )
+                            ipq.change(w, distTo[w] );
+                        else
+                            ipq.insert(w, distTo[w] );
+                    }
                 }
             }
         }
@@ -59,31 +66,48 @@ public:
 
     ~Dijkstra(){
         delete[] distTo;
-        delete edgeTo[s];
-        delete[] edgeTo;
+        delete[] marked;
+        delete from[s];
     }
 
     Weight shortestPathTo( int w ){
+        assert( w >= 0 && w < G.V() );
         return distTo[w];
     }
 
     bool hasPathTo( int w ){
-        return edgeTo[w] != NULL;
+        assert( w >= 0 && w < G.V() );
+        return marked[w];
     }
 
-    void shortedtPath( int w, vector<Edge<Weight>> &vec ){
+    void shortestPath( int w, vector<Edge<Weight>> &vec ){
+
+        assert( w >= 0 && w < G.V() );
 
         stack<Edge<Weight>*> s;
-        Edge<Weight> *e = edgeTo[w];
-        while( e ){
+        Edge<Weight> *e = from[w];
+        while( e->v() != e->w() ){
             s.push(e);
-            e = edgeTo[e->v()];
+            e = from[e->v()];
         }
 
         while( !s.empty() ){
             e = s.top();
             vec.push_back( *e );
             s.pop();
+        }
+    }
+
+    void showPath(int w){
+
+        assert( w >= 0 && w < G.V() );
+
+        vector<Edge<Weight>> vec;
+        shortestPath(w, vec);
+        for( int i = 0 ; i < vec.size() ; i ++ ){
+            cout<<vec[i].v()<<" -> ";
+            if( i == vec.size()-1 )
+                cout<<vec[i].w()<<endl;
         }
     }
 };

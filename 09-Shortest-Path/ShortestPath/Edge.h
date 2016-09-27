@@ -6,6 +6,7 @@
 #define SHORTESTPATH_EDGE_H
 
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ using namespace std;
 template<typename Weight>
 class Edge{
 private:
-    int a, b;
+    int a,b;
     Weight weight;
 
 public:
@@ -23,29 +24,24 @@ public:
         this->weight = weight;
     }
 
-    Edge(){
+    Edge(){}
 
-    }
+    ~Edge(){}
 
-    ~Edge(){
+    int v(){ return a;}
 
-    }
+    int w(){ return b;}
 
-    int v(){
-        return a;
-    }
-
-    int w(){
-        return b;
-    }
+    Weight wt(){ return weight;}
 
     int other(int x){
         assert( x == a || x == b );
         return x == a ? b : a;
     }
 
-    Weight wt(){
-        return weight;
+    friend ostream& operator<<(ostream &os, const Edge &e){
+        os<<e.a<<"-"<<e.b<<": "<<e.weight;
+        return os;
     }
 
     bool operator<(Edge<Weight>& e){
@@ -66,12 +62,6 @@ public:
 
     bool operator==(Edge<Weight>& e){
         return weight == e.wt();
-    }
-
-    friend ostream& operator<<(ostream &os, const Edge &e){
-
-        os<<e.a<<"-"<<e.b<<": "<<e.weight;
-        return os;
     }
 };
 
