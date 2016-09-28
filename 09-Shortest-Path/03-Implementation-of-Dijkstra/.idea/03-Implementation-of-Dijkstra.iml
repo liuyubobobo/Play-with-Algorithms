@@ -3,11 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/DenseGraph.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/BellmanFord.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IndexMinHeap.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ReadGraph.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SparseGraph.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main_dij.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Dijkstra.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Edge.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />

@@ -93,11 +93,13 @@ public:
 
         stack<Edge<Weight>*> s;
         Edge<Weight> *e = from[w];
-        while( e->v() != e->w() ){
-            cout<<*e<<endl;
+        //while( e->v() != e->w() ){
+        while( e->v() != this->s ){
+            //cout<<*e<<endl;
             s.push(e);
             e = from[e->v()];
         }
+        s.push(e);
 
         while( !s.empty() ){
             e = s.top();

@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 9/15/16.
+// Created by liuyubobobo on 9/28/16.
 //
 
-#ifndef SHORTESTPATH_DIJKSTRA_H
-#define SHORTESTPATH_DIJKSTRA_H
+#ifndef INC_03_IMPLEMENTATION_OF_DIJKSTRA_DIJKSTRA_H
+#define INC_03_IMPLEMENTATION_OF_DIJKSTRA_DIJKSTRA_H
 
 #include <iostream>
 #include <vector>
@@ -113,4 +113,4 @@ public:
     }
 };
 
-#endif //SHORTESTPATH_DIJKSTRA_H
+#endif //INC_03_IMPLEMENTATION_OF_DIJKSTRA_DIJKSTRA_H
