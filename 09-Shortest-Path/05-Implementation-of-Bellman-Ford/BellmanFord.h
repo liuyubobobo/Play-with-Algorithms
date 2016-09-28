@@ -1,9 +1,9 @@
 //
-// Created by liuyubobobo on 9/16/16.
+// Created by liuyubobobo on 9/28/16.
 //
 
-#ifndef SHORTESTPATH_BELLMANFORD_H
-#define SHORTESTPATH_BELLMANFORD_H
+#ifndef INC_05_IMPLEMENTATION_OF_BELLMAN_FORD_BELLMANFORD_H
+#define INC_05_IMPLEMENTATION_OF_BELLMAN_FORD_BELLMANFORD_H
 
 #include <stack>
 #include <vector>
@@ -21,7 +21,6 @@ private:
     Weight* distTo;
     vector<Edge<Weight>*> from;
     bool hasNegativeCycle;
-
 
     bool detectNegativeCycle(){
 
@@ -44,9 +43,12 @@ public:
             from.push_back(NULL);
         }
 
+        // Bellman-Ford
         distTo[s] = Weight();
 
         for( int pass = 1 ; pass < G.V() ; pass ++ ){
+
+            // Relaxation
             for( int i = 0 ; i < G.V() ; i ++ ){
                 typename Graph::adjIterator adj(G,i);
                 for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() )
@@ -115,4 +117,4 @@ public:
     }
 };
 
-#endif //SHORTESTPATH_BELLMANFORD_H
+#endif //INC_05_IMPLEMENTATION_OF_BELLMAN_FORD_BELLMANFORD_H

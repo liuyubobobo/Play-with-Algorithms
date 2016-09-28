@@ -114,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dijkstra.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dijkstra.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dijkstra.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
@@ -130,22 +130,21 @@
       <file leaf-file-name="BellmanFord.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BellmanFord.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+            <state relative-caret-position="417">
+              <caret line="32" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <element signature="e#116#132#0" expanded="true" />
                 <element signature="e#202#235#0" expanded="true" />
-                <marker date="1475031039000" expanded="true" signature="2185:2689" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_bell.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main_bell.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_bell.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="575">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -167,10 +166,10 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/testG2.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/BellmanFord.h" />
         <option value="$PROJECT_DIR$/main_bell.cpp" />
         <option value="$PROJECT_DIR$/main_dij.cpp" />
         <option value="$PROJECT_DIR$/Dijkstra.h" />
+        <option value="$PROJECT_DIR$/BellmanFord.h" />
       </list>
     </option>
   </component>
@@ -440,7 +439,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19771072" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13111342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -618,7 +617,6 @@
           <folding>
             <element signature="e#116#132#0" expanded="true" />
             <element signature="e#202#235#0" expanded="true" />
-            <marker date="1475031039000" expanded="true" signature="2185:2689" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -702,7 +700,6 @@
           <folding>
             <element signature="e#116#132#0" expanded="true" />
             <element signature="e#202#235#0" expanded="true" />
-            <marker date="1475031039000" expanded="true" signature="2185:2689" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -736,28 +733,6 @@
         <state relative-caret-position="145">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BellmanFord.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
-          <folding>
-            <element signature="e#116#132#0" expanded="true" />
-            <element signature="e#202#235#0" expanded="true" />
-            <marker date="1475031039000" expanded="true" signature="2185:2689" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_bell.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,6 +804,27 @@
           <folding>
             <element signature="e#110#129#0" expanded="true" />
             <element signature="e#241#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BellmanFord.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="32" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#116#132#0" expanded="true" />
+            <element signature="e#202#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_bell.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
