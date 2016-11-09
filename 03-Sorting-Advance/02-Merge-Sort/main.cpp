@@ -10,7 +10,8 @@ template<typename  T>
 void __merge(T arr[], int l, int mid, int r){
 
     // 经测试,传递aux数组的性能效果并不好
-    T aux[r-l+1];
+    //T aux[r-l+1];
+    T *aux = new T[r-l+1];
     for( int i = l ; i <= r; i ++ )
         aux[i-l] = arr[i];
 
@@ -22,6 +23,7 @@ void __merge(T arr[], int l, int mid, int r){
         else if( aux[i-l] < aux[j-l] ){ arr[k] = aux[i-l]; i ++;}
         else                          { arr[k] = aux[j-l]; j ++;}
     }
+    delete[] aux;
 }
 
 // 递归使用归并排序,对arr[l...r]的范围进行排序
@@ -63,16 +65,16 @@ int main() {
 
 
     // 测试2 测试近乎有序的数组
-    int swapTimes = 100;
-    cout<<"Test for Random Nearly Ordered Array, size = "<<n<<", swap time = "<<swapTimes<<endl;
-    arr1 = SortTestHelper::generateNearlyOrderedArray(n,swapTimes);
-    arr2 = SortTestHelper::copyIntArray(arr1, n);
-
-    SortTestHelper::testSort("Insertion Sort", insertionSort, arr1, n);
-    SortTestHelper::testSort("Merge Sort",     mergeSort,     arr2, n);
-
-    delete[] arr1;
-    delete[] arr2;
+//    int swapTimes = 100;
+//    cout<<"Test for Random Nearly Ordered Array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+//    arr1 = SortTestHelper::generateNearlyOrderedArray(n,swapTimes);
+//    arr2 = SortTestHelper::copyIntArray(arr1, n);
+//
+//    SortTestHelper::testSort("Insertion Sort", insertionSort, arr1, n);
+//    SortTestHelper::testSort("Merge Sort",     mergeSort,     arr2, n);
+//
+//    delete[] arr1;
+//    delete[] arr2;
 
     return 0;
 }
