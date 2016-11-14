@@ -41,6 +41,7 @@ void __mergeSort1(T arr[], int l, int r){
     __merge1(arr, l, mid, r);
 }
 
+// 归并排序,无优化
 template<typename T>
 void mergeSort1(T arr[], int n){
 
@@ -79,6 +80,7 @@ void __mergeSort2(T arr[], int l, int r, T aux[]){
     __merge2(arr, l, mid, r, aux);
 }
 
+// 归并排序,将aux作为参数传递
 template<typename T>
 void mergeSort2(T arr[], int n){
 

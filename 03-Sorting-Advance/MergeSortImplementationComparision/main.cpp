@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// 这个例子用于比较归并排序中,若将aux数组作为参数传给__merge子过程,整个归并排序会更快
 int main() {
 
     int n = 1000000;
