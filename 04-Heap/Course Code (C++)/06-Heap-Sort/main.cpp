@@ -45,7 +45,9 @@ void __shiftDown2(T arr[], int n, int k){
 template<typename T>
 void heapSort(T arr[], int n){
 
-    for( int i = (n-1)/2 ; i >= 0 ; i -- )
+    // 从(最后一个元素的索引-1)/2开始
+    // 最后一个元素的索引 = n-1
+    for( int i = (n-1-1)/2 ; i >= 0 ; i -- )
         __shiftDown2(arr, n, i);
 
     for( int i = n-1; i > 0 ; i-- ){
