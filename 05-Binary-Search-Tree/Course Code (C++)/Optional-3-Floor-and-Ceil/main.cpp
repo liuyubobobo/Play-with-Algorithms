@@ -108,6 +108,28 @@ public:
         return maxNode->key;
     }
 
+    // 寻找key的floor值
+    // 如果不存在key的floor值(key比BST中的最小值还小), 返回NULL
+    Key* floor(Key key){
+
+        if( count == 0 || key < minimum() )
+            return NULL;
+
+        Node *floorNode = floor(root, key);
+        return &(floorNode->key);
+    }
+
+    // 寻找key的ceil值
+    // 如果不存在key的ceil值(key比BST中的最大值还大), 返回NULL
+    Key* ceil(Key key){
+
+        if( count == 0 || key > maximum() )
+            return NULL;
+
+        Node *ceilNode = ceil(root, key);
+        return &(ceilNode->key);
+    }
+
     // 从二叉树中删除最小值所在节点
     void removeMin(){
         if( root )
@@ -306,4 +328,87 @@ private:
             return successor;
         }
     }
+
+
+    // 在以node为根的二叉搜索树中, 寻找key的floor值所处的节点
+    Node* floor(Node* node, Key key){
+
+        if( node == NULL )
+            return NULL;
+
+        // 如果node的key值和要寻找的key值相等
+        // 则node本身就是key的floor节点
+        if( node->key == key )
+            return node;
+
+        // 如果node的key值比要寻找的key值大
+        // 则要寻找的key的floor节点一定在node的左子树中
+        if( node->key > key )
+            return floor( node->left , key );
+
+        // 如果node->key < key
+        // 则node有可能是key的floor节点, 也有可能不是(存在比node->key大但是小于key的其余节点)
+        // 需要尝试向node的右子树寻找一下
+        Node* tempNode = floor( node->right , key );
+        if( tempNode != NULL )
+            return tempNode;
+
+        return node;
+    }
+
+
+    // 在以node为根的二叉搜索树中, 寻找key的ceil值所处的节点
+    Node* ceil(Node* node, Key key){
+
+        if( node == NULL )
+            return NULL;
+
+        // 如果node的key值和要寻找的key值相等
+        // 则node本身就是key的ceil节点
+        if( node->key == key )
+            return node;
+
+        // 如果node的key值比要寻找的key值小
+        // 则要寻找的key的ceil节点一定在node的右子树中
+        if( node->key < key )
+            return ceil( node->right , key );
+
+        // 如果node->key > key
+        // 则node有可能是key的ceil节点, 也有可能不是(存在比node->key小但是大于key的其余节点)
+        // 需要尝试向node的左子树寻找一下
+        Node* tempNode = ceil( node->left , key );
+        if( tempNode != NULL )
+            return tempNode;
+
+        return node;
+    }
 };
+
+
+int main(){
+
+    BST<int,int> bst;
+
+    for(int i = 2 ; i < 20 ; i += 2 )
+        bst.insert(i, i);
+    for( int i = 0 ; i <= 20 ; i ++ ){
+
+        int* floorKey = bst.floor(i);
+        cout<<"the floor of "<<i<<" is ";
+        if( floorKey == NULL )
+            cout<<"NULL"<<endl;
+        else
+            cout<<*floorKey<<endl;
+
+        int* ceilKey = bst.ceil(i);
+        cout<<"the ceil of "<<i<<" is ";
+        if( ceilKey == NULL )
+            cout<<"NULL"<<endl;
+        else
+            cout<<*ceilKey<<endl;
+
+        cout<<endl;
+    }
+
+    return 0;
+}
