@@ -40,7 +40,7 @@ int __binarySearch2(T arr[], int l, int r, T target){
     if( arr[mid] == target )
         return mid;
     else if( arr[mid] > target )
-        return __binarySearch2(arr, 0, mid-1, target);
+        return __binarySearch2(arr, l, mid-1, target);
     else
         return __binarySearch2(arr, mid+1, r, target);
 
