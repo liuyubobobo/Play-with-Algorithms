@@ -76,6 +76,9 @@ public:
         assert( count + 1 <= capacity );
         assert( i + 1 >= 1 && i + 1 <= capacity );
 
+        // 再插入一个新元素前,还需要保证索引i所在的位置是没有元素的。
+        assert( !contain(i) );
+
         i += 1;
         data[i] = item;
         indexes[count+1] = i;
