@@ -45,14 +45,14 @@ public:
 
         // Bellman-Ford
         distTo[s] = Weight();
-
+        from[s] = new Edge<Weight>();
         for( int pass = 1 ; pass < G.V() ; pass ++ ){
 
             // Relaxation
             for( int i = 0 ; i < G.V() ; i ++ ){
                 typename Graph::adjIterator adj(G,i);
                 for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() )
-                    if( !from[e->w()] || distTo[e->v()] + e->wt() < distTo[e->w()] ){
+                    if( from[e->v()] && (!from[e->w()] || distTo[e->v()] + e->wt() < distTo[e->w()]) ){
                         distTo[e->w()] = distTo[e->v()] + e->wt();
                         from[e->w()] = e;
                     }
@@ -65,6 +65,7 @@ public:
     ~BellmanFord(){
 
         delete[] distTo;
+        delete from[s];
     }
 
     bool negativeCycle(){
