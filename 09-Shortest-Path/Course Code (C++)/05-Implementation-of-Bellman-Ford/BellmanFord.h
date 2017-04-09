@@ -39,19 +39,27 @@ public:
 
         this->s = s;
         distTo = new Weight[G.V()];
-        for( int i = 0 ; i < G.V() ; i ++ ){
+        // 初始化所有的节点s都不可达, 由from数组来表示
+        for( int i = 0 ; i < G.V() ; i ++ )
             from.push_back(NULL);
-        }
 
-        // Bellman-Ford
+        // 设置distTo[s] = 0, 并且让from[s]不为NULL, 表示初始s节点可达且距离为0
         distTo[s] = Weight();
-        from[s] = new Edge<Weight>();
+        from[s] = new Edge<Weight>(); // 这里我们from[s]的内容是new出来的, 注意要在析构函数里delete掉
+
+        // Bellman-Ford的过程
+        // 进行V-1次循环, 每一次循环求出从起点到其余所有点, 最多使用pass步可到达的最短距离
         for( int pass = 1 ; pass < G.V() ; pass ++ ){
 
-            // Relaxation
+            // 每次循环中对所有的边进行一遍松弛操作
+            // 遍历所有边的方式是先遍历所有的顶点, 然后遍历和所有顶点相邻的所有边
             for( int i = 0 ; i < G.V() ; i ++ ){
+                // 使用我们实现的邻边迭代器遍历和所有顶点相邻的所有边
                 typename Graph::adjIterator adj(G,i);
                 for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() )
+                    // 对于每一个边首先判断e->v()可达
+                    // 之后看如果e->w()以前没有到达过， 显然我们可以更新distTo[e->w()]
+                    // 或者e->w()以前虽然到达过, 但是通过这个e我们可以获得一个更短的距离, 即可以进行一次松弛操作, 我们也可以更新distTo[e->w()]
                     if( from[e->v()] && (!from[e->w()] || distTo[e->v()] + e->wt() < distTo[e->w()]) ){
                         distTo[e->w()] = distTo[e->v()] + e->wt();
                         from[e->w()] = e;
