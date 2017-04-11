@@ -1,4 +1,4 @@
-package com.liuyubobobo;
+package bobo.algo;
 
 public class SelectionSort {
 
