@@ -1,5 +1,3 @@
-package bobo.algo;
-
 public class SelectionSort {
 
     // 我们的算法类不允许产生任何实例
