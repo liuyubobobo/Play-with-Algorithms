@@ -28,6 +28,7 @@ namespace SortTestHelper {
         return arr;
     }
 
+    // 打印arr数组的所有内容
     template<typename T>
     void printArray(T arr[], int n) {
 
