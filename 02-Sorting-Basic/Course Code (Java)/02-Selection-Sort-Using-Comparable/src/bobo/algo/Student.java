@@ -29,6 +29,7 @@ public class Student implements Comparable<Student> {
             return 0;
     }
 
+    // 定义Student实例的打印输出方式
     @Override
     public String toString() {
         return "Student: " + this.name + " " + Integer.toString( this.score );
