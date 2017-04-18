@@ -27,6 +27,8 @@ void insertionSort(T arr[], int n){
     return;
 }
 
+// 比较SelectionSort和InsertionSort两种排序算法的性能效率
+// 此时， 插入排序比选择排序性能略低
 int main() {
 
     int n = 10000;
