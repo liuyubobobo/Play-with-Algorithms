@@ -10,10 +10,10 @@ using namespace std;
 template<typename T>
 void shellSort(T arr[], int n){
 
+    // 计算 increment sequence: 1, 4, 13, 40, 121, 364, 1093...
     int h = 1;
     while( h < n/3 )
         h = 3 * h + 1;
-    // 计算 increment sequence: 1, 4, 13, 40, 121, 364, 1093...
 
     while( h >= 1 ){
 
@@ -32,13 +32,14 @@ void shellSort(T arr[], int n){
     }
 }
 
-
+// 比较SelectionSort, InsertionSort和BubbleSort和ShellSort四种排序算法的性能效率
+// ShellSort是这四种排序算法中性能最优的排序算法
 int main() {
 
-    int n = 10000;
+    int n = 20000;
 
-    // Test for Random Array
-    cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
+    // 测试1 一般测试
+    cout<<"Test for random array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
 
     int *arr1 = SortTestHelper::generateRandomArray(n,0,n);
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);
@@ -58,10 +59,10 @@ int main() {
     cout<<endl;
 
 
-    // Test for Random Nearly Ordered Array
+    // 测试2 测试近乎有序的数组
     int swapTimes = 100;
 
-    cout<<"Test for Random Nearly Ordered Array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+    cout<<"Test for nearly ordered array, size = "<<n<<", swap time = "<<swapTimes<<endl;
 
     arr1 = SortTestHelper::generateNearlyOrderedArray(n, swapTimes);
     arr2 = SortTestHelper::copyIntArray(arr1, n);
