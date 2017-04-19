@@ -39,10 +39,10 @@ void bubbleSort( T arr[] , int n){
 
 int main() {
 
-    int n = 10000;
+    int n = 20000;
 
-    // Test for Random Array
-    cout<<"Test for Random Array, size = "<<n<<", randome range [0, "<<n<<"]"<<endl;
+    // 测试1 一般测试
+    cout<<"Test for random array, size = "<<n<<", randome range [0, "<<n<<"]"<<endl;
 
     int *arr1 = SortTestHelper::generateRandomArray(n,0,n);
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);
@@ -59,10 +59,10 @@ int main() {
     cout<<endl;
 
 
-    // Test for Random Nearly Ordered Array
+    // 测试2 测试近乎有序的数组
     int swapTimes = 100;
 
-    cout<<"Test for Random Nearly Ordered Array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+    cout<<"Test for nNearly ordered array, size = "<<n<<", swap time = "<<swapTimes<<endl;
 
     arr1 = SortTestHelper::generateNearlyOrderedArray(n, swapTimes);
     arr2 = SortTestHelper::copyIntArray(arr1, n);
