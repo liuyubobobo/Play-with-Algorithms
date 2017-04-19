@@ -31,7 +31,7 @@ public class SelectionSort{
     // 测试SelectionSort
     public static void main(String[] args) {
 
-        int N = 10000;
+        int N = 20000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
         SortTestHelper.testSort("bobo.algo.SelectionSort", arr);
 

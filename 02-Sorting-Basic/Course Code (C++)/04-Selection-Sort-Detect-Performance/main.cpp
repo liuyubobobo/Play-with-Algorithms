@@ -19,7 +19,7 @@ void selectionSort(T arr[], int n){
 
 int main() {
 
-    int n = 10000;
+    int n = 20000;
     int *arr = SortTestHelper::generateRandomArray(n,0,n);
     SortTestHelper::testSort("Selection Sort", selectionSort, arr, n);
     delete[] arr;

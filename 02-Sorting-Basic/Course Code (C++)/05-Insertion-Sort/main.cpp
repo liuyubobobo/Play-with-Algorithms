@@ -31,7 +31,8 @@ void insertionSort(T arr[], int n){
 // 此时， 插入排序比选择排序性能略低
 int main() {
 
-    int n = 10000;
+    int n = 20000;
+
     cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
     int *arr1 = SortTestHelper::generateRandomArray(n,0,n);
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);

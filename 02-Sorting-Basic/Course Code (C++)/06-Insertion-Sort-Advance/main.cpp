@@ -35,7 +35,7 @@ void insertionSort(T arr[], int n){
 
 int main() {
 
-    int n = 10000;
+    int n = 20000;
     
     // 测试1 一般测试
     cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
