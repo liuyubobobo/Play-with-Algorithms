@@ -14,19 +14,34 @@ using namespace std;
 template<typename  T>
 void __merge(T arr[], int l, int mid, int r){
 
-    // 经测试,传递aux数组的性能效果并不好
+    //* VS不支持动态长度数组, 即不能使用 T aux[r-l+1]的方式申请aux的空间
+    //* 使用VS的同学, 请使用new的方式申请aux空间
+    //* 使用new申请空间, 不要忘了在__merge函数的最后, delete掉申请的空间:)
     T aux[r-l+1];
+    //T *aux = new T[r-l+1];
+
     for( int i = l ; i <= r; i ++ )
         aux[i-l] = arr[i];
 
+    // 初始化，i指向左半部分的起始索引位置l；j指向右半部分起始索引位置mid+1
     int i = l, j = mid+1;
     for( int k = l ; k <= r; k ++ ){
 
-        if( i > mid )   { arr[k] = aux[j-l]; j ++;}
-        else if( j > r ){ arr[k] = aux[i-l]; i ++;}
-        else if( aux[i-l] < aux[j-l] ){ arr[k] = aux[i-l]; i ++;}
-        else                          { arr[k] = aux[j-l]; j ++;}
+        if( i > mid ){  // 如果左半部分元素已经全部处理完毕
+            arr[k] = aux[j-l]; j ++;
+        }
+        else if( j > r ){  // 如果右半部分元素已经全部处理完毕
+            arr[k] = aux[i-l]; i ++;
+        }
+        else if( aux[i-l] < aux[j-l] ) {  // 左半部分所指元素 < 右半部分所指元素
+            arr[k] = aux[i-l]; i ++;
+        }
+        else{  // 左半部分所指元素 >= 右半部分所指元素
+            arr[k] = aux[j-l]; j ++;
+        }
     }
+
+    //delete[] aux;
 }
 
 // 递归使用归并排序,对arr[l...r]的范围进行排序
