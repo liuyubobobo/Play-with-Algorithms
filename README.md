@@ -36,3 +36,13 @@
 | 2-7 更多关于O(n^2)排序算法的思考 | [无代码]|  |
 | 补充1 冒泡排序法 - Bubble Sort | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)/Optional-01-Bubble-Sort)| [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)/Optional-01-Bubble-Sort/src/bobo/algo) |
 | 补充2 希尔排序法 - Shell Sort | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)/Optional-02-Shell-Sort)| [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)/Optional-02-Shell-Sort/src/bobo/algo) |
+| **第三章 高级排序算法** | | |
+| 3-1 归并排序法 - Merge Sort | [无代码] | |
+| 3-2 归并排序法的实现 | [C++源码]() | [Java源码]() |
+| 3-3 归并排序法的优化 | [C++源码]() | [Java源码]() |
+| 3-4 自底向上的归并排序算法 | [C++源码]() | [Java源码]() |
+| 3-5 快速排序法 - Quick Sort | [C++源码]() | [Java源码]() |
+| 3-6 随机化快速排序法 | [C++源码]() | [Java源码]() |
+| 3-7 双路快速排序法 | [C++源码]() | [Java源码]() |
+| 3-8 三路快速排序法 | [C++源码]() | [Java源码]() |
+| 3-9 归并排序和快速排序的衍生问题 | [无代码] |  |
