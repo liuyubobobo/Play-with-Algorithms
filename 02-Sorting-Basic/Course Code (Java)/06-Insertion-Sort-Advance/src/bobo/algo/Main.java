@@ -6,6 +6,7 @@ public class Main {
 
     // 比较SelectionSort和InsertionSort两种排序算法的性能效率
     // 优化后，插入排序比选择排序性能略好
+    // 对于有序性强的数组，插入排序远远优于选择排序
     public static void main(String[] args) {
 
         int N = 20000;
