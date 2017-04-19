@@ -52,7 +52,7 @@ int main() {
 
 
     // 测试2 有序性更强的测试
-    cout<<"Test for More Ordered Random Array, size = "<<n<<", random range [0, 3]"<<endl;
+    cout<<"Test for more ordered random array, size = "<<n<<", random range [0, 3]"<<endl;
     arr1 = SortTestHelper::generateRandomArray(n,0,3);
     arr2 = SortTestHelper::copyIntArray(arr1, n);
 
@@ -67,7 +67,7 @@ int main() {
 
     // 测试3 测试近乎有序的数组
     int swapTimes = 100;
-    cout<<"Test for Random Nearly Ordered Array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+    cout<<"Test for nearly ordered array, size = "<<n<<", swap time = "<<swapTimes<<endl;
     arr1 = SortTestHelper::generateNearlyOrderedArray(n,swapTimes);
     arr2 = SortTestHelper::copyIntArray(arr1, n);
 
