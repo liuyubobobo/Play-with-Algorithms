@@ -7,7 +7,7 @@
 using namespace std;
 
 // 对arr[l...r]部分进行partition操作
-// 返回p,使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
+// 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
 template <typename T>
 int __partition(T arr[], int l, int r){
 
@@ -44,11 +44,14 @@ void quickSort(T arr[], int n){
 }
 
 
+// 比较Merge Sort和Quick Sort两种排序算法的性能效率
+// 两种排序算法虽然都是O(nlogn)级别的, 但是Quick Sort算法有常数级的优势
+// Quick Sort要比Merge Sort快, 即使我们对Merge Sort进行了优化
 int main() {
 
     int n = 1000000;
 
-    cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
+    cout<<"Test for random array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
     int* arr1 = SortTestHelper::generateRandomArray(n,0,n);
     int* arr2 = SortTestHelper::copyIntArray(arr1,n);
 
