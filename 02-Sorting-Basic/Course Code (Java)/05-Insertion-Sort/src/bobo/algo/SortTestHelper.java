@@ -9,7 +9,7 @@ public class SortTestHelper {
     private SortTestHelper(){}
 
     // 生成有n个元素的随机数组,每个元素的随机范围为[rangeL, rangeR]
-    static public Integer[] generateRandomArray(int n, int rangeL, int rangeR) {
+    public static Integer[] generateRandomArray(int n, int rangeL, int rangeR) {
 
         assert rangeL <= rangeR;
 
@@ -21,7 +21,7 @@ public class SortTestHelper {
     }
 
     // 打印arr数组的所有内容
-    static void printArray(Object[] arr) {
+    public static void printArray(Object[] arr) {
 
         for (int i = 0; i < arr.length; i++){
             System.out.print( arr[i] );
@@ -33,7 +33,7 @@ public class SortTestHelper {
     }
 
     // 判断arr数组是否有序
-    static boolean isSorted(Comparable[] arr){
+    public static boolean isSorted(Comparable[] arr){
 
         for( int i = 0 ; i < arr.length - 1 ; i ++ )
             if( arr[i].compareTo(arr[i+1]) > 0 )
@@ -42,7 +42,7 @@ public class SortTestHelper {
     }
 
     // 测试sortClassName所对应的排序算法排序arr数组所得到结果的正确性和算法运行时间
-    static void testSort(String sortClassName, Comparable[] arr){
+    public static void testSort(String sortClassName, Comparable[] arr){
 
         // 通过Java的反射机制，通过排序的类名，运行排序函数
         try{
