@@ -27,6 +27,8 @@ public class Main {
         // 所以可以尝试, 当swapTimes比较大时, MergeSort更快
         // 但是当swapTimes小到一定程度, InsertionSort变得比MergeSort快
         int swapTimes = 10;
+        assert swapTimes >= 0;
+
         System.out.println("Test for nearly ordered array, size = " + N + " , swap time = " + swapTimes);
 
         arr1 = SortTestHelper.generateNearlyOrderedArray(N, swapTimes);
