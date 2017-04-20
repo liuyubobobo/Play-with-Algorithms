@@ -34,6 +34,7 @@ int _partition(T arr[], int l, int r){
 template <typename T>
 int _partition2(T arr[], int l, int r){
 
+    // 随机在arr[l...r]的范围中, 选择一个数值作为标定点pivot
     swap( arr[l] , arr[rand()%(r-l+1)+l] );
     T v = arr[l];
 
