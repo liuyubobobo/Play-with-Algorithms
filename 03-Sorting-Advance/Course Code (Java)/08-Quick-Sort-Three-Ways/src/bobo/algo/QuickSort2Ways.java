@@ -74,7 +74,7 @@ public class QuickSort2Ways {
     // 测试 QuickSort
     public static void main(String[] args) {
 
-        // 双路快速排序算法也是一个O(nlogn)复杂度的算法
+        //双路快速排序算法也是一个O(nlogn)复杂度的算法
         // 可以在1秒之内轻松处理100万数量级的数据
         int N = 1000000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);

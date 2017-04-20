@@ -4,6 +4,9 @@ import java.util.*;
 
 public class QuickSort {
 
+    // 我们的算法类不允许产生任何实例
+    private QuickSort(){}
+
     // 对arr[l...r]部分进行partition操作
     // 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
     private static int partition(Comparable[] arr, int l, int r){
