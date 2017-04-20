@@ -14,29 +14,37 @@ using namespace std;
 template<typename  T>
 void __merge(T arr[], int l, int mid, int r){
 
-    // 使用new来申请辅助空间
     T *aux = new T[r-l+1];
+
     for( int i = l ; i <= r; i ++ )
         aux[i-l] = arr[i];
 
+    // 初始化，i指向左半部分的起始索引位置l；j指向右半部分起始索引位置mid+1
     int i = l, j = mid+1;
     for( int k = l ; k <= r; k ++ ){
 
-        if( i > mid )   { arr[k] = aux[j-l]; j ++;}
-        else if( j > r ){ arr[k] = aux[i-l]; i ++;}
-        else if( aux[i-l] < aux[j-l] ){ arr[k] = aux[i-l]; i ++;}
-        else                          { arr[k] = aux[j-l]; j ++;}
+        if( i > mid ){  // 如果左半部分元素已经全部处理完毕
+            arr[k] = aux[j-l]; j ++;
+        }
+        else if( j > r ){  // 如果右半部分元素已经全部处理完毕
+            arr[k] = aux[i-l]; i ++;
+        }
+        else if( aux[i-l] < aux[j-l] ) {  // 左半部分所指元素 < 右半部分所指元素
+            arr[k] = aux[i-l]; i ++;
+        }
+        else{  // 左半部分所指元素 >= 右半部分所指元素
+            arr[k] = aux[j-l]; j ++;
+        }
     }
 
-    // 最后不要忘记释放new的空间
     delete[] aux;
 }
 
-// 递归使用归并排序,对arr[l...r]的范围进行排序
+// 使用优化的归并排序算法, 对arr[l...r]的范围进行排序
 template<typename T>
 void __mergeSort(T arr[], int l, int r){
 
-    // 对于小规模数组,使用插入排序
+    // 对于小规模数组, 使用插入排序
     if( r - l <= 15 ){
         insertionSort(arr, l, r);
         return;
@@ -45,6 +53,7 @@ void __mergeSort(T arr[], int l, int r){
     int mid = (l+r)/2;
     __mergeSort(arr, l, mid);
     __mergeSort(arr, mid+1, r);
+
     // 对于arr[mid] <= arr[mid+1]的情况,不进行merge
     // 对于近乎有序的数组非常有效,但是对于一般情况,有一定的性能损失
     if( arr[mid] > arr[mid+1] )
