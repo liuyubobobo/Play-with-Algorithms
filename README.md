@@ -21,9 +21,8 @@
 
 ## 课程源码目录 
 
-| 章节名称 | C++源码 | Java源码 |
-| :--- | :---: | :---: |
 | **第一章 当我们谈论算法的时候，我们在谈论什么？** | | | 
+| :--- | :---: | :---: |
 | 1-1 我们究竟为什么要学习算法 | [无代码] | |
 | 1-2 课程介绍 | [无代码] | |
 | **第二章 排序基础** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)) |
