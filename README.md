@@ -21,7 +21,7 @@
 
 ## 课程源码目录 
 
-| **第一章 当我们谈论算法的时候，我们在谈论什么？** | | | 
+| **第一章 当我们谈论算法的时候，我们在谈论什么？** | [无代码] | | 
 | :--- | :---: | :---: |
 | 1-1 我们究竟为什么要学习算法 | [无代码] | |
 | 1-2 课程介绍 | [无代码] | |
@@ -50,7 +50,22 @@
 | 补充3 ShellSort, MergeSort 和 QuickSort 的比较| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/Optional-03-ShellSort-MergeSort-and-QuickSort-Comparision) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/Optional-03-ShellSort-MergeSort-and-QuickSort-Comparison/src/bobo/algo) |
 | 补充4 求逆序数 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/Optional-04-Inversion-Number) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/Optional-04-Inversion-Number/src/bobo/algo) |
 | 补充5 求任意数组第k小（大）的值 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/Optional-05-Selection) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/Optional-05-Selection/src/bobo/algo) |
-| 补充6 对链表的O(nlogn)级别的排序 | [整理中] | [敬请期待：）] |
-| 补充7 更多高级的归并排序算法优化思想 | [整理中] | [敬请期待：）] |
-| 补充8 更多高级的快速排序算法优化思想 | [整理中] | [敬请期待：）] |
-| **第四章 堆和堆排序** | | |
+| 补充6 对链表的O(nlogn)级别的排序 | [整理中] | [敬请期待] |
+| 补充7 更多高级的归并排序算法优化思想 | [整理中] | [敬请期待] |
+| 补充8 更多高级的快速排序算法优化思想 | [整理中] | [敬请期待] |
+| **第四章 堆和堆排序** | [章节C++源码]() | [章节Java源码]() |
+| 4-1 为什么使用堆 | [无代码] | |
+| 4-2 堆的基本存储 | [C++源码]() | [Java源码]() |
+| 4-3 Shift Up | [C++源码]() | [Java源码]() |
+| 4-4 Shift Down | [C++源码]() | [Java源码]() |
+| 4-5 基础堆排序和Heapify | [C++源码]() | [Java源码]() |
+| 4-6 优化的堆排序 - Heap Sort | [C++源码]() | [Java源码]() |
+| 4-7 排序算法总结 | [无代码] | |
+| 4-8 索引堆 - Index Heap | [C++源码]() | [Java源码]() |
+| 4-9 索引堆的优化 | [C++源码]() | [Java源码]() |
+| 4-10 和堆相关的其他问题 | [无代码] | |
+| 补充1 优化的Shift Up和Shift Down | [整理中] | [敬请期待] |
+| 补充2 最小堆 | [整理中] | [敬请期待] |
+| 补充3 最小索引堆 | [整理中] | [敬请期待] |
+| 补充4 N个元素中的前M小元素 | [整理中] | [敬请期待] |
+| 补充5 双向优先队列 | [整理中] | [敬请期待] |
