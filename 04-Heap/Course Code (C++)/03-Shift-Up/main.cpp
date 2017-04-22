@@ -24,7 +24,7 @@ private:
     }
 
 public:
-
+    // 构造函数, 构造一个空堆, 可容纳capacity个元素
     MaxHeap(int capacity){
         data = new Item[capacity+1];
         count = 0;
@@ -35,14 +35,17 @@ public:
         delete[] data;
     }
 
+    // 返回堆中的元素个数
     int size(){
         return count;
     }
 
+    // 返回一个布尔值, 表示堆中是否为空
     bool isEmpty(){
         return count == 0;
     }
 
+    // 像最大堆中插入一个新的元素 item
     void insert(Item item){
         assert( count + 1 <= capacity );
         data[count+1] = item;
@@ -52,22 +55,28 @@ public:
 
 
 public:
+    // 以树状打印整个堆结构
     void testPrint(){
 
+        // 我们的testPrint只能打印100个元素以内的堆的树状信息
         if( size() >= 100 ){
-            cout<<"Fancy print can only work for less than 100 int";
+            cout<<"This print function can only work for less than 100 int";
             return;
         }
 
+        // 我们的testPrint只能处理整数信息
         if( typeid(Item) != typeid(int) ){
-            cout <<"Fancy print can only work for int item";
+            cout <<"This print function can only work for int item";
             return;
         }
 
-        cout<<"The Heap size is: "<<size()<<endl;
-        cout<<"data in heap: ";
-        for( int i = 1 ; i <= size() ; i ++ )
+        cout<<"The max heap size is: "<<size()<<endl;
+        cout<<"Data in the max heap: ";
+        for( int i = 1 ; i <= size() ; i ++ ){
+            // 我们的testPrint要求堆中的所有整数在[0, 100)的范围内
+            assert( data[i] >= 0 && data[i] < 100 );
             cout<<data[i]<<" ";
+        }
         cout<<endl;
         cout<<endl;
 
@@ -138,15 +147,15 @@ private:
     }
 };
 
-
+// 测试 MaxHeap
 int main() {
 
     MaxHeap<int> maxheap = MaxHeap<int>(100);
 
     srand(time(NULL));
-    for( int i = 0 ; i < 50 ; i ++ ){
+    for( int i = 0 ; i < 50 ; i ++ )
         maxheap.insert( rand()%100 );
-    }
+
     maxheap.testPrint();
 
     return 0;
