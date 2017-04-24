@@ -38,12 +38,15 @@ private:
 
 public:
 
+    // 构造函数, 构造一个空堆, 可容纳capacity个元素
     MaxHeap(int capacity){
         data = new Item[capacity+1];
         count = 0;
         this->capacity = capacity;
     }
 
+    // 构造函数, 通过一个给定数组创建一个最大堆
+    // 该构造堆的过程, 时间复杂度为O(n)
     MaxHeap(Item arr[], int n){
         data = new Item[n+1];
         capacity = n;
@@ -60,14 +63,17 @@ public:
         delete[] data;
     }
 
+    // 返回堆中的元素个数
     int size(){
         return count;
     }
 
+    // 返回一个布尔值, 表示堆中是否为空
     bool isEmpty(){
         return count == 0;
     }
 
+    // 像最大堆中插入一个新的元素 item
     void insert(Item item){
         assert( count + 1 <= capacity );
         data[count+1] = item;
@@ -75,6 +81,7 @@ public:
         count ++;
     }
 
+    // 从最大堆中取出堆顶元素, 即堆中所存储的最大数据
     Item extractMax(){
         assert( count > 0 );
         Item ret = data[1];
@@ -84,6 +91,7 @@ public:
         return ret;
     }
 
+    // 获取最大堆中的堆顶元素
     Item getMax(){
         assert( count > 0 );
         return data[1];
