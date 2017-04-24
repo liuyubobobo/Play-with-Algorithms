@@ -37,7 +37,7 @@ private:
     }
 
 public:
-
+    // 构造函数, 构造一个空堆, 可容纳capacity个元素
     MaxHeap(int capacity){
         data = new Item[capacity+1];
         count = 0;
@@ -48,14 +48,17 @@ public:
         delete[] data;
     }
 
+    // 返回堆中的元素个数
     int size(){
         return count;
     }
 
+    // 返回一个布尔值, 表示堆中是否为空
     bool isEmpty(){
         return count == 0;
     }
 
+    // 像最大堆中插入一个新的元素 item
     void insert(Item item){
         assert( count + 1 <= capacity );
         data[count+1] = item;
@@ -63,6 +66,7 @@ public:
         count ++;
     }
 
+    // 从最大堆中取出堆顶元素, 即堆中所存储的最大数据
     Item extractMax(){
         assert( count > 0 );
         Item ret = data[1];
@@ -74,6 +78,7 @@ public:
         return ret;
     }
 
+    // 获取最大堆中的堆顶元素
     Item getMax(){
         assert( count > 0 );
         return data[1];
@@ -82,18 +87,32 @@ public:
 };
 
 
+// 测试最大堆
 int main() {
 
     MaxHeap<int> maxheap = MaxHeap<int>(100);
 
     srand(time(NULL));
-    for( int i = 0 ; i < 63 ; i ++ ){
+    int n = 100;    // 随机生成n个元素放入最大堆中
+    for( int i = 0 ; i < n ; i ++ ){
         maxheap.insert( rand()%100 );
     }
 
-    while( !maxheap.isEmpty() )
-        cout<<maxheap.extractMax()<<" ";
+    int* arr = new int[n];
+    // 将maxheap中的数据逐渐使用extractMax取出来
+    // 取出来的顺序应该是按照从大到小的顺序取出来的
+    for( int i = 0 ; i < n ; i ++ ){
+        arr[i] = maxheap.extractMax();
+        cout<<arr[i]<<" ";
+    }
     cout<<endl;
+
+    // 确保arr数组是从大到小排列的
+    for( int i = 1 ; i < n ; i ++ )
+        assert( arr[i-1] >= arr[i] );
+
+    delete[] arr;
+
 
     return 0;
 }
