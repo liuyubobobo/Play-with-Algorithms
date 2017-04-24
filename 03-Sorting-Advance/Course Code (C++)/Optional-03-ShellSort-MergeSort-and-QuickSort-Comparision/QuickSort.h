@@ -43,7 +43,6 @@ void _quickSort(T arr[], int l, int r){
         return;
     }
 
-    // 调用双路快速排序的partition
     int p = _partition(arr, l, r);
     _quickSort(arr, l, p-1 );
     _quickSort(arr, p+1, r);
