@@ -49,7 +49,7 @@ public class MaxHeap<Item extends Comparable> {
     //********************
     private void shiftUp(int k){
 
-        if( k > 1 && data[k/2].compareTo(data[k]) < 0 ){
+        while( k > 1 && data[k/2].compareTo(data[k]) < 0 ){
             swap(k, k/2);
             k /= 2;
         }
@@ -64,5 +64,6 @@ public class MaxHeap<Item extends Comparable> {
         for( int i = 0 ; i < N ; i ++ )
             maxHeap.insert( new Integer((int)(Math.random() * M)) );
         System.out.println(maxHeap.size());
+
     }
 }
