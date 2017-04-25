@@ -19,7 +19,7 @@ public class MaxHeap<Item extends Comparable> {
 
     // 构造函数, 通过一个给定数组创建一个最大堆
     // 该构造堆的过程, 时间复杂度为O(n)
-    MaxHeap(Item arr[]){
+    public MaxHeap(Item arr[]){
 
         int n = arr.length;
 
@@ -54,7 +54,7 @@ public class MaxHeap<Item extends Comparable> {
     }
 
     // 从最大堆中取出堆顶元素, 即堆中所存储的最大数据
-    Item extractMax(){
+    public Item extractMax(){
         assert count > 0;
         Item ret = data[1];
 
@@ -66,7 +66,7 @@ public class MaxHeap<Item extends Comparable> {
     }
 
     // 获取最大堆中的堆顶元素
-    Item getMax(){
+    public Item getMax(){
         assert( count > 0 );
         return data[1];
     }

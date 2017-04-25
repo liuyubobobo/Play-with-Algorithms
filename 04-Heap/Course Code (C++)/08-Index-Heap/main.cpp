@@ -116,6 +116,7 @@ public:
 
     // 获取最大索引堆中索引为i的元素
     Item getItem( int i ){
+        assert( i + 1 >= 1 && i + 1 <= capacity );
         return data[i+1];
     }
 
@@ -127,7 +128,6 @@ public:
 
         // 找到indexes[j] = i, j表示data[i]在堆中的位置
         // 之后shiftUp(j), 再shiftDown(j)
-
         for( int j = 1 ; j <= count ; j ++ )
             if( indexes[j] == i ){
                 shiftUp(j);
@@ -160,7 +160,7 @@ public:
 
         if( !res ){
             cout<<"Error!"<<endl;
-            return res;
+            return false;
         }
 
         return true;
