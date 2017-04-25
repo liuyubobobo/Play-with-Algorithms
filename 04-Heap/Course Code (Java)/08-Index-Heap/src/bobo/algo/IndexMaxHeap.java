@@ -4,14 +4,14 @@ import java.util.*;
 import java.lang.*;
 
 // 在堆的有关操作中，需要比较堆中元素的大小，所以Item需要extends Comparable
-public class MaxHeap<Item extends Comparable> {
+public class IndexMaxHeap<Item extends Comparable> {
 
     protected Item[] data;
     protected int count;
     protected int capacity;
 
     // 构造函数, 构造一个空堆, 可容纳capacity个元素
-    public MaxHeap(int capacity){
+    public IndexMaxHeap(int capacity){
         data = (Item[])new Comparable[capacity+1];
         count = 0;
         this.capacity = capacity;
@@ -19,7 +19,7 @@ public class MaxHeap<Item extends Comparable> {
 
     // 构造函数, 通过一个给定数组创建一个最大堆
     // 该构造堆的过程, 时间复杂度为O(n)
-    MaxHeap(Item arr[]){
+    IndexMaxHeap(Item arr[]){
 
         int n = arr.length;
 
@@ -104,26 +104,8 @@ public class MaxHeap<Item extends Comparable> {
         }
     }
 
-    // 测试 MaxHeap
+    // 测试 IndexMaxHeap
     public static void main(String[] args) {
 
-        MaxHeap<Integer> maxHeap = new MaxHeap<Integer>(100);
-        int N = 100; // 堆中元素个数
-        int M = 100; // 堆中元素取值范围[0, M)
-        for( int i = 0 ; i < N ; i ++ )
-            maxHeap.insert( new Integer((int)(Math.random() * M)) );
-
-        Integer[] arr = new Integer[N];
-        // 将maxheap中的数据逐渐使用extractMax取出来
-        // 取出来的顺序应该是按照从大到小的顺序取出来的
-        for( int i = 0 ; i < N ; i ++ ){
-            arr[i] = maxHeap.extractMax();
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-
-        // 确保arr数组是从大到小排列的
-        for( int i = 1 ; i < N ; i ++ )
-            assert arr[i-1] >= arr[i];
     }
 }
