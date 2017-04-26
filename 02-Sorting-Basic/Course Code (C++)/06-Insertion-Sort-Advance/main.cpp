@@ -38,7 +38,7 @@ int main() {
     int n = 20000;
     
     // 测试1 一般测试
-    cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
+    cout<<"Test for random array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
     int *arr1 = SortTestHelper::generateRandomArray(n,0,n);
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);
 
@@ -74,8 +74,8 @@ int main() {
     SortTestHelper::testSort("Insertion Sort", insertionSort,arr1,n);
     SortTestHelper::testSort("Selection Sort", selectionSort,arr2,n);
 
-    delete(arr1);
-    delete(arr2);
+    delete[] arr1;
+    delete[] arr2;
 
     return 0;
 }

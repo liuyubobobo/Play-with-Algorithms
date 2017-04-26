@@ -33,7 +33,7 @@ int main() {
 
     int n = 20000;
 
-    cout<<"Test for Random Array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
+    cout<<"Test for random array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
     int *arr1 = SortTestHelper::generateRandomArray(n,0,n);
     int *arr2 = SortTestHelper::copyIntArray(arr1, n);
 
