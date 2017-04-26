@@ -66,7 +66,7 @@
 | 4-8 索引堆 - Index Heap | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/08-Index-Heap) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/08-Index-Heap/src/bobo/algo) |
 | 4-9 索引堆的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/09-Index-Heap-Advance) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/09-Index-Heap-Advance/src/bobo/algo) |
 | 4-10 和堆相关的其他问题 | [无代码] | |
-| 本章课程最终代码 | [C++源码]() | [Java源码]() |
+| 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Chapter-04-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Chapter-04-Completed-Code/src/bobo/algo) |
 | 补充1 优化的Shift Up和Shift Down | [整理中] | [敬请期待] |
 | 补充2 最小堆 | [整理中] | [敬请期待] |
 | 补充3 最小索引堆 | [整理中] | [敬请期待] |
