@@ -33,6 +33,7 @@
 | 2-5 插入排序法 - Insertion Sort | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)/05-Insertion-Sort)| [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)/05-Insertion-Sort/src/bobo/algo) |
 | 2-6 插入排序法的改进 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)/06-Insertion-Sort-Advance)| [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)/06-Insertion-Sort-Advance/src/bobo/algo) |
 | 2-7 更多关于O(n^2)排序算法的思考 | [无代码]|  |
+| 本章最终代码 | [C++源码]() | [Java源码]() |
 | 补充1 冒泡排序法 - Bubble Sort | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)/Optional-01-Bubble-Sort)| [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)/Optional-01-Bubble-Sort/src/bobo/algo) |
 | 补充2 希尔排序法 - Shell Sort | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(C%2B%2B)/Optional-02-Shell-Sort)| [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/02-Sorting-Basic/Course%20Code%20(Java)/Optional-02-Shell-Sort/src/bobo/algo) |
 | **第三章 高级排序算法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)) |
@@ -45,6 +46,7 @@
 | 3-7 双路快速排序法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/07-Quick-Sort-Deal-With-Identical-Keys) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/07-Quick-Sort-Deal-With-Identical-Keys/src/bobo/algo) |
 | 3-8 三路快速排序法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/08-Quick-Sort-Three-Ways) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/08-Quick-Sort-Three-Ways/src/bobo/algo) |
 | 3-9 归并排序和快速排序的衍生问题 | [无代码] |  |
+| 本章最终代码 | [C++源码]() | [Java源码]() |
 | 补充1 归并排序的另外一个优化，在merge外申请aux空间 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/Optional-01-MergeSort-Create-aux-Array-Out-of-Merge) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/Optional-01-Merge-Sort-Create-aux-Array-Out-of-Merge/src/bobo/algo) |
 | 补充2 自顶向下和自底向上的归并排序的比较 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/Optional-02-MergeSort-and-MergeSortBU-Perfermance-Comparison) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/Optional-02-MergeSort-and-MergeSortBU-Performance-Comparison/src/bobo/algo) |
 | 补充3 ShellSort, MergeSort 和 QuickSort 的比较| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(C%2B%2B)/Optional-03-ShellSort-MergeSort-and-QuickSort-Comparision) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/03-Sorting-Advance/Course%20Code%20(Java)/Optional-03-ShellSort-MergeSort-and-QuickSort-Comparison/src/bobo/algo) |
@@ -53,17 +55,18 @@
 | 补充6 对链表的O(nlogn)级别的排序 | [整理中] | [敬请期待] |
 | 补充7 更多高级的归并排序算法优化思想 | [整理中] | [敬请期待] |
 | 补充8 更多高级的快速排序算法优化思想 | [整理中] | [敬请期待] |
-| **第四章 堆和堆排序** | [章节C++源码]() | [章节Java源码]() |
+| **第四章 堆和堆排序** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)) |
 | 4-1 为什么使用堆 | [无代码] | |
-| 4-2 堆的基本存储 | [C++源码]() | [Java源码]() |
-| 4-3 Shift Up | [C++源码]() | [Java源码]() |
-| 4-4 Shift Down | [C++源码]() | [Java源码]() |
-| 4-5 基础堆排序和Heapify | [C++源码]() | [Java源码]() |
-| 4-6 优化的堆排序 - Heap Sort | [C++源码]() | [Java源码]() |
+| 4-2 堆的基本存储 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/02-Max-Heap-Class-Basic) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/02-Max-Heap-Class-Basic/src/bobo/algo) |
+| 4-3 Shift Up | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/03-Shift-Up) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/03-Shift-Up/src/bobo/algo) |
+| 4-4 Shift Down | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/04-Shift-Down) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/04-Shift-Down/src/bobo/algo) |
+| 4-5 基础堆排序和Heapify | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/05-Heapify) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/05-Heapify/src/bobo/algo) |
+| 4-6 优化的堆排序 - Heap Sort | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/06-Heap-Sort) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/06-Heap-Sort/src/bobo/algo) |
 | 4-7 排序算法总结 | [无代码] | |
-| 4-8 索引堆 - Index Heap | [C++源码]() | [Java源码]() |
-| 4-9 索引堆的优化 | [C++源码]() | [Java源码]() |
+| 4-8 索引堆 - Index Heap | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/08-Index-Heap) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/08-Index-Heap/src/bobo/algo) |
+| 4-9 索引堆的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/09-Index-Heap-Advance) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/09-Index-Heap-Advance/src/bobo/algo) |
 | 4-10 和堆相关的其他问题 | [无代码] | |
+| 本章最终代码 | [C++源码]() | [Java源码]() |
 | 补充1 优化的Shift Up和Shift Down | [整理中] | [敬请期待] |
 | 补充2 最小堆 | [整理中] | [敬请期待] |
 | 补充3 最小索引堆 | [整理中] | [敬请期待] |
