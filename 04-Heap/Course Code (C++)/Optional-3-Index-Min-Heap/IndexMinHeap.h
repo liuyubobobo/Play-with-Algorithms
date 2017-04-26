@@ -11,18 +11,19 @@
 
 using namespace std;
 
-
+// 最小索引堆
 template<typename Item>
 class IndexMinHeap{
 
 private:
-    Item *data;
-    int *indexes;
-    int *reverse;
+    Item *data;     // 最小索引堆中的数据
+    int *indexes;   // 最小索引堆中的索引, indexes[x] = i 表示索引i在x的位置
+    int *reverse;   // 最小索引堆中的反向索引, reverse[i] = x 表示索引i在x的位置
 
     int count;
     int capacity;
 
+    // 索引堆中, 数据之间的比较根据data的大小进行比较, 但实际操作的是索引
     void shiftUp( int k ){
 
         while( k > 1 && data[indexes[k/2]] > data[indexes[k]] ){
@@ -33,6 +34,7 @@ private:
         }
     }
 
+    // 索引堆中, 数据之间的比较根据data的大小进行比较, 但实际操作的是索引
     void shiftDown( int k ){
 
         while( 2*k <= count ){
@@ -51,6 +53,7 @@ private:
     }
 
 public:
+    // 构造函数, 构造一个空的索引堆, 可容纳capacity个元素
     IndexMinHeap(int capacity){
 
         data = new Item[capacity+1];
@@ -70,14 +73,18 @@ public:
         delete[] reverse;
     }
 
+    // 返回索引堆中的元素个数
     int size(){
         return count;
     }
 
+    // 返回一个布尔值, 表示索引堆中是否为空
     bool isEmpty(){
         return count == 0;
     }
 
+    // 向最小索引堆中插入一个新的元素, 新元素的索引为i, 元素为item
+    // 传入的i对用户而言,是从0索引的
     void insert(int index, Item item){
         assert( count + 1 <= capacity );
         assert( index + 1 >= 1 && index + 1 <= capacity );
@@ -90,6 +97,7 @@ public:
         shiftUp(count);
     }
 
+    // 从最小索引堆中取出堆顶元素, 即索引堆中所存储的最小数据
     Item extractMin(){
         assert( count > 0 );
 
@@ -102,6 +110,7 @@ public:
         return ret;
     }
 
+    // 从最小索引堆中取出堆顶元素的索引
     int extractMinIndex(){
         assert( count > 0 );
 
@@ -114,26 +123,31 @@ public:
         return ret;
     }
 
+    // 获取最小索引堆中的堆顶元素
     Item getMin(){
         assert( count > 0 );
         return data[indexes[1]];
     }
 
+    // 获取最小索引堆中的堆顶元素的索引
     int getMinIndex(){
         assert( count > 0 );
         return indexes[1]-1;
     }
 
+    // 看索引i所在的位置是否存在元素
     bool contain( int index ){
 
         return reverse[index+1] != 0;
     }
 
+    // 获取最小索引堆中索引为i的元素
     Item getItem( int index ){
         assert( contain(index) );
         return data[index+1];
     }
 
+    // 将最小索引堆中索引为i的元素修改为newItem
     void change( int index , Item newItem ){
 
         assert( contain(index) );
