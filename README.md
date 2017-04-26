@@ -67,9 +67,9 @@
 | 4-9 索引堆的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/09-Index-Heap-Advance) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/09-Index-Heap-Advance/src/bobo/algo) |
 | 4-10 和堆相关的其他问题 | [无代码] | |
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Chapter-04-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Chapter-04-Completed-Code/src/bobo/algo) |
-| 补充1 优化的Shift Up和Shift Down | [整理中] | [敬请期待] |
-| 补充2 最小堆 | [整理中] | [敬请期待] |
-| 补充3 最小索引堆 | [整理中] | [敬请期待] |
+| 补充1 优化的Shift Up和Shift Down | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Optional-1-Optimized-Shift-Up-and-Shift-Down) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Optional-1-Optimized-Shift-Up-and-Shift-Down/src/bobo/algo) |
+| 补充2 最小堆 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Optional-2-Min-Heap) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Optional-2-Min-Heap/src/bobo/algo) |
+| 补充3 最小索引堆 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Optional-3-Index-Min-Heap) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Optional-3-Index-Min-Heap/src/bobo/algo) |
 | 补充4 从0开始索引的最大堆和最小堆 | [整理中] | [敬请期待] |
 | 补充5 从0开始索引的最大索引堆和最小索引堆 | [整理中] | [敬请期待] |
 | 补充6 N个元素中的前M小元素 | [整理中] | [敬请期待] |
