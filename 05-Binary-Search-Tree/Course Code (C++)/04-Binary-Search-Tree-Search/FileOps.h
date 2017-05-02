@@ -12,7 +12,7 @@
 
 using namespace std;
 
-
+// 文件相关操作
 namespace FileOps{
 
     int firstCharacterIndex(const string& s, int start){
