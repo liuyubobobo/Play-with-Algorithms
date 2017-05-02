@@ -18,7 +18,5 @@ Thumbs.db
 # Jetbrains Ignore files #
 ##########################
 *.iml
-*.xml
-*.html
-
+.idea/
 
