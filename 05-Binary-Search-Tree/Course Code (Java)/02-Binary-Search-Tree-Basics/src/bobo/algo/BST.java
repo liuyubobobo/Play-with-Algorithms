@@ -7,12 +7,12 @@ public class BST<Key extends Comparable<Key>, Value> {
     // 树中的节点为私有的类, 外界不需要了解二叉树节点的具体实现
     private class Node {
         private Key key;
-        private Value val;
+        private Value value;
         private Node left, right;
 
-        public Node(Key key, Value val, int size) {
+        public Node(Key key, Value value) {
             this.key = key;
-            this.val = val;
+            this.value = value;
             left = right = null;
         }
     }
