@@ -27,17 +27,17 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 返回二分搜索树的节点个数
-    int size() {
+    public int size() {
         return count;
     }
 
     // 返回二分搜索树是否为空
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return count == 0;
     }
 
     // 向二分搜索树中插入一个新的(key, value)数据对
-    void insert(Key key, Value value){
+    public void insert(Key key, Value value){
         root = insert(root, key, value);
     }
 

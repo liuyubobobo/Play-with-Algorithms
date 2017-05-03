@@ -27,42 +27,42 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 返回二分搜索树的节点个数
-    int size() {
+    public int size() {
         return count;
     }
 
     // 返回二分搜索树是否为空
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return count == 0;
     }
 
     // 向二分搜索树中插入一个新的(key, value)数据对
-    void insert(Key key, Value value){
+    public void insert(Key key, Value value){
         root = insert(root, key, value);
     }
 
     // 查看二分搜索树中是否存在键key
-    boolean contain(Key key){
+    public boolean contain(Key key){
         return contain(root, key);
     }
 
     // 在二分搜索树中搜索键key所对应的值。如果这个值不存在, 则返回null
-    Value search(Key key){
+    public Value search(Key key){
         return search( root , key );
     }
 
     // 二分搜索树的前序遍历
-    void preOrder(){
+    public void preOrder(){
         preOrder(root);
     }
 
     // 二分搜索树的中序遍历
-    void inOrder(){
+    public void inOrder(){
         inOrder(root);
     }
 
     // 二分搜索树的后序遍历
-    void postOrder(){
+    public void postOrder(){
         postOrder(root);
     }
 
@@ -90,7 +90,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 查看以node为根的二分搜索树中是否包含键值为key的节点, 使用递归算法
-    boolean contain(Node node, Key key){
+    private boolean contain(Node node, Key key){
 
         if( node == null )
             return false;
@@ -105,7 +105,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // 在以node为根的二分搜索树中查找key所对应的value, 递归算法
     // 若value不存在, 则返回NULL
-    Value search(Node node, Key key){
+    private Value search(Node node, Key key){
 
         if( node == null )
             return null;
@@ -119,7 +119,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 对以node为根的二叉搜索树进行前序遍历, 递归算法
-    void preOrder(Node node){
+    private void preOrder(Node node){
 
         if( node != null ){
             System.out.println(node.key);
@@ -129,7 +129,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 对以node为根的二叉搜索树进行中序遍历, 递归算法
-    void inOrder(Node node){
+    private void inOrder(Node node){
 
         if( node != null ){
             inOrder(node.left);
@@ -139,7 +139,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 对以node为根的二叉搜索树进行后序遍历, 递归算法
-    void postOrder(Node node){
+    private void postOrder(Node node){
 
         if( node != null ){
             postOrder(node.left);

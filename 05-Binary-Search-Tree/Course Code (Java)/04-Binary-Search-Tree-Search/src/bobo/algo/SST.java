@@ -27,17 +27,17 @@ public class SST<Key extends Comparable<Key>, Value> {
     }
 
     // 返回顺序查找表中的节点个数
-    int size(){
+    public int size(){
         return count;
     }
 
     // 返回顺序查找表是否为空
-    boolean isEmpty(){
+    public boolean isEmpty(){
         return count == 0;
     };
 
     // 向顺序查找表中插入一个新的(key, value)数据对
-    void insert(Key key, Value value){
+    public void insert(Key key, Value value){
 
         // 查找一下整个顺序表，肯是否存在同样大小的key
         Node node = head;
@@ -59,7 +59,7 @@ public class SST<Key extends Comparable<Key>, Value> {
     }
 
     // 查看顺序查找表中是否包含键值为key的节点
-    boolean contain(Key key){
+    public boolean contain(Key key){
 
         Node node = head;
         while( node != null ){
@@ -71,7 +71,7 @@ public class SST<Key extends Comparable<Key>, Value> {
     }
 
     // 在顺序查找表中查找key所对应的value, 若value不存在, 则返回NULL
-    Value search(Key key){
+    public Value search(Key key){
 
         Node node = head;
         while( node != null ){
@@ -83,7 +83,7 @@ public class SST<Key extends Comparable<Key>, Value> {
     }
 
     // 在顺序查找表中删除(key,value)所对应的节点
-    void remove(Key key){
+    public void remove(Key key){
 
         if(head == null)
             return;
