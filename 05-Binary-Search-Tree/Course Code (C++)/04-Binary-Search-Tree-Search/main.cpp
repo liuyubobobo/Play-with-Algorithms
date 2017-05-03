@@ -124,7 +124,6 @@ int main() {
     if( FileOps::readFile(filename, words) ) {
 
         cout << "There are totally " << words.size() << " words in " << filename << endl;
-
         cout << endl;
 
 
@@ -144,10 +143,14 @@ int main() {
         }
 
         // 输出圣经中god一词出现的频率
-        cout << "'god' : " << *bst.search("god") << endl;
-        time_t endTime = clock();
-        cout << "BST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+        if(bst.contain("god"))
+            cout << "'god' : " << *bst.search("god") << endl;
+        else
+            cout << "No word 'god' in " << filename << endl;
 
+        time_t endTime = clock();
+
+        cout << "BST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
         cout << endl;
 
 
@@ -167,11 +170,14 @@ int main() {
         }
 
         // 输出圣经中god一词出现的频率
-        cout << "'god' : " << *sst.search("god") << endl;
+        if(sst.contain("god"))
+            cout << "'god' : " << *sst.search("god") << endl;
+        else
+            cout << "No word 'god' in " << filename << endl;
 
         endTime = clock();
-        cout << "SST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
 
+        cout << "SST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
     }
 
     return 0;
