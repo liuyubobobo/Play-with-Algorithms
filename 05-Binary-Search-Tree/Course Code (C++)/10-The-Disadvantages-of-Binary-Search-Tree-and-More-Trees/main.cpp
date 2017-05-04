@@ -32,7 +32,10 @@ int main() {
         }
 
         // 我们查看unite一词的词频
-        cout << "'unite' : " << *(*bst).search("unite") << endl;
+        if( bst->contain("unite") )
+            cout << "'unite' : " << *(*bst).search("unite") << endl;
+        else
+            cout << "No word 'unite' in " + filename << endl;
         time_t endTime = clock();
 
         cout << "BST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
@@ -53,7 +56,10 @@ int main() {
         }
 
         // 我们查看unite一词的词频
-        cout << "'unite' : " << *(*sst).search("unite") << endl;
+        if( sst->contain("unite") )
+            cout << "'unite' : " << *(*sst).search("unite") << endl;
+        else
+            cout << "No word 'unite' in " + filename << endl;
         endTime = clock();
 
         cout << "SST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
@@ -62,7 +68,7 @@ int main() {
         delete sst;
 
 
-        // 测试2, 我们将原文本排序后插入二分搜索树, 查看其效率
+        // 测试3, 我们将原文本排序后插入二分搜索树, 查看其效率
         startTime = clock();
         BST<string, int> *bst2 = new BST<string, int>();
 
