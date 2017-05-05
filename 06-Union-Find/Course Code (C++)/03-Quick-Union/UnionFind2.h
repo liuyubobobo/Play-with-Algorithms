@@ -36,6 +36,7 @@ namespace UF2{
         }
 
         // 查找过程, 查找元素p所对应的集合编号
+        // O(h)复杂度, h为树的高度
         int find(int p){
             assert( p >= 0 && p < count );
             // 不断去查询自己的父亲节点, 直到到达根节点
