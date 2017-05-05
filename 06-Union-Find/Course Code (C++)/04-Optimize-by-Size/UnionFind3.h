@@ -9,15 +9,15 @@
 
 using namespace std;
 
-
+// 我们的第三版Union-Find
 namespace UF3{
 
     class UnionFind{
 
     private:
-        int* parent;
-        int* sz; // sz[i]表示以i为根的集合中元素个数
-        int count;
+        int* parent; // parent[i]表示第i个元素所指向的父节点
+        int* sz;     // sz[i]表示以i为根的集合中元素个数
+        int count;   // 数据个数
 
     public:
         UnionFind(int count){

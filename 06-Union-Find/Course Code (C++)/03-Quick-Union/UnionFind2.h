@@ -16,7 +16,7 @@ namespace UF2{
 
     private:
         // 我们的第二版Union-Find, 使用一个数组构建一棵指向父节点的树
-        // parent[i]表示第一个元素所指向的父节点
+        // parent[i]表示第i个元素所指向的父节点
         int* parent;
         int count;  // 数据个数
 
