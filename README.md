@@ -76,3 +76,32 @@
 | 补充7 双向优先队列 | [整理中] | [敬请期待] |
 | 补充8 多叉堆 | [整理中] | [敬请期待] |
 | 补充9 更高级的堆结构 | [整理中] | [敬请期待] |
+| **第五章 二分搜索树** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)) |
+| 5-1 二分查找法（Binary Search）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/01-Binary-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/01-Binary-Search/src/bobo/algo) |
+| 5-2 二分搜索树基础（Binary Search Tree）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/02-Binary-Search-Tree-Basics) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/02-Binary-Search-Tree-Basics/src/bobo/algo) |
+| 5-3 二分搜索树的节点插入 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/03-Binary-Search-Tree-Insert) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/03-Binary-Search-Tree-Insert/src/bobo/algo) |
+| 5-4 二分搜索树的查找 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/04-Binary-Search-Tree-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/04-Binary-Search-Tree-Search/src/bobo/algo) |
+| 5-5 二分搜索树的遍历（深度优先遍历） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/05-Binary-Search-Tree-Traverse) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/05-Binary-Search-Tree-Traverse/src/bobo/algo) |
+| 5-6 层序遍历（广度优先遍历） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/06-Binary-Search-Tree-Level-Traverse) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/06-Binary-Search-Tree-Level-Traverse/src/bobo/algo) |
+| 5-7 删除最大值，最小值 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/07-Binary-Search-Tree-Remove-Min-and-Max) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/07-Binary-Search-Tree-Remove-Min-and-Max/src/bobo/algo) |
+| 5-8 二分搜索树节点的删除（Hubbard Deletion） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/08-Binary-Search-Tree-Remove) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/08-Binary-Search-Tree-Remove/src/bobo/algo) |
+| 5-9 二分搜索树的顺序性 | [无代码] | |
+| 5-10 二分搜索树的局限性 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/10-The-Disadvantages-of-Binary-Search-Tree-and-More-Trees) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/10-The-Disadvantages-of-Binary-Search-Tree-and-More-Trees/src/bobo/algo) |
+| 5-11 树形问题和更多树 | [无代码] | |
+| 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Chapter-05-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Chapter-05-Completed-Code/src/bobo/algo) |
+| 补充1 二分搜索法的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-01-More-About-Binary-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-01-More-About-Binary-Search/src/bobo/algo) |
+| 补充2 二分搜索树中的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-02-Floor-and-Ceil) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-02-Floor-and-Ceil/src/bobo/algo) |
+| 补充3 二分搜索树中的rank和select | [整理中] | [敬请期待] |
+| 补充4 二分搜索树的非递归实现 | [整理中] | [敬请期待] |
+| 补充5 二分搜索树的另一个应用：Set | [整理中] | [敬请期待] |
+| 补充6 允许重复键值的二分搜索树 | [整理中] | [敬请期待] |
+| 补充7 Trie | [整理中] | [敬请期待] |
+| 补充8 红黑树 | [整理中] | [敬请期待] |
+| 补充9 区间树 | [整理中] | [敬请期待] |
+| 补充10 KD树 | [整理中] | [敬请期待] |
+| 补充11 哈夫曼树 | [整理中] | [敬请期待] |
+| 补充12 树形问题之八皇后问题 | [整理中] | [敬请期待] |
+| 补充13 树形问题之八数码问题 | [整理中] | [敬请期待] |
+| 补充14 树形问题之数独求解 | [整理中] | [敬请期待] |
+| 补充15 树形问题之搬运工求解 | [整理中] | [敬请期待] |
+
