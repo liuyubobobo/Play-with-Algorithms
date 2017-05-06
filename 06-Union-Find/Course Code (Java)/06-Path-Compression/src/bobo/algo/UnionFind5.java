@@ -1,14 +1,18 @@
 package bobo.algo;
 
-// 我们的第四版Union-Find
-public class UnionFind4 {
+// 我们的第五版Union-Find
+public class UnionFind5 {
 
-    private int[] rank;   // rank[i]表示以i为根的集合所表示的树的层数
+    // rank[i]表示以i为根的集合所表示的树的层数
+    // 在后续的代码中, 我们并不会维护rank的语意, 也就是rank的值在路径压缩的过程中, 有可能不在是树的层数值
+    // 这也是我们的rank不叫height或者depth的原因, 他只是作为比较的一个标准
+    // 关于这个问题，可以参考问答区：http://coding.imooc.com/learn/questiondetail/7287.html
+    private int[] rank;
     private int[] parent; // parent[i]表示第i个元素所指向的父节点
     private int count;    // 数据个数
 
     // 构造函数
-    public UnionFind4(int count){
+    public UnionFind5(int count){
         rank = new int[count];
         parent = new int[count];
         this.count = count;
@@ -23,11 +27,18 @@ public class UnionFind4 {
     // O(h)复杂度, h为树的高度
     int find(int p){
         assert( p >= 0 && p < count );
-        // 不断去查询自己的父亲节点, 直到到达根节点
-        // 根节点的特点: parent[p] == p
-        while( p != parent[p] )
+
+        // path compression 1
+        while( p != parent[p] ){
+            parent[p] = parent[parent[p]];
             p = parent[p];
+        }
         return p;
+
+        // path compression 2, 递归算法
+//            if( p != parent[p] )
+//                parent[p] = find( parent[p] );
+//            return parent[p];
     }
 
     // 查看元素p和元素q是否所属一个集合

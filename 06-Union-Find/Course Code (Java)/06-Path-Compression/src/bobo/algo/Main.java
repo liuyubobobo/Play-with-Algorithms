@@ -2,7 +2,7 @@ package bobo.algo;
 
 public class Main {
 
-    // 对比UF1, UF2, UF3和UF4的时间性能
+    // 对比UF1, UF2, UF3, UF4和UF5的时间性能
     public static void main(String[] args) {
 
         // 使用1000000的数据规模
@@ -29,5 +29,9 @@ public class Main {
         // UF4虽然相对UF3进行有了优化, 但优化的地方出现的情况较少,
         // 所以性能更优表现的不明显, 甚至在一些数据下性能会更差
         UnionFindTestHelper.testUF4(n);
+
+        // UF5虽然相对UF4进行有了优化, 但优化的地方出现的情况较少,
+        // 所以性能更优表现的不明显, 甚至在一些数据下性能会更差
+        UnionFindTestHelper.testUF5(n);
     }
 }

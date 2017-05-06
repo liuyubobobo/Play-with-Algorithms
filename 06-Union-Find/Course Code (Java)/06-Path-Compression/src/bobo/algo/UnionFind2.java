@@ -1,22 +1,20 @@
 package bobo.algo;
 
-// 我们的第四版Union-Find
-public class UnionFind4 {
+// 我们的第二版Union-Find
+public class UnionFind2 {
 
-    private int[] rank;   // rank[i]表示以i为根的集合所表示的树的层数
-    private int[] parent; // parent[i]表示第i个元素所指向的父节点
-    private int count;    // 数据个数
+    // 我们的第二版Union-Find, 使用一个数组构建一棵指向父节点的树
+    // parent[i]表示第一个元素所指向的父节点
+    private int[] parent;
+    private int count;  // 数据个数
 
     // 构造函数
-    public UnionFind4(int count){
-        rank = new int[count];
+    public UnionFind2(int count){
         parent = new int[count];
         this.count = count;
         // 初始化, 每一个parent[i]指向自己, 表示每一个元素自己自成一个集合
-        for( int i = 0 ; i < count ; i ++ ){
+        for( int i = 0 ; i < count ; i ++ )
             parent[i] = i;
-            rank[i] = 1;
-        }
     }
 
     // 查找过程, 查找元素p所对应的集合编号
@@ -46,17 +44,6 @@ public class UnionFind4 {
         if( pRoot == qRoot )
             return;
 
-        // 根据两个元素所在树的元素个数不同判断合并方向
-        // 将元素个数少的集合合并到元素个数多的集合上
-        if( rank[pRoot] < rank[qRoot] ){
-            parent[pRoot] = qRoot;
-        }
-        else if( rank[qRoot] < rank[pRoot]){
-            parent[qRoot] = pRoot;
-        }
-        else{ // rank[pRoot] == rank[qRoot]
-            parent[pRoot] = qRoot;
-            rank[qRoot] += 1;   // 此时, 我维护rank的值
-        }
+        parent[pRoot] = qRoot;
     }
 }
