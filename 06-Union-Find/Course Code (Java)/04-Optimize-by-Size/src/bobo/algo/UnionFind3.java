@@ -1,20 +1,22 @@
 package bobo.algo;
 
-// 我们的第二版Union-Find
-public class UnionFind2 {
+// 我们的第三版Union-Find
+public class UnionFind3 {
 
-    // 我们的第二版Union-Find, 使用一个数组构建一棵指向父节点的树
-    // parent[i]表示第一个元素所指向的父节点
-    private int[] parent;
-    private int count;  // 数据个数
+    private int[] parent; // parent[i]表示第一个元素所指向的父节点
+    private int[] sz;     // sz[i]表示以i为根的集合中元素个数
+    private int count;    // 数据个数
 
     // 构造函数
-    public UnionFind2(int count){
+    public UnionFind3(int count){
         parent = new int[count];
+        sz = new int[count];
         this.count = count;
         // 初始化, 每一个parent[i]指向自己, 表示每一个元素自己自成一个集合
-        for( int i = 0 ; i < count ; i ++ )
+        for( int i = 0 ; i < count ; i ++ ){
             parent[i] = i;
+            sz[i] = 1;
+        }
     }
 
     // 查找过程, 查找元素p所对应的集合编号
@@ -44,6 +46,15 @@ public class UnionFind2 {
         if( pRoot == qRoot )
             return;
 
-        parent[pRoot] = qRoot;
+        // 根据两个元素所在树的元素个数不同判断合并方向
+        // 将元素个数少的集合合并到元素个数多的集合上
+        if( sz[pRoot] < sz[qRoot] ){
+            parent[pRoot] = qRoot;
+            sz[qRoot] += sz[pRoot];
+        }
+        else{
+            parent[qRoot] = pRoot;
+            sz[pRoot] += sz[qRoot];
+        }
     }
 }

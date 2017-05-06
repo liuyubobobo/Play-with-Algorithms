@@ -15,7 +15,6 @@ public class UnionFind1 {
     }
 
     // 查找过程, 查找元素p所对应的集合编号
-    // O(1)复杂度
     int find(int p) {
         assert p >= 0 && p < count;
         return id[p];
