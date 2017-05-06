@@ -104,4 +104,12 @@
 | 补充13 树形问题之八数码问题 | [整理中] | [敬请期待] |
 | 补充14 树形问题之数独求解 | [整理中] | [敬请期待] |
 | 补充15 树形问题之搬运工求解 | [整理中] | [敬请期待] |
-
+| **第六章 并查集** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)) |
+| 6-1 并查集基础（Union Find）| [无代码] |  |
+| 6-2 Quick Find | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/02-Quick-Find) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/02-Quick-Find/src/bobo/algo) |
+| 6-3 Quick Union | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/03-Quick-Union) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/03-Quick-Union/src/bobo/algo) |
+| 6-4 基于size的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/04-Optimize-by-Size) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/04-Optimize-by-Size/src/bobo/algo) |
+| 6-5 基于rank的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/05-Optimize-by-Rank) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/05-Optimize-by-Rank/src/bobo/algo) |
+| 6-6 路径压缩（Path Compression）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/06-Path-Compression) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/06-Path-Compression/src/bobo/algo) |
+| 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/Chapter-06-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/Chapter-06-Completed-Code/src/bobo/algo) |
+| **第七章 图的基础** | [章节C++源码]() | [章节Java源码]() |
