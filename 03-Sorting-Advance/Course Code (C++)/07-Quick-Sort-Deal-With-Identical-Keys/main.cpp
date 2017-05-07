@@ -49,7 +49,7 @@ int _partition2(T arr[], int l, int r){
         // 注意这里的边界, arr[j] > v, 不能是arr[j] >= v
         // 思考一下为什么?
         while( j >= l+1 && arr[j] > v )
-            j --;
+            j -
 
         // 对于上面的两个边界的设定, 有的同学在课程的问答区有很好的回答:)
         // 大家可以参考: http://coding.imooc.com/learn/questiondetail/4920.html

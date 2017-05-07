@@ -15,26 +15,27 @@ using namespace std;
 class SparseGraph{
 
 private:
-    int n, m;
-    bool directed;
-    vector<vector<int>> g;
+    int n, m;       // 节点数和边数
+    bool directed;  // 是否为有向图
+    vector<vector<int>> g;  // 图的具体数据
 
 public:
+    // 构造函数
     SparseGraph( int n , bool directed ){
+        assert( n >= 0 );
         this->n = n;
-        this->m = 0;
+        this->m = 0;    // 初始化没有任何边
         this->directed = directed;
-        for( int i = 0 ; i < n ; i ++ )
-            g.push_back( vector<int>() );
+        // g初始化为n个空的vector, 表示每一个g[i]都为空, 即没有任和边
+        g = vector<vector<int>>(n, vector<int>());
     }
 
-    ~SparseGraph(){
+    ~SparseGraph(){ }
 
-    }
+    int V(){ return n;} // 返回节点个数
+    int E(){ return m;} // 返回边的个数
 
-    int V(){ return n;}
-    int E(){ return m;}
-
+    // 向图中添加一个边
     void addEdge( int v, int w ){
 
         assert( v >= 0 && v < n );
@@ -47,6 +48,7 @@ public:
         m ++;
     }
 
+    // 验证图中是否有从v到w的边
     bool hasEdge( int v , int w ){
 
         assert( v >= 0 && v < n );
