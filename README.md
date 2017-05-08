@@ -112,4 +112,26 @@
 | 6-5 基于rank的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/05-Optimize-by-Rank) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/05-Optimize-by-Rank/src/bobo/algo) |
 | 6-6 路径压缩（Path Compression）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/06-Path-Compression) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/06-Path-Compression/src/bobo/algo) |
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/Chapter-06-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/Chapter-06-Completed-Code/src/bobo/algo) |
-| **第七章 图的基础** | [章节C++源码]() | [章节Java源码]() |
+| **第七章 图的基础** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)) |
+| 7-1 图论基础 | [无代码] |  |
+| 7-2 图的表示 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/02-Graph-Representation) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/02-Graph-Representation/src/bobo/algo) |
+| 7-3 相邻节点迭代器 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/03-Vertex%20Adjacent%20Iterator) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/03-Vertex-Adjacent-Iterator/src/bobo/algo) |
+| 7-4 图的算法框架 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/04-Read-Graph) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/04-Read-Graph/src/bobo/algo) |
+| 7-5 深度优先遍历和联通分量 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/05-DFS-and-Components) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/05-DFS-and-Components/src/bobo/algo) |
+| 7-6 寻路 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/06-Finding-a-Path) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/06-Finding-a-Path/src/bobo/algo) |
+| 7-7 广度优先遍历和无权图的最短路径 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/07-BFS-and-Shortest-Path) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/07-BFS-and-Shortest-Path/src/bobo/algo) |
+| 7-8 迷宫生成，PS抠图 —— 更多无权图的应用 | [无代码] |  |
+| 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/Chapter-07-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/Chapter-07-Completed-Code/src/bobo/algo) |
+| 补充1 Floodfill 算法 | [整理中] | [敬请期待] |
+| 补充2 扫雷游戏模型 | [整理中] | [敬请期待] |
+| 补充3 走迷宫 | [整理中] | [敬请期待] |
+| 补充4 迷宫生成 | [整理中] | [敬请期待] |
+| 补充5 欧拉路径 | [整理中] | [敬请期待] |
+| 补充6 哈密尔顿路径 | [整理中] | [敬请期待] |
+| 补充7 Blue Path 自动求解 | [整理中] | [敬请期待] |
+| 补充8 地图填色问题 | [整理中] | [敬请期待] |
+| 补充9 二分图 | [整理中] | [敬请期待] |
+| 补充10 二分图的最优匹配 | [整理中] | [敬请期待] |
+| 补充11 墙为线条的迷宫生成 | [整理中] | [敬请期待] |
+| 补充12 六边形的迷宫生成 | [整理中] | [敬请期待] |
+| **第八章 最小生成树** | [章节C++源码]() | [章节Java源码]() |
