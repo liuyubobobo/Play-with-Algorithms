@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// 测试有权图和有权图的读取
 int main() {
 
     string filename = "testG1.txt";
