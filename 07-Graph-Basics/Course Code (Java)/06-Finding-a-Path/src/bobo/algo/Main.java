@@ -5,7 +5,7 @@ public class Main {
     // 测试寻路算法
     public static void main(String[] args) {
 
-        String filename = "testG2.txt";
+        String filename = "testG.txt";
         SparseGraph g = new SparseGraph(7, false);
         ReadGraph readGraph = new ReadGraph(g, filename);
         g.show();

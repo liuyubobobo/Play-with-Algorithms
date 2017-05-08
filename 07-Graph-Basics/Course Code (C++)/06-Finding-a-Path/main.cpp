@@ -9,7 +9,7 @@ using namespace std;
 // 测试寻路算法
 int main() {
 
-    string filename = "testG2.txt";
+    string filename = "testG.txt";
     SparseGraph g = SparseGraph(7, false);
     ReadGraph<SparseGraph> readGraph(g, filename);
     g.show();
