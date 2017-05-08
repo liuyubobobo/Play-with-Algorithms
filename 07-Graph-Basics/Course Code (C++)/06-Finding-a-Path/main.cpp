@@ -6,7 +6,7 @@
 
 using namespace std;
 
-
+// 测试寻路算法
 int main() {
 
     string filename = "testG2.txt";
@@ -15,9 +15,9 @@ int main() {
     g.show();
     cout<<endl;
 
-    Path<SparseGraph> dfs(g,0);
-    cout<<"DFS : ";
-    dfs.showPath(6);
+    Path<SparseGraph> path(g,0);
+    cout<<"Path from 0 to 6 : " << endl;
+    path.showPath(6);
 
     return 0;
 }
