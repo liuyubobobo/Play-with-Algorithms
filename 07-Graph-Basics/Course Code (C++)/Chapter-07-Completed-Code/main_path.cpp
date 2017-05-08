@@ -10,7 +10,7 @@
 
 using namespace std;
 
-
+// 测试深度优先遍历和广度优先遍历的寻路算法
 int main() {
 
     string filename = "testG2.txt";

@@ -8,7 +8,7 @@
 
 using namespace std;
 
-
+// 随机生成一个图, 求其连通性
 int main() {
 
     // Test Random Graph Component

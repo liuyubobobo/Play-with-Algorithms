@@ -10,7 +10,7 @@
 
 using namespace std;
 
-
+// 对图G随机生成边,边的个数的期望值为E
 template <typename Graph>
 class RandomGraph{
 

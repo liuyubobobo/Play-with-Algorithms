@@ -9,7 +9,7 @@
 
 using namespace std;
 
-
+// 读取testG1和testG2, 求其连通性
 int main() {
 
     // TestG1.txt
