@@ -50,39 +50,10 @@ public class SparseGraph {
         return false;
     }
 
-    // 邻边迭代器, 传入一个图和一个顶点,
-    // 迭代在这个图中和这个顶点向连的所有顶点
-    class adjIterator{
-        private int v;
-        private int index;
-
-        // 构造函数
-        public adjIterator(int v){
-            this.v = v;
-            this.index = 0;
-        }
-
-        // 返回图G中与顶点v相连接的第一个顶点
-        public int begin(){
-            index = 0;
-            if( g[v].size() > 0 )
-                return g[v].elementAt(index);
-            // 若没有顶点和v相连接, 则返回-1
-            return -1;
-        }
-
-        // 返回图G中与顶点v相连接的下一个顶点
-        int next(){
-            index ++;
-            if( index < g[v].size() )
-                return g[v].elementAt(index);
-            // 若没有顶点和v相连接, 则返回-1
-            return -1;
-        }
-
-        // 查看是否已经迭代完了图G中与顶点v相连接的所有顶点
-        boolean end(){
-            return index >= g[v].size();
-        }
-    };
+    // 返回图中一个顶点的所有邻边
+    // 由于java使用引用机制，返回一个Vector不会带来额外开销,
+    public Iterable<Integer> adj(int v) {
+        assert v >= 0 && v < n;
+        return g[v];
+    }
 }

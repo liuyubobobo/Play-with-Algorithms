@@ -1,5 +1,7 @@
 package bobo.algo;
 
+import java.util.Vector;
+
 // 稠密图 - 邻接矩阵
 public class DenseGraph {
 
@@ -45,42 +47,14 @@ public class DenseGraph {
         return g[v][w];
     }
 
-    // 邻边迭代器, 传入一个图和一个顶点,
-    // 迭代在这个图中和这个顶点向连的所有顶点
-    class adjIterator{
-        private int v;
-        private int index;
-
-        // 构造函数
-        public adjIterator(int v){
-            assert v >= 0 && v < n;
-            this.v = v;
-            this.index = -1;   // 索引从-1开始, 因为每次遍历都需要调用一次next()
-        }
-
-        // 返回图G中与顶点v相连接的第一个顶点
-        public int begin(){
-
-            // 索引从-1开始, 因为每次遍历都需要调用一次next()
-            index = -1;
-            return next();
-        }
-
-        // 返回图G中与顶点v相连接的下一个顶点
-        public int next(){
-
-            // 从当前index开始向后搜索, 直到找到一个g[v][index]为true
-            for( index += 1 ; index < V() ; index ++ )
-                if( g[v][index] )
-                    return index;
-            // 若没有顶点和v相连接, 则返回-1
-            return -1;
-        }
-
-        // 查看是否已经迭代完了图G中与顶点v相连接的所有顶点
-        public boolean end(){
-            return index >= V();
-        }
-
-    };
+    // 返回图中一个顶点的所有邻边
+    // 由于java使用引用机制，返回一个Vector不会带来额外开销,
+    public Iterable<Integer> adj(int v) {
+        assert v >= 0 && v < n;
+        Vector<Integer> adjV = new Vector<Integer>();
+        for(int i = 0 ; i < n ; i ++ )
+            if( g[v][i] )
+                adjV.add(i);
+        return adjV;
+    }
 }
