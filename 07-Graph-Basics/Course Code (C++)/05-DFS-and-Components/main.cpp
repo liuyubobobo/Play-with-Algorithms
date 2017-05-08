@@ -6,7 +6,7 @@
 
 using namespace std;
 
-
+// 测试图的联通分量算法
 int main() {
 
     // TestG1.txt
