@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// 测试最小生成树算法
 int main() {
 
     string filename = "testG1.txt";
