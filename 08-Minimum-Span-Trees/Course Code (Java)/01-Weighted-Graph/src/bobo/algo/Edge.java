@@ -1,7 +1,7 @@
 package bobo.algo;
 
 // 边
-public class Edge<Weight extends Comparable> implements Comparable<Edge>{
+public class Edge<Weight extends Number & Comparable> implements Comparable<Edge>{
 
     private int a, b;    // 边的两个端点
     private Weight weight;  // 边的权值

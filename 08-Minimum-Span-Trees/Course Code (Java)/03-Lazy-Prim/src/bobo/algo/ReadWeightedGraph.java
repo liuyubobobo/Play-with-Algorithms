@@ -9,10 +9,12 @@ import java.util.Locale;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 
+// 通过文件读取有全图的信息
 public class ReadWeightedGraph {
 
     private Scanner scanner;
 
+    // 由于文件格式的限制，我们的文件读取类只能读取权值为Double类型的图
     public ReadWeightedGraph(WeightedGraph<Double> graph, String filename){
 
         readFile(filename);

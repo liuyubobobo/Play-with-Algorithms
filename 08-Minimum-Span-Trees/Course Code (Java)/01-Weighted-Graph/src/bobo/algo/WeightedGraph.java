@@ -1,6 +1,6 @@
 package bobo.algo;
 
-interface WeightedGraph<Weight extends Comparable> {
+interface WeightedGraph<Weight extends Number & Comparable> {
     public int V();
     public int E();
     public void addEdge(Edge<Weight> e);

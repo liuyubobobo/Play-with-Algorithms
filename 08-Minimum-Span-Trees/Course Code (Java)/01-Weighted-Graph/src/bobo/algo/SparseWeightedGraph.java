@@ -3,7 +3,7 @@ package bobo.algo;
 import java.util.Vector;
 
 // 稀疏图 - 邻接表
-public class SparseWeightedGraph<Weight extends Comparable>
+public class SparseWeightedGraph<Weight extends Number & Comparable>
         implements WeightedGraph {
 
     private int n;  // 节点数

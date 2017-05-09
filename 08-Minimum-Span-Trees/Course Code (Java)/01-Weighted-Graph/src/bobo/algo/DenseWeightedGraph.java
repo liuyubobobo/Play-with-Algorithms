@@ -3,7 +3,7 @@ package bobo.algo;
 import java.util.Vector;
 
 // 稠密图 - 邻接矩阵
-public class DenseWeightedGraph<Weight extends Comparable>
+public class DenseWeightedGraph<Weight extends Number & Comparable>
         implements WeightedGraph{
 
     private int n;  // 节点数
