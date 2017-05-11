@@ -39,7 +39,7 @@ public class DenseWeightedGraph<Weight extends Number & Comparable>
 
         g[e.v()][e.w()] = new Edge(e);
         if( e.v() != e.w() && !directed )
-            g[e.w()][e.v()] = new Edge(e);
+            g[e.w()][e.v()] = new Edge(e.w(), e.v(), e.wt());
 
         m ++;
     }

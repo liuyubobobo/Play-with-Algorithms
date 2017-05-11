@@ -37,7 +37,7 @@ public class SparseWeightedGraph<Weight extends Number & Comparable>
 
         g[e.v()].add(new Edge(e));
         if( e.v() != e.w() && !directed )
-            g[e.w()].add(new Edge(e));
+            g[e.w()].add(new Edge(e.w(), e.v(), e.wt()));
 
         m ++;
     }
