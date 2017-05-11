@@ -2,8 +2,7 @@ package bobo.algo;
 
 public class Main {
 
-    // 测试我们实现的两种Prim算法的性能差距
-    // 可以看出这一节使用索引堆实现的Prim算法优于上一小节的Lazy Prim算法
+    // 比较Lazy Prim, Prim和Kruskal的时间性能
     public static void main(String[] args) {
 
         String filename1 = "testG1.txt";
@@ -104,6 +103,37 @@ public class Main {
 
 //        startTime = System.currentTimeMillis();
 //        PrimMST<Double> primMST5 = new PrimMST<Double>(g5);
+//        endTime = System.currentTimeMillis();
+//        System.out.println("Test for G5: " + (endTime-startTime) + "ms.");
+
+        System.out.println();
+
+
+        // Test Kruskal MST
+        System.out.println("Test Kruskal MST:");
+
+        startTime = System.currentTimeMillis();
+        KruskalMST<Double> kruskalMST1 = new KruskalMST<Double>(g1);
+        endTime = System.currentTimeMillis();
+        System.out.println("Test for G1: " + (endTime-startTime) + "ms.");
+
+        startTime = System.currentTimeMillis();
+        KruskalMST<Double> kruskalMST2 = new KruskalMST<Double>(g2);
+        endTime = System.currentTimeMillis();
+        System.out.println("Test for G2: " + (endTime-startTime) + "ms.");
+
+        startTime = System.currentTimeMillis();
+        KruskalMST<Double> kruskalMST3 = new KruskalMST<Double>(g3);
+        endTime = System.currentTimeMillis();
+        System.out.println("Test for G3: " + (endTime-startTime) + "ms.");
+
+        startTime = System.currentTimeMillis();
+        KruskalMST<Double> kruskalMST4 = new KruskalMST<Double>(g4);
+        endTime = System.currentTimeMillis();
+        System.out.println("Test for G4: " + (endTime-startTime) + "ms.");
+
+//        startTime = System.currentTimeMillis();
+//        KruskalMST<Double> kruskalMST5 = new KruskalMST<Double>(g5);
 //        endTime = System.currentTimeMillis();
 //        System.out.println("Test for G5: " + (endTime-startTime) + "ms.");
 
