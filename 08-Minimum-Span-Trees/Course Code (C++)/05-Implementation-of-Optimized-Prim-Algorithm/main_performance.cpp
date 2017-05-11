@@ -11,6 +11,8 @@
 
 using namespace std;
 
+// 测试我们实现的两种Prim算法的性能差距
+// 可以看出这一节使用索引堆实现的Prim算法优于上一小节的Lazy Prim算法
 int main() {
 
     string filename1 = "testG1.txt";
@@ -29,6 +31,7 @@ int main() {
 //    int V5 = 1000000;
 
 
+    // 文件读取
     SparseGraph<double> g1 = SparseGraph<double>(V1, false);
     ReadGraph<SparseGraph<double>,double> readGraph1(g1, filename1);
     cout<<filename1<<" load successfully."<<endl;
