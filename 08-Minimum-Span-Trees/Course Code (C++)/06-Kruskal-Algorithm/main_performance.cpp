@@ -12,6 +12,7 @@
 
 using namespace std;
 
+// 比较Lazy Prim, Prim和Kruskal的时间性能
 int main() {
 
     string filename1 = "testG1.txt";
@@ -30,6 +31,7 @@ int main() {
 //    int V5 = 1000000;
 
 
+    // 读取文件
     SparseGraph<double> g1 = SparseGraph<double>(V1, false);
     ReadGraph<SparseGraph<double>,double> readGraph1(g1, filename1);
     cout<<filename1<<" load successfully."<<endl;
