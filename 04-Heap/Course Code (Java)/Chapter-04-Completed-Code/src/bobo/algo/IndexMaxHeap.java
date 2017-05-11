@@ -48,6 +48,7 @@ public class IndexMaxHeap<Item extends Comparable> {
         i += 1;
         data[i] = item;
         indexes[count+1] = i;
+        reverse[i] = count + 1;
         count ++;
 
         shiftUp(count);
@@ -113,9 +114,8 @@ public class IndexMaxHeap<Item extends Comparable> {
 
         // 有了 reverse 之后,
         // 我们可以非常简单的通过reverse直接定位索引i在indexes中的位置
-        int j = reverse[i];
-        shiftUp( j );
-        shiftDown( j );
+        shiftUp( reverse[i] );
+        shiftDown( reverse[i] );
     }
 
     // 交换索引堆中的索引i和j

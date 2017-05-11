@@ -167,9 +167,8 @@ public:
 
         // 有了 reverse 之后,
         // 我们可以非常简单的通过reverse直接定位索引i在indexes中的位置
-        int j = reverse[i];
-        shiftUp( j );
-        shiftDown( j );
+        shiftUp( reverse[i] );
+        shiftDown( reverse[i] );
     }
 };
 

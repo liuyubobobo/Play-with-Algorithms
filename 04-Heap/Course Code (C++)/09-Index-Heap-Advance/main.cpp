@@ -161,9 +161,8 @@ public:
 
         // 有了 reverse 之后,
         // 我们可以非常简单的通过reverse直接定位索引i在indexes中的位置
-        int j = reverse[i];
-        shiftUp( j );
-        shiftDown( j );
+        shiftUp( reverse[i] );
+        shiftDown( reverse[i] );
     }
 
     // 测试索引堆中的索引数组index和反向数组reverse
