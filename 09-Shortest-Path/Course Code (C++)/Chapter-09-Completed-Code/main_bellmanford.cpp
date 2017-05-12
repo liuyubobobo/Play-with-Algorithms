@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// 测试Bellman-Ford算法
 int main() {
 
     string filename = "testG2.txt";
@@ -20,10 +21,15 @@ int main() {
     if( bellmanFord.negativeCycle() )
         cout<<"The graph contain negative cycle!"<<endl;
     else
-        for( int i = 1 ; i < V ; i ++ ){
-            cout<<"Shortest Path to "<<i<<" : "<<bellmanFord.shortestPathTo(i)<<endl;
-            bellmanFord.showPath(i);
-            cout<<"----------"<<endl;
+        for( int i = 1 ; i < V ; i ++ ) {
+            if (bellmanFord.hasPathTo(i)) {
+                cout << "Shortest Path to " << i << " : " << bellmanFord.shortestPathTo(i) << endl;
+                bellmanFord.showPath(i);
+            }
+            else
+                cout << "No Path to " << i << endl;
+
+            cout << "----------" << endl;
         }
 
     return 0;
