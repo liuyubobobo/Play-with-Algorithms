@@ -11,23 +11,25 @@
 
 using namespace std;
 
-
+// 使用BellmanFord算法求最短路径
 template <typename Graph, typename Weight>
 class BellmanFord{
 
 private:
-    Graph &G;
-    int s;
-    Weight* distTo;
-    vector<Edge<Weight>*> from;
-    bool hasNegativeCycle;
+    Graph &G;                   // 图的引用
+    int s;                      // 起始点
+    Weight* distTo;             // distTo[i]存储从起始点s到i的最短路径长度
+    vector<Edge<Weight>*> from; // from[i]记录最短路径中, 到达i点的边是哪一条
+                                // 可以用来恢复整个最短路径
+    bool hasNegativeCycle;      // 标记图中是否有负权环
 
+    // 判断图中是否有负权环
     bool detectNegativeCycle(){
 
         for( int i = 0 ; i < G.V() ; i ++ ){
             typename Graph::adjIterator adj(G,i);
             for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() )
-                if( !from[e->w()] || distTo[e->v()] + e->wt() < distTo[e->w()] )
+                if( from[e->v()] && distTo[e->v()] + e->wt() < distTo[e->w()] )
                     return true;
         }
 
@@ -35,6 +37,7 @@ private:
     }
 
 public:
+    // 构造函数, 使用BellmanFord算法求最短路径
     BellmanFord(Graph &graph, int s):G(graph){
 
         this->s = s;
@@ -45,7 +48,7 @@ public:
 
         // 设置distTo[s] = 0, 并且让from[s]不为NULL, 表示初始s节点可达且距离为0
         distTo[s] = Weight();
-        from[s] = new Edge<Weight>(); // 这里我们from[s]的内容是new出来的, 注意要在析构函数里delete掉
+        from[s] = new Edge<Weight>(s, s, 0); // 这里我们from[s]的内容是new出来的, 注意要在析构函数里delete掉
 
         // Bellman-Ford的过程
         // 进行V-1次循环, 每一次循环求出从起点到其余所有点, 最多使用pass步可到达的最短距离
@@ -70,32 +73,40 @@ public:
         hasNegativeCycle = detectNegativeCycle();
     }
 
+    // 析构函数
     ~BellmanFord(){
 
         delete[] distTo;
         delete from[s];
     }
 
+    // 返回图中是否有负权环
     bool negativeCycle(){
         return hasNegativeCycle;
     }
 
+    // 返回从s点到w点的最短路径长度
     Weight shortestPathTo( int w ){
         assert( w >= 0 && w < G.V() );
         assert( !hasNegativeCycle );
+        assert( hasPathTo(w) );
         return distTo[w];
     }
 
+    // 判断从s点到w点是否联通
     bool hasPathTo( int w ){
         assert( w >= 0 && w < G.V() );
         return from[w] != NULL;
     }
 
+    // 寻找从s到w的最短路径, 将整个路径经过的边存放在vec中
     void shortestPath( int w, vector<Edge<Weight>> &vec ){
 
         assert( w >= 0 && w < G.V() );
         assert( !hasNegativeCycle );
+        assert( hasPathTo(w) );
 
+        // 通过from数组逆向查找到从s到w的路径, 存放到栈中
         stack<Edge<Weight>*> s;
         Edge<Weight> *e = from[w];
         while( e->v() != this->s ){
@@ -104,6 +115,7 @@ public:
         }
         s.push(e);
 
+        // 从栈中依次取出元素, 获得顺序的从s到w的路径
         while( !s.empty() ){
             e = s.top();
             vec.push_back( *e );
@@ -111,10 +123,12 @@ public:
         }
     }
 
+    // 打印出从s点到w点的路径
     void showPath(int w){
 
         assert( w >= 0 && w < G.V() );
         assert( !hasNegativeCycle );
+        assert( hasPathTo(w) );
 
         vector<Edge<Weight>> vec;
         shortestPath(w, vec);
