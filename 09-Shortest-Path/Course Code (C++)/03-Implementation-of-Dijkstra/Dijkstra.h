@@ -45,6 +45,7 @@ public:
 
         // 对于其实点s进行初始化
         distTo[s] = Weight();
+        from[s] = new Edge<Weight>(s, s, 0);
         ipq.insert(s, distTo[s] );
         marked[s] = true;
         while( !ipq.isEmpty() ){
@@ -78,11 +79,13 @@ public:
     ~Dijkstra(){
         delete[] distTo;
         delete[] marked;
+        delete from[0];
     }
 
     // 返回从s点到w点的最短路径长度
     Weight shortestPathTo( int w ){
         assert( w >= 0 && w < G.V() );
+        assert( hasPathTo(w) );
         return distTo[w];
     }
 
@@ -96,6 +99,7 @@ public:
     void shortestPath( int w, vector<Edge<Weight>> &vec ){
 
         assert( w >= 0 && w < G.V() );
+        assert( hasPathTo(w) );
 
         // 通过from数组逆向查找到从s到w的路径, 存放到栈中
         stack<Edge<Weight>*> s;
@@ -118,6 +122,7 @@ public:
     void showPath(int w){
 
         assert( w >= 0 && w < G.V() );
+        assert( hasPathTo(w) );
 
         vector<Edge<Weight>> vec;
         shortestPath(w, vec);

@@ -66,6 +66,7 @@ public class Dijkstra<Weight extends Number & Comparable> {
     // 返回从s点到w点的最短路径长度
     Number shortestPathTo( int w ){
         assert w >= 0 && w < G.V();
+        assert hasPathTo(w);
         return distTo[w];
     }
 
@@ -79,6 +80,7 @@ public class Dijkstra<Weight extends Number & Comparable> {
     Vector<Edge<Weight>> shortestPath( int w){
 
         assert w >= 0 && w < G.V();
+        assert hasPathTo(w);
 
         // 通过from数组逆向查找到从s到w的路径, 存放到栈中
         Stack<Edge<Weight>> s = new Stack<Edge<Weight>>();
@@ -103,6 +105,7 @@ public class Dijkstra<Weight extends Number & Comparable> {
     void showPath(int w){
 
         assert w >= 0 && w < G.V();
+        assert hasPathTo(w);
 
         Vector<Edge<Weight>> path =  shortestPath(w);
         for( int i = 0 ; i < path.size() ; i ++ ){

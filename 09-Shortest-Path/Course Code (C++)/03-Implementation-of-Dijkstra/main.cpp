@@ -19,7 +19,7 @@ int main() {
 
     cout<<"Test Dijkstra:"<<endl<<endl;
     Dijkstra<SparseGraph<int>, int> dij(g,0);
-    for( int i = 1 ; i < V ; i ++ ){
+    for( int i = 0 ; i < V ; i ++ ){
         if(dij.hasPathTo(i)){
             cout<<"Shortest Path to "<<i<<" : "<<dij.shortestPathTo(i)<<endl;
             dij.showPath(i);
