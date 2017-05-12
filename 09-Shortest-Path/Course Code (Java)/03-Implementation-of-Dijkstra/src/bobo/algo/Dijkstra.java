@@ -34,6 +34,7 @@ public class Dijkstra<Weight extends Number & Comparable> {
 
         // 对于其实点s进行初始化
         distTo[s] = 0.0;
+        from[s] = new Edge<Weight>(s, s, (Weight)(Number)(0.0));
         ipq.insert(s, (Weight)distTo[s] );
         marked[s] = true;
         while( !ipq.isEmpty() ){
