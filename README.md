@@ -145,7 +145,13 @@
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/Chapter-08-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/Chapter-08-Completed-Code/src/bobo/algo) |
 | 补充1 图的最小生成树的个数 | [整理中] | [敬请期待] |
 | 补充2 Vyssotsky Algorithm | [整理中] | [敬请期待] |
-| **第九章 最短路径** | [章节C++源码]() | [章节Java源码]() |
-| | | |
+| **第九章 最短路径** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)) |
+| 9-1 最短路径问题和松弛操作(Relaxation) | [无代码] | |
+| 9-2 Dijkstra的算法思想 | [无代码] | |
+| 9-3 实现Dijkstra算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/03-Implementation-of-Dijkstra) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/03-Implementation-of-Dijkstra) |
+| 9-4 负权边和Bellman-Ford算法 | [无代码] | |
+| 9-5 实现Bellman-Ford算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/05-Implementation-of-Bellman-Ford) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/05-Implementation-of-Bellman-Ford) |
+| 9-6 更多和最短路径相关的思考 | [无代码] | |
+| 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/Chapter-09-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/Chapter-09-Completed-Code) |
 | **第十章 结束语** | [无代码] | |
 | 10-1 总结：算法思想，大家加油！ | [无代码] | |
