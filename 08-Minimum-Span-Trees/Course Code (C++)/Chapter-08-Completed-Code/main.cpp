@@ -1,8 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <vector>
-#include <ctime>
-#include <string>
 #include "DenseGraph.h"
 #include "SparseGraph.h"
 #include "ReadGraph.h"
@@ -12,25 +9,14 @@
 
 using namespace std;
 
+// 测试Kruskal算法
 int main() {
-
-    // res of file
-    // 0-7 0.16
-    // 1-7 0.19
-    // 0-2 0.26
-    // 2-3 0.17
-    // 5-7 0.28
-    // 4-5 0.35
-    // 6-2 0.40
-    // 1.81
 
     string filename = "testG1.txt";
     int V = 8;
 
     SparseGraph<double> g = SparseGraph<double>(V, false);
     ReadGraph<SparseGraph<double>, double> readGraph(g, filename);
-    cout<<filename<<" load successfully."<<endl;
-
 
     // Test Lazy Prim MST
     cout<<"Test Lazy Prim MST:"<<endl;
@@ -61,6 +47,7 @@ int main() {
     for( int i = 0 ; i < mst.size() ; i ++ )
         cout<<mst[i]<<endl;
     cout<<"The MST weight is: "<<kruskalMST.result()<<endl;
+
 
     return 0;
 }
