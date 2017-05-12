@@ -134,4 +134,18 @@
 | 补充10 二分图的最优匹配 | [整理中] | [敬请期待] |
 | 补充11 墙为线条的迷宫生成 | [整理中] | [敬请期待] |
 | 补充12 六边形的迷宫生成 | [整理中] | [敬请期待] |
-| **第八章 最小生成树** | [章节C++源码]() | [章节Java源码]() |
+| **第八章 最小生成树** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)) |
+| 8-1 有权图 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/01-Weighted-Graph) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/01-Weighted-Graph) |
+| 8-2 最小生成树问题和切分定理 | [无代码] | |
+| 8-3 Prim算法的第一个实现 (Lazy Prim) | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/03-Lazy-Prim) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/03-Lazy-Prim/src/bobo/algo) |
+| 8-4 Prim算法的优化 | [无代码] | |
+| 8-5 优化后的Prim算法的实现 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/05-Implementation-of-Optimized-Prim-Algorithm) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/05-Implementation-of-Optimized-Prim-Algorithm/src/bobo/algo) |
+| 8-6 Kruskal算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/06-Kruskal-Algorithm) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/06-Kruskal-Algorithm/src/bobo/algo) |
+| 8-7 最小生成树算法的思考 | [无代码] | |
+| 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/Chapter-08-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/Chapter-08-Completed-Code/src/bobo/algo) |
+| 补充1 图的最小生成树的个数 | [整理中] | [敬请期待] |
+| 补充2 Vyssotsky Algorithm | [整理中] | [敬请期待] |
+| **第九章 最短路径** | [章节C++源码]() | [章节Java源码]() |
+| | | |
+| **第十章 结束语** | [无代码] | |
+| 10-1 总结：算法思想，大家加油！ | [无代码] | |
