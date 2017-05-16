@@ -112,6 +112,7 @@
 | 6-5 基于rank的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/05-Optimize-by-Rank) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/05-Optimize-by-Rank/src/bobo/algo) |
 | 6-6 路径压缩（Path Compression）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/06-Path-Compression) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/06-Path-Compression/src/bobo/algo) |
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/Chapter-06-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/Chapter-06-Completed-Code/src/bobo/algo) |
+| 补充1 使用相同的测试用例测试不同的UF实现 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/Optional-01-Same-Cases-Test-for-UF） | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/Optional-01-Same-Cases-Test-for-UF/src/bobo/algo） |
 | **第七章 图的基础** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)) |
 | 7-1 图论基础 | [无代码] |  |
 | 7-2 图的表示 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(C%2B%2B)/02-Graph-Representation) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/07-Graph-Basics/Course%20Code%20(Java)/02-Graph-Representation/src/bobo/algo) |
@@ -153,5 +154,11 @@
 | 9-5 实现Bellman-Ford算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/05-Implementation-of-Bellman-Ford) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/05-Implementation-of-Bellman-Ford) |
 | 9-6 更多和最短路径相关的思考 | [无代码] | |
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/Chapter-09-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/Chapter-09-Completed-Code) |
+| 补充1 SPFA算法 | [整理中] | [敬请期待] |
+| 补充2 有向无环图（DAG）的拓扑排序 | [整理中] | [敬请期待] |
+| 补充3 Floyed算法 | [整理中] | [敬请期待] |
+| 补充4 使用Bellman-Ford求最长路径 | [整理中] | [敬请期待] |
+| 补充5 使用拓扑排序求有向无环图（DAG）的最长路径 | [整理中] | [敬请期待] |
+| 补充3 使用Floyed算法求所有对的最长路径 | [整理中] | [敬请期待] |
 | **第十章 结束语** | [无代码] | |
 | 10-1 总结：算法思想，大家加油！ | [无代码] | |
