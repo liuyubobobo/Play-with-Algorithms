@@ -25,7 +25,7 @@ public class UnionFind5 {
 
     // 查找过程, 查找元素p所对应的集合编号
     // O(h)复杂度, h为树的高度
-    int find(int p){
+    private int find(int p){
         assert( p >= 0 && p < count );
 
         // path compression 1
@@ -43,13 +43,13 @@ public class UnionFind5 {
 
     // 查看元素p和元素q是否所属一个集合
     // O(h)复杂度, h为树的高度
-    boolean isConnected( int p , int q ){
+    public boolean isConnected( int p , int q ){
         return find(p) == find(q);
     }
 
     // 合并元素p和元素q所属的集合
     // O(h)复杂度, h为树的高度
-    void unionElements(int p, int q){
+    public void unionElements(int p, int q){
 
         int pRoot = find(p);
         int qRoot = find(q);
