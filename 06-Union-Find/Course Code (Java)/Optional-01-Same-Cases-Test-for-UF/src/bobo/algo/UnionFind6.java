@@ -1,7 +1,7 @@
 package bobo.algo;
 
-// 我们的第五版Union-Find, 路径压缩使用迭代实现
-public class UnionFind5 implements UF {
+// 我们的第六版Union-Find, 路径压缩使用递归实现
+public class UnionFind6 implements UF {
 
     // rank[i]表示以i为根的集合所表示的树的层数
     // 在后续的代码中, 我们并不会维护rank的语意, 也就是rank的值在路径压缩的过程中, 有可能不在是树的层数值
@@ -12,7 +12,7 @@ public class UnionFind5 implements UF {
     private int count;    // 数据个数
 
     // 构造函数
-    public UnionFind5(int count){
+    public UnionFind6(int count){
         rank = new int[count];
         parent = new int[count];
         this.count = count;
@@ -28,12 +28,10 @@ public class UnionFind5 implements UF {
     private int find(int p){
         assert( p >= 0 && p < count );
 
-        // path compression 1
-        while( p != parent[p] ){
-            parent[p] = parent[parent[p]];
-            p = parent[p];
-        }
-        return p;
+        // path compression 2, 递归算法
+        if( p != parent[p] )
+            parent[p] = find( parent[p] );
+        return parent[p];
     }
 
     // 查看元素p和元素q是否所属一个集合
