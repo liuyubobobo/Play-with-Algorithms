@@ -8,8 +8,8 @@ using namespace std;
 // 在这里, 我们对于不同的UnionFind的实现, 使用相同的测试用例, 让测试结果更加准确
 int main() {
 
-    // 使用1000000的数据规模
-    int n = 1000000;
+    // 使用5,000,000的数据规模
+    int n = 5000000;
 
     srand( time(NULL) );
 
@@ -46,6 +46,9 @@ int main() {
 
     UF5::UnionFind uf5 = UF5::UnionFind(n);
     UnionFindTestHelper::testUF("UF5", uf5, unionTest, connectTest);
+
+    UF5::UnionFind uf6 = UF5::UnionFind(n);
+    UnionFindTestHelper::testUF("UF6", uf6, unionTest, connectTest);
 
     return 0;
 }
