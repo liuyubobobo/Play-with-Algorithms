@@ -12,6 +12,7 @@
 #include "UnionFind3.h"
 #include "UnionFind4.h"
 #include "UnionFind5.h"
+#include "UnionFind6.h"
 
 using namespace std;
 
@@ -137,6 +138,30 @@ namespace UnionFindTestHelper{
 
         cout<<"UF5, "<<2*n<<" ops, "<<double(endTime-startTime)/CLOCKS_PER_SEC<<" s"<<endl;
     }
+
+    // 测试第六版本的并查集, 测试元素个数为n
+    void testUF6( int n ){
+
+        srand( time(NULL) );
+        UF6::UnionFind uf = UF6::UnionFind(n);
+
+        time_t startTime = clock();
+
+        for( int i = 0 ; i < n ; i ++ ){
+            int a = rand()%n;
+            int b = rand()%n;
+            uf.unionElements(a,b);
+        }
+        for(int i = 0 ; i < n ; i ++ ){
+            int a = rand()%n;
+            int b = rand()%n;
+            uf.isConnected(a,b);
+        }
+        time_t endTime = clock();
+
+        cout<<"UF6, "<<2*n<<" ops, "<<double(endTime-startTime)/CLOCKS_PER_SEC<<" s"<<endl;
+    }
+
 
     // 使用相同的测试数据测试UF的执行效率
     template<typename UF>

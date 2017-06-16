@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// 对比UF1, UF2, UF3, UF4和UF5的时间性能
+// 对比UF1, UF2, UF3, UF4, UF5和UF6的时间性能
 // 在这里, 我们对于不同的UnionFind的实现, 使用相同的测试用例, 让测试结果更加准确
 int main() {
 
@@ -29,7 +29,7 @@ int main() {
         connectTest.push_back(make_pair(a,b));
     }
 
-    // 测试我们的UF1 ~ UF5
+    // 测试我们的UF1 ~ UF6
 
     // 100万数据对于UF1和UF2来说太慢了, 不再测试
 //    UF1::UnionFind uf1 = UF1::UnionFind(n);
@@ -47,7 +47,7 @@ int main() {
     UF5::UnionFind uf5 = UF5::UnionFind(n);
     UnionFindTestHelper::testUF("UF5", uf5, unionTest, connectTest);
 
-    UF5::UnionFind uf6 = UF5::UnionFind(n);
+    UF6::UnionFind uf6 = UF6::UnionFind(n);
     UnionFindTestHelper::testUF("UF6", uf6, unionTest, connectTest);
 
     return 0;

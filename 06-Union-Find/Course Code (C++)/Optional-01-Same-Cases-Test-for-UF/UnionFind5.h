@@ -9,7 +9,7 @@
 
 using namespace std;
 
-// 我们的第五版Union-Find
+// 我们的第五版Union-Find, 其中路径压缩使用迭代的方式
 namespace UF5{
 
     class UnionFind{
@@ -52,11 +52,6 @@ namespace UF5{
                 p = parent[p];
             }
             return p;
-
-            // path compression 2, 递归算法
-//            if( p != parent[p] )
-//                parent[p] = find( parent[p] );
-//            return parent[p];
         }
 
         // 查看元素p和元素q是否所属一个集合

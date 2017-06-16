@@ -10,7 +10,7 @@
 using namespace std;
 
 // 我们的第六版Union-Find, 路径压缩使用递归的方式
-namespace UF5{
+namespace UF6{
 
     class UnionFind{
 
