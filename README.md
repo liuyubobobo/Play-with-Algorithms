@@ -91,19 +91,20 @@
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Chapter-05-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Chapter-05-Completed-Code/src/bobo/algo) |
 | 补充1 二分搜索法的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-01-More-About-Binary-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-01-More-About-Binary-Search/src/bobo/algo) |
 | 补充2 二分搜索树中的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-02-Floor-and-Ceil) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-02-Floor-and-Ceil/src/bobo/algo) |
-| 补充3 二分搜索树中的rank和select | [整理中] | [敬请期待] |
-| 补充4 二分搜索树的非递归实现 | [整理中] | [敬请期待] |
-| 补充5 二分搜索树的另一个应用：Set | [整理中] | [敬请期待] |
-| 补充6 允许重复键值的二分搜索树 | [整理中] | [敬请期待] |
-| 补充7 Trie | [整理中] | [敬请期待] |
-| 补充8 红黑树 | [整理中] | [敬请期待] |
-| 补充9 区间树 | [整理中] | [敬请期待] |
-| 补充10 KD树 | [整理中] | [敬请期待] |
-| 补充11 哈夫曼树 | [整理中] | [敬请期待] |
-| 补充12 树形问题之八皇后问题 | [整理中] | [敬请期待] |
-| 补充13 树形问题之八数码问题 | [整理中] | [敬请期待] |
-| 补充14 树形问题之数独求解 | [整理中] | [敬请期待] |
-| 补充15 树形问题之搬运工求解 | [整理中] | [敬请期待] |
+| 补充3 二分搜索树中的前驱和后继 | [整理中] | [敬请期待] |
+| 补充4 二分搜索树中的rank和select | [整理中] | [敬请期待] |
+| 补充5 二分搜索树的非递归实现 | [整理中] | [敬请期待] |
+| 补充6 二分搜索树的另一个应用：Set | [整理中] | [敬请期待] |
+| 补充7 允许重复键值的二分搜索树 | [整理中] | [敬请期待] |
+| 补充8 Trie | [整理中] | [敬请期待] |
+| 补充9 红黑树 | [整理中] | [敬请期待] |
+| 补充10 区间树 | [整理中] | [敬请期待] |
+| 补充11 KD树 | [整理中] | [敬请期待] |
+| 补充12 哈夫曼树 | [整理中] | [敬请期待] |
+| 补充13 树形问题之八皇后问题 | [整理中] | [敬请期待] |
+| 补充14 树形问题之八数码问题 | [整理中] | [敬请期待] |
+| 补充15 树形问题之数独求解 | [整理中] | [敬请期待] |
+| 补充16 树形问题之搬运工求解 | [整理中] | [敬请期待] |
 | **第六章 并查集** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)) |
 | 6-1 并查集基础（Union Find）| [无代码] |  |
 | 6-2 Quick Find | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/02-Quick-Find) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/02-Quick-Find/src/bobo/algo) |
