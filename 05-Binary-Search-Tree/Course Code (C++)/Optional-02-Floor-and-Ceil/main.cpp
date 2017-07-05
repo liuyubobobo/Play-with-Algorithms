@@ -1,6 +1,7 @@
 #include <iostream>
 #include <queue>
 #include <cassert>
+#include <vector>
 
 using namespace std;
 
@@ -396,27 +397,55 @@ private:
     }
 };
 
+void shuffle( vector<int>& vec ){
+
+    srand( time(NULL) );
+    for( int i = vec.size()-1 ; i >= 0 ; i -- ){
+        int x = rand()%(i+1);
+        swap( vec[i] , vec[x] );
+    }
+}
+
 
 // 测试二分搜索树中的floor和ceil两个函数
 int main(){
 
     BST<int,int> bst;
 
-    // 向二分搜索树中插入从2到20(不包括20)d的所有偶数
-    for(int i = 2 ; i < 20 ; i += 2 )
-        bst.insert(i, i);
+    //将[0, N)之间的偶数保存在nums中
+    int N = 1000;
+    vector<int> nums;
+    for( int i = 0 ; i < N ; i += 2)
+        nums.push_back(i);
 
-    // 对[0...20]区间里的21个数, 调用二分搜索树的floor和ceil, 查看其结果
-    for( int i = 0 ; i <= 20 ; i ++ ){
+    // 将nums乱序处理
+    shuffle(nums);
+
+    // 向二分搜索树中插入[0, N)之间的所有偶数
+    for(int i = 0 ; i < nums.size() ; i ++ )
+        bst.insert(nums[i], nums[i]);
+
+    // 对[0...N)区间里的N个数, 调用二分搜索树的floor和ceil, 查看其结果
+    for( int i = 0 ; i < N ; i ++ ){
 
         int* floorKey = bst.floor(i);
+        if(i % 2 == 0)
+            i < N ? assert(*floorKey == i) : assert(floorKey == NULL);
+        else
+            i-1 >= 0 ? assert(*floorKey == i-1) : assert(floorKey == NULL);
+
         cout<<"the floor of "<<i<<" is ";
         if( floorKey == NULL )
             cout<<"NULL"<<endl;
         else
             cout<<*floorKey<<endl;
 
+
         int* ceilKey = bst.ceil(i);
+        if(i % 2 == 0)
+            i < N ? assert(*ceilKey == i) : assert(ceilKey == NULL);
+        else
+            i + 1 < N ? assert(*ceilKey == i+1) : assert(ceilKey == NULL);
         cout<<"the ceil of "<<i<<" is ";
         if( ceilKey == NULL )
             cout<<"NULL"<<endl;
