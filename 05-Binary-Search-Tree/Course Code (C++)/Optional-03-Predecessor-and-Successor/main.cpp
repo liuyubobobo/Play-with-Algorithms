@@ -495,7 +495,8 @@ void shuffle( int arr[], int n ){
     }
 }
 
-// 测试二分搜索树中的floor和ceil两个函数
+
+// 测试二分搜索树中的predecessor和successor两个函数
 int main(){
 
     // 生成 0 到 N-1 一共 N 个数字的数组
