@@ -417,6 +417,8 @@ int main(){
     vector<int> nums;
     for( int i = 0 ; i < N ; i += 2)
         nums.push_back(i);
+    int minNum = nums[0];
+    int maxNum = nums[nums.size()-1];
 
     // 将nums乱序处理
     shuffle(nums);
@@ -425,14 +427,21 @@ int main(){
     for(int i = 0 ; i < nums.size() ; i ++ )
         bst.insert(nums[i], nums[i]);
 
-    // 对[0...N)区间里的N个数, 调用二分搜索树的floor和ceil, 查看其结果
-    for( int i = 0 ; i < N ; i ++ ){
+    // 对[0...N]区间里的N+1个数, 调用二分搜索树的floor和ceil, 查看其结果
+    for( int i = 0 ; i <= N ; i ++ ){
 
+        // 测试floor
         int* floorKey = bst.floor(i);
-        if(i % 2 == 0)
-            i < N ? assert(*floorKey == i) : assert(floorKey == NULL);
-        else
-            i-1 >= 0 ? assert(*floorKey == i-1) : assert(floorKey == NULL);
+        if(i % 2 == 0){
+            if(i >= 0 && i < N) assert(*floorKey == i);
+            else if(i < 0)      assert(floorKey == NULL);
+            else                assert(*floorKey == maxNum);
+        }
+        else {
+            if(i - 1 >= 0 && i - 1 < N) assert(*floorKey == i - 1);
+            else if(i - 1 < 0)          assert(floorKey == NULL);
+            else                        assert(*floorKey == maxNum);
+        }
 
         cout<<"the floor of "<<i<<" is ";
         if( floorKey == NULL )
@@ -441,16 +450,25 @@ int main(){
             cout<<*floorKey<<endl;
 
 
+        // 测试ceil
         int* ceilKey = bst.ceil(i);
-        if(i % 2 == 0)
-            i < N ? assert(*ceilKey == i) : assert(ceilKey == NULL);
-        else
-            i + 1 < N ? assert(*ceilKey == i+1) : assert(ceilKey == NULL);
+        if(i % 2 == 0) {
+            if(i >= 0 && i < N) assert(*ceilKey == i);
+            else if(i < 0)      assert(*ceilKey == minNum);
+            else                assert(ceilKey == NULL);
+        }
+        else {
+            if(i + 1 >= 0 && i + 1 < N) assert(*ceilKey == i + 1);
+            else if(i + 1 < 0)          assert(*ceilKey == minNum);
+            else                        assert(ceilKey == NULL);
+        }
+
         cout<<"the ceil of "<<i<<" is ";
         if( ceilKey == NULL )
             cout<<"NULL"<<endl;
         else
             cout<<*ceilKey<<endl;
+
 
         cout<<endl;
     }
