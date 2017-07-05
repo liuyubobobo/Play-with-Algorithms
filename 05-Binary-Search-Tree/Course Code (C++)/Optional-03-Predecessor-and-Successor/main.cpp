@@ -514,7 +514,7 @@ int main(){
         bst.insert(i, i);
 
     // 测试前驱算法, 除了数字0没有前驱, 每个数字x的前驱应该为x-1
-    for(int i = 0 ; i < N ; i ++)
+    for(int i = 0 ; i < N ; i ++){
         if( i == 0 ){
             assert(bst.predecessor(i) == NULL);
             cout << "The predesessor of 0 is NULL" << endl;
@@ -523,11 +523,12 @@ int main(){
             assert(*bst.predecessor(i) == i-1);
             cout << "The predesessor of " << i << " is " << i-1 << endl;
         }
+    }
 
     cout<<endl;
 
     // 测试后继算法, 除了数字没有N-1后继, 每个数字x的后继应该为x+1
-    for(int i = 0 ; i < N ; i ++)
+    for(int i = 0 ; i < N ; i ++){
         if( i == N-1 ){
             assert(bst.successor(i) == NULL);
             cout << "The successor of " << i << " is NULL" << endl;
@@ -536,6 +537,7 @@ int main(){
             assert(*bst.successor(i) == i+1);
             cout << "The successor of " << i << " is " << i+1 << endl;
         }
+    }
 
     return 0;
 }
