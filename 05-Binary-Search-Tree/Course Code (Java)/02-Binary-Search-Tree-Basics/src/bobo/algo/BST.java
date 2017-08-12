@@ -18,7 +18,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     private Node root;  // 根节点
-    private int count;  // 树种的节点个数
+    private int count;  // 树中的节点个数
 
     // 构造函数, 默认构造一棵空二分搜索树
     public BST() {
