@@ -10,6 +10,8 @@
 
 **知乎**: [刘宇波 http://www.zhihu.com/people/liuyubobobo](http://www.zhihu.com/people/liuyubobobo)
 
+**知乎专栏：**[是不是很酷 https://zhuanlan.zhihu.com/liuyubobobo](https://zhuanlan.zhihu.com/liuyubobobo)
+
 **个人公众号：是不是很酷**：）
 
 ![QRCode](qrcode.jpg)
