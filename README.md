@@ -10,6 +10,10 @@
 
 **知乎**: [刘宇波 http://www.zhihu.com/people/liuyubobobo](http://www.zhihu.com/people/liuyubobobo)
 
+**个人公众号：是不是很酷**：）
+
+![QRCode](qrcode.jpg)
+
 
 ## 本代码仓包括
 
