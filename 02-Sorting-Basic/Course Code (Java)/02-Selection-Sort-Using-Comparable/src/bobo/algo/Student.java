@@ -22,9 +22,9 @@ public class Student implements Comparable<Student> {
             return this.name.compareTo(that.name);
 
         if( this.score < that.score )
-            return 1;
-        else if( this.score > that.score )
             return -1;
+        else if( this.score > that.score )
+            return 1;
         else // this.score == that.score
             return 0;
     }
