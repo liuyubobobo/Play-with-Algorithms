@@ -81,7 +81,8 @@ public class SortTestHelper {
             sortMethod.invoke(null,params);
             long endTime = System.currentTimeMillis();
 
-            assert isSorted( arr );
+            if(!isSorted( arr ))
+                throw new IllegalArgumentException("Sort failed");
 
             System.out.println( sortClass.getSimpleName()+ " : " + (endTime-startTime) + "ms" );
         }
