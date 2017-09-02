@@ -10,23 +10,22 @@
 
 using namespace std;
 
-
 template<typename T>
 void bubbleSort( T arr[] , int n){
 
-    bool swapped;
+    int newn; // 使用newn进行优化
 
     do{
-        swapped = false;
+        newn = 0;
         for( int i = 1 ; i < n ; i ++ )
             if( arr[i-1] > arr[i] ){
                 swap( arr[i-1] , arr[i] );
-                swapped = true;
+
+                // 记录最后一次的交换位置,在此之后的元素在下一轮扫描中均不考虑
+                newn = i;
             }
-
-        n --;
-
-    }while(swapped);
+        n = newn;
+    }while(newn > 0);
 }
 
 #endif //OPTIONAL_02_SHELL_SORT_BUBBLESORT_H

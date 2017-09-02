@@ -43,7 +43,7 @@ void bubbleSort2( T arr[] , int n){
                 swap( arr[i-1] , arr[i] );
 
                 // 记录最后一次的交换位置,在此之后的元素在下一轮扫描中均不考虑
-                //newn = ;
+                newn = i;
             }
         n = newn;
     }while(newn > 0);
