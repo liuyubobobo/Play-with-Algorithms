@@ -23,8 +23,6 @@ public class InsertionSort{
     // 对arr[l...r]的区间使用InsertionSort排序
     public static void sort(Comparable[] arr, int l, int r){
 
-        assert l >= 0 && l <= r && r < arr.length;
-
         for( int i = l + 1 ; i <= r ; i ++ ){
             Comparable e = arr[i];
             int j = i;
