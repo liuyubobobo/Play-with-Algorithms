@@ -70,7 +70,7 @@ public class Selection {
 
         // 验证selection算法, 对arr数组求第i小元素, 应该为i
         for( int i = 0 ; i < N ; i ++ ){
-            assert solve(arr, N, i) == i;
+            assert new Integer(i).equals(solve(arr, N, i));
             System.out.println("test " + i + " complete.");
         }
 
