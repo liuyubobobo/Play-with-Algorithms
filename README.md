@@ -104,6 +104,8 @@
 | 补充10 多叉堆 | [整理中] | [敬请期待] |
 | 补充11 斐波那契额堆 | [整理中] | [敬请期待] |
 | 补充12 索引排序 | [整理中] | [敬请期待] |
+| 补充13 添加索引，不稳定排序转换成稳定排序 | [整理中] | [敬请期待] |
+| 补充14 基于事件堆的例子碰撞检测 (Java)| [整理中] | [敬请期待] |
 | **第五章 二分搜索树** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)) |
 | 5-1 二分查找法（Binary Search）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/01-Binary-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/01-Binary-Search/src/bobo/algo) |
 | 5-2 二分搜索树基础（Binary Search Tree）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/02-Binary-Search-Tree-Basics) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/02-Binary-Search-Tree-Basics/src/bobo/algo) |
@@ -119,26 +121,34 @@
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Chapter-05-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Chapter-05-Completed-Code/src/bobo/algo) |
 | 补充1 二分查找法改变变量定义，论如何写出正确算法 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第三章1，2小节](http://coding.imooc.com/lesson/82.html#mid=2656) |
 | 补充2 二分搜索法的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-01-More-About-Binary-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-01-More-About-Binary-Search/src/bobo/algo) |
-| 补充3 二分搜索树中的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-02-Floor-and-Ceil) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-02-Floor-and-Ceil/src/bobo/algo) |
-| 补充4 二分搜索树中的前驱和后继 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-03-Predecessor-and-Successor) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-03-Predecessor-and-Successor/src/bobo/algo) |
-| 补充5 二分搜索树中的rank和select | [整理中] | [敬请期待] |
-| 补充6 二分搜索树前中后序非递归遍历<br/>深入理解非递归和递归的区别，以及非递归和栈的关系 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第六章2，3小节](http://coding.imooc.com/lesson/82.html#mid=2675) |
-| 补充7 二分搜索树整体的非递归实现 | [整理中] | [敬请期待] |
-| 补充8 二分搜索树的另一个应用：Set | [整理中] | [敬请期待] |
-| 补充9 允许重复键值的二分搜索树 | [整理中] | [敬请期待] |
-| 补充10 拥有指向父节点指针Node的二分搜索树 | [整理中] | [敬请期待] |
-| 补充11 更多二分搜索树相关的面试问题 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第七章](http://coding.imooc.com/lesson/82.html#mid=2681) |
-| 补充12 树形问题和回溯法 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第八章](http://coding.imooc.com/lesson/82.html#mid=2687) |
-| 补充13 树形问题之八皇后问题 | [玩转算法面试](http://coding.imooc.com/class/82.html#Anchor) | [第八章第8小节](http://coding.imooc.com/lesson/82.html#mid=2695) |
-| 补充14 树形问题之数独求解 | [整理中] | [敬请期待] |
+| 补充3 二分搜索法的lower_bound和upper_bound | [整理中] | [敬请期待] |
+| 补充4 二分搜索树中的floor和ceil | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-02-Floor-and-Ceil) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-02-Floor-and-Ceil/src/bobo/algo) |
+| 补充5 二分搜索树中的前驱和后继 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-03-Predecessor-and-Successor) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-03-Predecessor-and-Successor/src/bobo/algo) |
+| 补充6 二分搜索树中的rank和select | [整理中] | [敬请期待] |
+| 补充7 二分搜索树前中后序非递归遍历<br/>深入理解非递归和递归的区别，以及非递归和栈的关系 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第六章2，3小节](http://coding.imooc.com/lesson/82.html#mid=2675) |
+| 补充8 二分搜索树整体的非递归实现 | [整理中] | [敬请期待] |
+| 补充9 二分搜索树的另一个应用：Set | [整理中] | [敬请期待] |
+| 补充10 允许重复键值的二分搜索树 | [整理中] | [敬请期待] |
+| 补充11 拥有指向父节点指针Node的二分搜索树 | [整理中] | [敬请期待] |
+| 补充12 更多二分搜索树相关的面试问题 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第七章](http://coding.imooc.com/lesson/82.html#mid=2681) |
+| 补充13 树形问题和回溯法 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第八章](http://coding.imooc.com/lesson/82.html#mid=2687) |
+| 补充14 树形问题之八皇后问题 | [玩转算法面试](http://coding.imooc.com/class/82.html#Anchor) | [第八章第8小节](http://coding.imooc.com/lesson/82.html#mid=2695) |
 | 补充15 走迷宫 (Java) | [看得见的算法](http://coding.imooc.com/class/138.html) | [第五章](http://coding.imooc.com/lesson/138.html#mid=7064) |
 | 补充16 树形问题之 Move the Box 求解 (Java) | [看得见的算法](http://coding.imooc.com/class/138.html) | [第八章](http://coding.imooc.com/lesson/138.html#mid=7440) |
 | 补充17 Trie | [整理中] | [敬请期待] |
-| 补充18 红黑树 | [整理中] | [敬请期待] |
-| 补充19 区间树 | [整理中] | [敬请期待] |
-| 补充20 KD树 | [整理中] | [敬请期待] |
-| 补充21 哈夫曼树 | [整理中] | [敬请期待] |
-| 补充22 树形问题之推箱子自动求解 | [整理中] | [敬请期待] |
+| 补充18 区间树 | [整理中] | [敬请期待] |
+| 补充19 KD树 | [整理中] | [敬请期待] |
+| 补充20 哈夫曼树 | [整理中] | [敬请期待] |
+| 补充21 使用哈夫曼树进行文件压缩 (Java) | [整理中] | [敬请期待] |
+| 补充22 红黑树 | [整理中] | [敬请期待] |
+| 补充23 AVL | [整理中] | [敬请期待] |
+| 补充24 Treap | [整理 中] | [敬请期待] |
+| 补充25 伸展树 | [整理中] | [敬请期待] |
+| 补充26 B树 | [整理中] | [敬请期待] |
+| 补充27 树形问题之数独求解 | [整理中] | [敬请期待] |
+| 补充28 数独求解之特殊数据结构 | [整理中] | [敬请期待] |
+| 补充29 树形问题之推箱子自动求解 | [整理中] | [敬请期待] |
+| 补充30 树形问题之八数码问题 (A*算法初步) | [整理中] | [敬请期待] |
 | **第六章 并查集** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)) |
 | 6-1 并查集基础（Union Find）| [无代码] |  |
 | 6-2 Quick Find | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(C%2B%2B)/02-Quick-Find) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/06-Union-Find/Course%20Code%20(Java)/02-Quick-Find/src/bobo/algo) |
@@ -171,6 +181,7 @@
 | 补充10 墙为线条的迷宫生成 | [整理中] | [敬请期待] |
 | 补充11 六边形的迷宫生成 | [整理中] | [敬请期待] |
 | 补充12 TSP问题 | [整理中] | [敬请期待] |
+| 补充13 TSP问题之遗传算法初步 | [整理中] | [敬请期待] |
 | **第八章 最小生成树** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)) |
 | 8-1 有权图 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(C%2B%2B)/01-Weighted-Graph) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/08-Minimum-Span-Trees/Course%20Code%20(Java)/01-Weighted-Graph) |
 | 8-2 最小生成树问题和切分定理 | [无代码] | |
