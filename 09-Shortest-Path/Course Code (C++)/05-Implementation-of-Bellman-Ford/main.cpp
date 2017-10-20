@@ -17,11 +17,16 @@ int main() {
     ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
 
     cout<<"Test Bellman-Ford:"<<endl<<endl;
-    BellmanFord<SparseGraph<int>, int> bellmanFord(g,0);
+
+    int s = 0;
+    BellmanFord<SparseGraph<int>, int> bellmanFord(g, s);
     if( bellmanFord.negativeCycle() )
         cout<<"The graph contain negative cycle!"<<endl;
     else
-        for( int i = 1 ; i < V ; i ++ ) {
+        for( int i = 0 ; i < V ; i ++ ) {
+            if(i == s)
+                continue;
+
             if (bellmanFord.hasPathTo(i)) {
                 cout << "Shortest Path to " << i << " : " << bellmanFord.shortestPathTo(i) << endl;
                 bellmanFord.showPath(i);

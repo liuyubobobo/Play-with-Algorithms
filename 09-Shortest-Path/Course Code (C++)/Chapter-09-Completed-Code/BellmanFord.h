@@ -48,7 +48,7 @@ public:
 
         // 设置distTo[s] = 0, 并且让from[s]不为NULL, 表示初始s节点可达且距离为0
         distTo[s] = Weight();
-        from[s] = new Edge<Weight>(s, s, 0); // 这里我们from[s]的内容是new出来的, 注意要在析构函数里delete掉
+        from[s] = new Edge<Weight>(s, s, Weight()); // 这里我们from[s]的内容是new出来的, 注意要在析构函数里delete掉
 
         // Bellman-Ford的过程
         // 进行V-1次循环, 每一次循环求出从起点到其余所有点, 最多使用pass步可到达的最短距离

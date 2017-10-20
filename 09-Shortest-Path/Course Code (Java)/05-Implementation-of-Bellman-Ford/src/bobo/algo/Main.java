@@ -13,11 +13,16 @@ public class Main {
         ReadWeightedGraph readGraph = new ReadWeightedGraph(g, filename);
 
         System.out.println("Test Bellman-Ford:\n");
-        BellmanFord<Integer> bellmanFord = new BellmanFord<Integer>(g,0);
+
+        int s = 0;
+        BellmanFord<Integer> bellmanFord = new BellmanFord<Integer>(g, s);
         if( bellmanFord.negativeCycle() )
             System.out.println("The graph contain negative cycle!");
         else
-            for( int i = 1 ; i < V ; i ++ ){
+            for( int i = 0 ; i < V ; i ++ ){
+                if(i == s)
+                    continue;
+
                 if(bellmanFord.hasPathTo(i)) {
                     System.out.println("Shortest Path to " + i + " : " + bellmanFord.shortestPathTo(i));
                     bellmanFord.showPath(i);
