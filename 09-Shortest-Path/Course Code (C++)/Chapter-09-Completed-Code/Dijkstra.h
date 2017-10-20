@@ -45,7 +45,7 @@ public:
 
         // 对于其实点s进行初始化
         distTo[s] = Weight();
-        from[s] = new Edge<Weight>(s, s, 0);
+        from[s] = new Edge<Weight>(s, s, Weight());
         ipq.insert(s, distTo[s] );
         marked[s] = true;
         while( !ipq.isEmpty() ){
