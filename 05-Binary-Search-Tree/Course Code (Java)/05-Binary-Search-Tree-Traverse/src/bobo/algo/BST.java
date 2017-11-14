@@ -184,7 +184,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         for(int i = 0 ; i < 2*N ; i ++){
             String res = bst.search(new Integer(i));
             if( i < N )
-                assert res == Integer.toString(i);
+                assert res.equals(Integer.toString(i));
             else
                 assert res == null;
         }
