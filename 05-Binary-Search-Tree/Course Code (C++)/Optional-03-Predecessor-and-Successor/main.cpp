@@ -440,7 +440,6 @@ private:
         if(node->key == key)
             return NULL;
 
-        Node* maxNode;
         if(key < node->key)
             // 如果当前节点大于key, 则当前节点不可能是比key小的最大值
             // 向下搜索到的结果直接返回
@@ -448,13 +447,12 @@ private:
         else{
             assert(key > node->key);
             // 如果当前节点小于key, 则当前节点有可能是比key小的最大值
-            // 向下搜索结果存储到maxNode中
-            maxNode = predecessorFromAncestor(node->right, key);
-            if(maxNode)
-                // maxNode和当前节点node取最大值返回
-                return maxNode->key > node->key ? maxNode : node;
+            // 向右继续搜索, 将结果存储到tempNode中
+            Node* tempNode = predecessorFromAncestor(node->right, key);
+            if(tempNode)
+                return tempNode;
             else
-                // 如果maxNode为空, 则当前节点即为结果
+                // 如果tempNode为空, 则当前节点即为结果
                 return node;
         }
     }
@@ -466,7 +464,6 @@ private:
         if(node->key == key)
             return NULL;
 
-        Node* minNode;
         if(key > node->key)
             // 如果当前节点小于key, 则当前节点不可能是比key大的最小值
             // 向下搜索到的结果直接返回
@@ -474,17 +471,17 @@ private:
         else{
             assert(key < node->key);
             // 如果当前节点大于key, 则当前节点有可能是比key大的最小值
-            // 向下搜索结果存储到minNode中
-            minNode = predecessorFromAncestor(node->left, key);
-            if(minNode)
-                // minNode和当前节点node取最小值返回
-                return minNode->key < node->key ? minNode : node;
+            // 向左继续搜索, 将结果存储到tempNode中
+            Node* tempNode = predecessorFromAncestor(node->left, key);
+            if(tempNode)
+                return tempNode;
             else
-                // 如果minNode为空, 则当前节点即为结果
+                // 如果tempNode为空, 则当前节点即为结果
                 return node;
         }
     }
 };
+
 
 void shuffle( int arr[], int n ){
 
