@@ -1,49 +1,38 @@
 #include <iostream>
 #include <cassert>
+#include <cstdlib>
+#include <ctime>
+#include "BinarySearch.h"
+#include "LinearSearch.h"
 
 using namespace std;
 
-// 二分查找法, 实现lower_bound
-// 即在一个有序数组arr中, 寻找大于等于target的元素的第一个索引
-// 如果存在, 则返回相应的索引index
-// 否则, 返回arr的元素个数 n
-template<typename T>
-int lower_bound(T arr[], int n, T target){
+int* generateRandomOrderedArray(int n, int rangeL, int rangeR){
 
-    assert(n >= 0);
+    int* arr = new int[n];
 
-    int l = 0, r = n;
-    while(l != r){
-        int mid = l + (r - l) / 2;
-        if(arr[mid] < target)
-            l = mid + 1;
-        else    // nums[mid] >= target
-            r = mid;
-    }
-    return l;
-}
-
-// 二分查找法, 实现upper_bound
-// 即在一个有序数组arr中, 寻找大于target的元素的第一个索引
-// 如果存在, 则返回相应的索引index
-// 否则, 返回arr的元素个数 n
-template<typename T>
-int upper_bound(T arr[], int n, T target){
-
-    assert(n >= 0);
-
-    int l = 0, r = n;
-    while(l != r){
-        int mid = l + (r - l) / 2;
-        if(arr[mid] <= target)
-            l = mid + 1;
-        else    // nums[mid] > target
-            r = mid;
-    }
-    return l;
+    srand(time(NULL));
+    for(int i = 0 ; i < n ; i ++)
+        arr[i] = rand() % (rangeR - rangeL + 1) + rangeL;
+    sort(arr, arr + n);
+    return arr;
 }
 
 int main() {
-    
+
+    int n = 1000;
+    int m = 100;
+    int* arr = generateRandomOrderedArray(n, 0, m);
+
+    /// 我们使用简单的线性查找法来验证我们写的二分查找法
+    for(int i = -1 ; i <= m + 1 ; i ++) {
+        assert(BinarySearch::lower_bound(arr, n, i) ==
+               LinearSearch::lower_bound(arr, n, i));
+        assert(BinarySearch::upper_bound(arr, n, i) ==
+               LinearSearch::upper_bound(arr, n, i));
+    }
+
+    cout << "test completed:)" << endl;
+
     return 0;
 }
