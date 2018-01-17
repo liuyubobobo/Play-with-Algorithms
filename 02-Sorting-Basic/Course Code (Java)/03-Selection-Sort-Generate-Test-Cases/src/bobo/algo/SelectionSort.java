@@ -7,7 +7,7 @@ public class SelectionSort {
     // 我们的算法类不允许产生任何实例
     private SelectionSort(){}
 
-    public static <T extends Comparable<T>> void sort(T[] arr){
+    public static void sort(Comparable[] arr){
 
         int n = arr.length;
         for( int i = 0 ; i < n ; i ++ ){
