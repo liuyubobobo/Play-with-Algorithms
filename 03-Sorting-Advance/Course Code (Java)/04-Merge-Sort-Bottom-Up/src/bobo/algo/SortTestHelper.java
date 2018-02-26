@@ -2,6 +2,7 @@ package bobo.algo;
 
 import java.lang.reflect.Method;
 import java.lang.Class;
+import java.security.InvalidAlgorithmParameterException;
 import java.util.Random;
 
 public class SortTestHelper {
@@ -82,6 +83,8 @@ public class SortTestHelper {
             long endTime = System.currentTimeMillis();
 
             assert isSorted( arr );
+            if(!isSorted(arr))
+                throw new InvalidAlgorithmParameterException("sort failed!");
 
             System.out.println( sortClass.getSimpleName()+ " : " + (endTime-startTime) + "ms" );
         }
