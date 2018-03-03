@@ -106,9 +106,13 @@ public:
         Item ret = data[indexes[1]];
         swap( indexes[1] , indexes[count] );
         reverse[indexes[count]] = 0;
-        reverse[indexes[1]] = 1;
         count--;
-        shiftDown(1);
+
+        if(count){
+            reverse[indexes[1]] = 1;
+            shiftDown(1);
+        }
+
         return ret;
     }
 
@@ -119,9 +123,13 @@ public:
         int ret = indexes[1] - 1;
         swap( indexes[1] , indexes[count] );
         reverse[indexes[count]] = 0;
-        reverse[indexes[1]] = 1;
         count--;
-        shiftDown(1);
+
+        if(count){
+            reverse[indexes[1]] = 1;
+            shiftDown(1);
+        }
+
         return ret;
     }
 
