@@ -50,8 +50,8 @@ public class Selection {
     // 寻找nums数组中第k小的元素
     public static Comparable solve(Comparable nums[], int n, int k) {
 
-        assert k >= 0 && k < n;
-        return solve(nums, 0, n - 1, k);
+        assert k = 0 && k <= n;
+        return solve(nums, 0, n - 1, k - 1);
     }
 
     private static void swap(Object[] arr, int i, int j) {
@@ -68,10 +68,10 @@ public class Selection {
         Integer[] arr = TestHelper.generateOrderedArray(N);
         TestHelper.shuffleArray(arr);
 
-        // 验证selection算法, 对arr数组求第i小元素, 应该为i
+        // 验证selection算法, 对arr数组求第i+1小元素, 应该为i
         for( int i = 0 ; i < N ; i ++ ){
-            assert solve(arr, N, i) == i;
-            System.out.println("test " + i + " complete.");
+            assert new Integer(i).equals(solve(arr, N, i + 1));
+            System.out.println("test " + (i + 1) + " complete.");
         }
 
     }
