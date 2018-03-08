@@ -43,15 +43,25 @@ public class Selection {
             return nums[p];
         else if( k < p )    // 如果 k < p, 只需要在nums[l...p-1]中找第k小元素即可
             return solve( nums, l, p-1, k);
-        else // 如果 k > p, 则需要在nums[p+1...r]中找第k小元素
+        else // 如果 k > p, 则需要在nums[p+1...r]中找第k-p-1小元素
+             // 注意: 由于我们传入__selection的依然是nums, 而不是nums[p+1...r],
+             //       所以传入的最后一个参数依然是k, 而不是k-p-1
             return solve( nums, p+1, r, k );
     }
 
     // 寻找nums数组中第k小的元素
-    public static Comparable solve(Comparable nums[], int n, int k) {
+    // 注意: 在我们的算法中, k是从0开始索引的, 即最小的元素是第0小元素, 以此类推
+    // 如果希望我们的算法中k的语意是从1开始的, 只需要在整个逻辑开始进行k--即可, 可以参考solve2
+    public static Comparable solve(Comparable nums[], int k) {
 
-        assert k >= 0 && k < n;
-        return solve(nums, 0, n - 1, k);
+        assert nums != null && k >= 0 && k < nums.length;
+        return solve(nums, 0, nums.length - 1, k);
+    }
+
+    // 寻找nums数组中第k小的元素, k从1开始索引, 即最小元素是第1小元素, 以此类推
+    public static Comparable solve2(Comparable nums[], int k) {
+
+        return Selection.solve(nums, k - 1);
     }
 
     private static void swap(Object[] arr, int i, int j) {
@@ -68,11 +78,25 @@ public class Selection {
         Integer[] arr = TestHelper.generateOrderedArray(N);
         TestHelper.shuffleArray(arr);
 
-        // 验证selection算法, 对arr数组求第i小元素, 应该为i
+        // 验证Selection.solve, 对arr数组求第i小元素, 应该为i
         for( int i = 0 ; i < N ; i ++ ){
-            assert solve(arr, N, i) == i;
+            assert solve(arr, i) == i;
             System.out.println("test " + i + " complete.");
         }
+        System.out.println("Test Selection.solve completed.");
+        System.out.println();
+
+
+        arr = TestHelper.generateOrderedArray(N);
+        TestHelper.shuffleArray(arr);
+
+        // 验证Selection.solve2, 对arr数组求第i小元素, 应该为i-1
+        // 因为在Selection.solve2中, 第k小元素的k是从1索引的
+        for( int i = 0 ; i < N ; i ++ ){
+            assert solve2(arr, i) == i - 1;
+            System.out.println("test " + i + " complete.");
+        }
+        System.out.println("Test Selection.solve2 completed.");
 
     }
 }

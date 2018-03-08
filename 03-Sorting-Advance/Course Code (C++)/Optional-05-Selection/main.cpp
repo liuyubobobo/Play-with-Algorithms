@@ -38,11 +38,15 @@ int __selection( T arr[], int l, int r, int k ){
         return arr[p];
     else if( k < p )    // 如果 k < p, 只需要在arr[l...p-1]中找第k小元素即可
         return __selection( arr, l, p-1, k);
-    else // 如果 k > p, 则需要在arr[p+1...r]中找第k小元素
+    else // 如果 k > p, 则需要在arr[p+1...r]中找第k-p-1小元素
+         // 注意: 由于我们传入__selection的依然是arr, 而不是arr[p+1...r],
+         //       所以传入的最后一个参数依然是k, 而不是k-p-1
         return __selection( arr, p+1, r, k );
 }
 
 // 寻找arr数组中第k小的元素
+// 注意: 在我们的算法中, k是从0开始索引的, 即最小的元素是第0小元素, 以此类推
+// 如果希望我们的算法中k的语意是从1开始的, 只需要在整个逻辑开始进行k--即可, 可以参考selection2
 template <typename T>
 int selection(T arr[], int n, int k) {
 
@@ -51,6 +55,14 @@ int selection(T arr[], int n, int k) {
     srand(time(NULL));
     return __selection(arr, 0, n - 1, k);
 }
+
+// 寻找arr数组中第k小的元素, k从1开始索引, 即最小元素是第1小元素, 以此类推
+template <typename T>
+int selection2(T arr[], int n, int k) {
+
+    return selection(arr, n, k - 1);
+}
+
 
 // 测试 selection算法
 int main() {
@@ -66,6 +78,21 @@ int main() {
         cout<<"test "<<i<<" complete."<<endl;
     }
     cout<<"Test selection completed."<<endl;
+
+    delete[] arr;
+
+    cout << endl;
+
+    // 验证selection2算法
+    arr = TestHelper::generateOrderedArray(n);
+    TestHelper::shuffleArray(arr, n);
+
+    // 对arr数组求第i小元素, 应该为i - 1 (在selection2中, 第k小元素的k是从1索引的)
+    for( int i = 1 ; i <= n ; i ++ ){
+        assert( selection2(arr, n, i) == i - 1 );
+        cout<<"test "<<i<<" complete."<<endl;
+    }
+    cout<<"Test selection2 completed."<<endl;
 
     delete[] arr;
 
