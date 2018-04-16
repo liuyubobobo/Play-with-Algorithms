@@ -119,7 +119,7 @@ public class BST<Key extends Comparable<Key>, Value> {
             int pos = (int) (Math.random() * (i+1));
             Integer t = arr[pos];
             arr[pos] = arr[i];
-            arr[i] = arr[pos];
+            arr[i] = t;
         }
         // 由于我们实现的二分搜索树不是平衡二叉树，
         // 所以如果按照顺序插入一组数据，我们的二分搜索树会退化成为一个链表
