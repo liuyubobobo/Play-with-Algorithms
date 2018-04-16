@@ -455,7 +455,7 @@ public class BST<Key extends Comparable<Key>, Value> {
             assert(key.compareTo(node.key) < 0);
             // 如果当前节点大于key, 则当前节点有可能是比key大的最小值
             // 向左继续搜索, 将结果存储到tempNode中
-            Node tempNode = predecessorFromAncestor(node.left, key);
+            Node tempNode = successorFromAncestor(node.left, key);
             if(tempNode != null)
                 return tempNode;
             else
@@ -480,7 +480,7 @@ public class BST<Key extends Comparable<Key>, Value> {
             int pos = (int) (Math.random() * (i+1));
             Integer t = arr[pos];
             arr[pos] = arr[i];
-            arr[i] = arr[pos];
+            arr[i] = t;
         }
         // 由于我们实现的二分搜索树不是平衡二叉树，
         // 所以如果按照顺序插入一组数据，我们的二分搜索树会退化成为一个链表
