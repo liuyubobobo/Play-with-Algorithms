@@ -99,11 +99,11 @@
 | 补充1 优化的Shift Up和Shift Down | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Optional-1-Optimized-Shift-Up-and-Shift-Down) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Optional-1-Optimized-Shift-Up-and-Shift-Down/src/bobo/algo) |
 | 补充2 最小堆 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Optional-2-Min-Heap) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Optional-2-Min-Heap/src/bobo/algo) |
 | 补充3 最小索引堆 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(C%2B%2B)/Optional-3-Index-Min-Heap) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/04-Heap/Course%20Code%20(Java)/Optional-3-Index-Min-Heap/src/bobo/algo) |
-| 补充4 从0开始索引的最大堆和最小堆 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章] |
+| 补充4 从0开始索引的最大堆和最小堆 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章](https://coding.imooc.com/lesson/207.html#mid=13738) |
 | 补充5 从0开始索引的最大索引堆和最小索引堆 | [整理中] | [敬请期待] |
 | 补充6 堆排序可视化 (Java) | [看得见的算法](http://coding.imooc.com/class/138.html) | [第四章第11小节](http://coding.imooc.com/lesson/138.html#mid=7092) |
-| 补充7 可以空间动态扩展的堆结构<br/>思路参见《[玩转算法面试](http://coding.imooc.com/class/82.html)》第二章最后两小节 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章] |
-| 补充8 N个元素中的前M大(或小)元素 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章 8-7, 8-8] |
+| 补充7 可以空间动态扩展的堆结构 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章](https://coding.imooc.com/lesson/207.html#mid=13738) |
+| 补充8 N个元素中的前M大(或小)元素 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章 7，8小节](https://coding.imooc.com/lesson/207.html#mid=13744) |
 | 补充9 双向优先队列 | [整理中] | [敬请期待] |
 | 补充10 多叉堆 | [整理中] | [敬请期待] |
 | 补充11 斐波那契额堆 | [整理中] | [敬请期待] |
@@ -141,8 +141,8 @@
 | 补充16 树形问题之八皇后问题 | [玩转算法面试](http://coding.imooc.com/class/82.html#Anchor) | [第八章第8小节](http://coding.imooc.com/lesson/82.html#mid=2695) |
 | 补充17 走迷宫 (Java) | [看得见的算法](http://coding.imooc.com/class/138.html) | [第五章](http://coding.imooc.com/lesson/138.html#mid=7064) |
 | 补充18 树形问题之 Move the Box 求解 (Java) | [看得见的算法](http://coding.imooc.com/class/138.html) | [第八章](http://coding.imooc.com/lesson/138.html#mid=7440) |
-| 补充19 Trie | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十章] |
-| 补充20 区间树(线段树) | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第九章] |
+| 补充19 线段树 (区间树) | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第九章] |
+| 补充20 Trie | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十章] |
 | 补充21 KD树 | [整理中] | [敬请期待] |
 | 补充22 哈夫曼树 | [整理中] | [敬请期待] |
 | 补充23 使用哈夫曼树进行文件压缩 | [整理中] | [敬请期待] |
