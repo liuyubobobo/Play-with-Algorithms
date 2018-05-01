@@ -1,6 +1,7 @@
 package bobo.algo;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 // 二分搜索树
 // 由于Key需要能够进行比较，所以需要extends Comparable<Key>
@@ -72,7 +73,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     public void levelOrder(){
 
         // 我们使用LinkedList来作为我们的队列
-        LinkedList<Node> q = new LinkedList<Node>();
+        Queue<Node> q = new LinkedList<Node>();
         q.add(root);
         while( !q.isEmpty() ){
 
