@@ -3,6 +3,7 @@ package bobo.algo;
 import java.util.Vector;
 import java.util.Stack;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class ShortestPath {
 
@@ -31,16 +32,16 @@ public class ShortestPath {
         this.s = s;
 
         // 无向图最短路径算法, 从s开始广度优先遍历整张图
-        LinkedList<Integer> q = new LinkedList<Integer>();
+        Queue<Integer> q = new LinkedList<Integer>();
 
-        q.push( s );
+        q.add(s);
         visited[s] = true;
         ord[s] = 0;
         while( !q.isEmpty() ){
-            int v = q.pop();
+            int v = q.remove();
             for( int i : G.adj(v) )
                 if( !visited[i] ){
-                    q.push(i);
+                    q.add(i);
                     visited[i] = true;
                     from[i] = v;
                     ord[i] = ord[v] + 1;
