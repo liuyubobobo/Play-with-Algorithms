@@ -43,6 +43,20 @@
     
 * **v 1.0** 全套课程上线
 
+## 课程相关其他代码仓
+
+* [**《玩转算法面试》课程**](https://coding.imooc.com/class/82.html), 代码仓: [Play-with-Algorithm-Interview](https://github.com/liuyubobobo/Play-with-Algorithm-Interview)
+
+* [**《看得见的算法》课程**](https://coding.imooc.com/class/138.html), 代码仓: [Play-with-Algorithm-Visualization](https://github.com/liuyubobobo/Play-with-Algorithm-Visualization)
+
+* [**《玩转数据结构》课程**](https://coding.imooc.com/class/207.html), 代码仓: [Play-with-Algorithm-Visualization](https://github.com/liuyubobobo/Play-with-Data-Structures)
+
+* 我的**LeetCode题解代码仓**：[Play Leetcode](https://github.com/liuyubobobo/Play-Leetcode) （注：以C++实现为主）
+
+* [@ShiveryMoon 同学的本课程Python代码仓](https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition)
+
+* [@摘星fy 同学的Canvas版本可视化堆排序过程](https://github.com/kingAnyWHere/MaxHeap)，同时也是一个很好的堆结构的可视化。
+
 ## 课程源码目录 
 
 | **第一章 当我们谈论算法的时候，我们在谈论什么？** | [无代码] | | 
@@ -221,4 +235,6 @@
 
 ---
 
-由于慕课网规定，课程不再提供PPT下载，请谅解。
+由于慕课网规定，课程不再提供PPT下载，仅提供ppt转pdf水印版，请谅解。具体文件在各章文件夹下。
+
+**大家加油！：）**
