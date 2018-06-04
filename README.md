@@ -145,8 +145,8 @@
 | 补充6 二分搜索树中的前驱和后继 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-06-Predecessor-and-Successor-in-BST/) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-06-Predecessor-and-Successor-in-BST/src/bobo/algo/) |
 | 补充7 二分搜索树中的rank和select | [整理中] | [敬请期待] |
 | 补充8 二分搜索树前中后序非递归遍历<br/>深入理解非递归和递归的区别，以及非递归和栈的关系 | [玩转算法面试](http://coding.imooc.com/class/82.html) | [第六章2，3小节](http://coding.imooc.com/lesson/82.html#mid=2675) |
-| 补充9 二叉树前中后续遍历的经典非递归实现 | [整理中] | [敬请期待] |
-| 补充10 二叉树的Morris前中后续遍历 | [整理中] | [敬请期待] |
+| 补充9 二叉树前中后序遍历的经典非递归实现 | [C++](05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-09-Binary-Tree-Classic-Nonrecursive-Traversal/) | [Java](05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-09-Binary-Tree-Classic-Nonrecursive-Traversal/) |
+| 补充10 二叉树的Morris前中后序遍历 | [C++](05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/Optional-10-Binary-Tree-Morris-Traversal/) | [Java](05-Binary-Search-Tree/Course%20Code%20(Java)/Optional-10-Binary-Tree-Morris-Traversal/src/) |
 | 补充11 二分搜索树整体的非递归实现 | [整理中] | [敬请期待] |
 | 补充12 二分搜索树的另一个应用：Tree Set | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第六章，第七章](https://coding.imooc.com/lesson/207.html#mid=13454) |
 | 补充13 允许重复键值的二分搜索树：Multi Tree Set / Map | [整理中] | [敬请期待] |
