@@ -36,23 +36,23 @@ public:
         TreeNode* cur = root;
 
         while(cur != NULL || !stack.empty()){
-            if(cur != NULL){
+
+            while(cur != NULL){
                 stack.push(cur);
                 cur = cur->left;
             }
-            else{
-                cur = stack.top();
-                stack.pop();
 
-                if(cur->right == NULL || pre == cur->right){
-                    res.push_back(cur->val);
-                    pre = cur;
-                    cur = NULL;
-                }
-                else{
-                    stack.push(cur);
-                    cur = cur->right;
-                }
+            cur = stack.top();
+            stack.pop();
+
+            if(cur->right == NULL || pre == cur->right){
+                res.push_back(cur->val);
+                pre = cur;
+                cur = NULL;
+            }
+            else{
+                stack.push(cur);
+                cur = cur->right;
             }
         }
 

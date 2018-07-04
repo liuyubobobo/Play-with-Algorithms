@@ -17,8 +17,8 @@ struct TreeNode {
 };
 
 
-// Non-Recursive
-// Using a pre pointer to record the last visited node
+// Classic Non-Recursive
+// Using a pre pointer to record the last visted node
 //
 // Time Complexity: O(n)
 // Space Complexity: O(h)
@@ -33,25 +33,26 @@ public:
 
         stack<TreeNode*> stack;
         TreeNode* pre = NULL;
+        TreeNode* cur = root;
 
-        stack.push(root);
-        while(!stack.empty()){
-
-            TreeNode* node = stack.top();
-            stack.pop();
-            if((node->left == NULL && node->right == NULL) ||
-               (pre != NULL && pre == node->left && node->right == NULL) ||
-               (pre != NULL && pre == node->right)){
-                res.push_back(node->val);
-                pre = node;
+        while(cur != NULL || !stack.empty()){
+            if(cur != NULL){
+                stack.push(cur);
+                cur = cur->left;
             }
             else{
-                stack.push(node);
+                cur = stack.top();
+                stack.pop();
 
-                if(node->right != NULL)
-                    stack.push(node->right);
-                if(node->left != NULL)
-                    stack.push(node->left);
+                if(cur->right == NULL || pre == cur->right){
+                    res.push_back(cur->val);
+                    pre = cur;
+                    cur = NULL;
+                }
+                else{
+                    stack.push(cur);
+                    cur = cur->right;
+                }
             }
         }
 

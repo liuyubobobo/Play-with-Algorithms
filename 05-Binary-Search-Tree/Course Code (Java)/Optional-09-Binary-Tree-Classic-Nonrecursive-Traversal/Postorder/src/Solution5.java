@@ -25,21 +25,20 @@ public class Solution5 {
 
         while(cur != null || !stack.empty()){
 
-            if(cur != null){
+            while(cur != null){
                 stack.push(cur);
                 cur = cur.left;
             }
+
+            cur = stack.pop();
+            if(cur.right == null || pre == cur.right){
+                res.add(cur.val);
+                pre = cur;
+                cur = null;
+            }
             else{
-                cur = stack.pop();
-                if(cur.right == null || pre == cur.right){
-                    res.add(cur.val);
-                    pre = cur;
-                    cur = null;
-                }
-                else{
-                    stack.push(cur);
-                    cur = cur.right;
-                }
+                stack.push(cur);
+                cur = cur.right;
             }
         }
         return res;

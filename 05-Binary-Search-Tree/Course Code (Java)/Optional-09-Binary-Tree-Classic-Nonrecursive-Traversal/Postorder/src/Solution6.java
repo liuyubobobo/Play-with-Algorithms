@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-// Non-Recursive
+// Classic Non-Recursive
 // Using a pre pointer to record the last visted node
 //
 // Time Complexity: O(n)
 // Space Complexity: O(h)
-public class Solution4 {
+public class Solution6 {
 
     public List<Integer> postorderTraversal(TreeNode root) {
 
@@ -21,23 +21,25 @@ public class Solution4 {
 
         Stack<TreeNode> stack = new Stack<>();
         TreeNode pre = null;
+        TreeNode cur = root;
 
-        stack.push(root);
-        while(!stack.empty()){
+        while(cur != null || !stack.empty()){
 
-            TreeNode cur = stack.pop();
-            if((cur.left == null && cur.right == null) ||
-                    (pre != null && pre == cur.left && cur.right == null) ||
-                    (pre != null && pre == cur.right)){
-                res.add(cur.val);
-                pre = cur;
+            if(cur != null){
+                stack.push(cur);
+                cur = cur.left;
             }
             else{
-                stack.push(cur);
-                if(cur.right != null)
-                    stack.push(cur.right);
-                if(cur.left != null)
-                    stack.push(cur.left);
+                cur = stack.pop();
+                if(cur.right == null || pre == cur.right){
+                    res.add(cur.val);
+                    pre = cur;
+                    cur = null;
+                }
+                else{
+                    stack.push(cur);
+                    cur = cur.right;
+                }
             }
         }
         return res;

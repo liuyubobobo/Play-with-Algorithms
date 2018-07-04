@@ -1,6 +1,6 @@
 /// Source : https://leetcode.com/problems/binary-tree-postorder-traversal/description/
 /// Author : liuyubobobo
-/// Time   : 2018-05-31
+/// Time   : 2018-05-30
 
 #include <iostream>
 #include <vector>
@@ -18,10 +18,10 @@ struct TreeNode {
 
 
 // Non-Recursive
-// Using a pre pointer to record the last visted node
+// Using two stacks, Reverse Preorder Traversal!
 //
 // Time Complexity: O(n)
-// Space Complexity: O(h)
+// Space Complexity: O(n)
 class Solution {
 
 public:
@@ -31,47 +31,32 @@ public:
         if(root == NULL)
             return res;
 
-        stack<TreeNode*> stack;
-        TreeNode* pre = NULL;
+        stack<TreeNode*> stack, output;
 
-        stack.push(root);
-        while(!stack.empty()){
-
-            TreeNode* node = stack.top();
-            stack.pop();
-            if((node->left == NULL && node->right == NULL) ||
-                    (pre != NULL && pre == node->left && node->right == NULL) ||
-                    (pre != NULL && pre == node->right)){
-                res.push_back(node->val);
-                pre = node;
+        TreeNode* p = root;
+        while(p != NULL || !stack.empty()){
+            if(p != NULL){
+                stack.push(p);
+                output.push(p);
+                p = p->right;
             }
             else{
-                stack.push(node);
-
-                if(node->right != NULL)
-                    stack.push(node->right);
-                if(node->left != NULL)
-                    stack.push(node->left);
+                p = stack.top();
+                stack.pop();
+                p = p->left;
             }
+        }
+
+        while(!output.empty()){
+            res.push_back((output.top())->val);
+            output.pop();
         }
 
         return res;
     }
 };
 
-
-void print_vec(const vector<int>& vec){
-    for(int e: vec)
-        cout << e << " ";
-    cout << endl;
-}
-
 int main() {
-
-    TreeNode* root = new TreeNode(1);
-    root->right = new TreeNode(2);
-    root->right->left = new TreeNode(3);
-    print_vec(Solution().postorderTraversal(root));
 
     return 0;
 }
