@@ -18,16 +18,7 @@
 
 **个人公众号：是不是很酷**：）
 
-![QRCode](qrcode.jpg)
-
-
-## 本代码仓包括
-
-* [课程更新信息](https://github.com/liuyubobobo/Play-with-Algorithms#课程更新信息)
-* [课程及补充内容源码](https://github.com/liuyubobobo/Play-with-Algorithms#课程源码目录)
-* 课程补充文字讲解 [整理中][不断更新]
-* 课程配套练习 [整理中][不断更新]
-* 课程勘误信息 [整理中][不断更新]
+![QRCode](src/qrcode.jpg)
 
 ## 课程更新信息
 
@@ -53,9 +44,16 @@
 
 * 我的**LeetCode题解代码仓**：[Play Leetcode](https://github.com/liuyubobobo/Play-Leetcode) （注：以C++实现为主）
 
-* [@ShiveryMoon 同学的本课程Python代码仓](https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition)
+## 更多推荐
 
-* [@摘星fy 同学的Canvas版本可视化堆排序过程](https://github.com/kingAnyWHere/MaxHeap)，同时也是一个很好的堆结构的可视化。
+* 感谢学习课程的大佬 [**@ShiveryMoon**](https://github.com/ShiveryMoon) 同学使用Python语言实现了课程的所有代码，甚至还有不少拓展和补充。有使用Python语言的同学，可以去大佬的代码仓观望。传送门：[https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition](https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition)
+
+* 感谢学习课程的大佬 [@摘星fy](https://github.com/kingAnyWHere)基于Canvas实现的堆和任意二分搜索树的可视化。有兴趣的同学可以去大佬的代码仓围观。
+    * 堆的可视化：[https://github.com/kingAnyWHere/MaxHeap](https://github.com/kingAnyWHere/MaxHeap)
+    * 任意二分搜索树的可视化 ：[https://github.com/kingAnyWHere/canvas-binary-search](https://github.com/kingAnyWHere/canvas-binary-search) 
+    * 以下为截图：）
+    
+![BST-Visualization](src/demo.png)
 
 ## 课程源码目录 
 
