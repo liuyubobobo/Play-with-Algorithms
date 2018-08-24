@@ -40,7 +40,7 @@
 
 * [**《看得见的算法》课程**](https://coding.imooc.com/class/138.html), 代码仓: [Play-with-Algorithm-Visualization](https://github.com/liuyubobobo/Play-with-Algorithm-Visualization)
 
-* [**《玩转数据结构》课程**](https://coding.imooc.com/class/207.html), 代码仓: [Play-with-Algorithm-Visualization](https://github.com/liuyubobobo/Play-with-Data-Structures)
+* [**《玩转数据结构》课程**](https://coding.imooc.com/class/207.html), 代码仓: [Play-with-Data-Structures](https://github.com/liuyubobobo/Play-with-Data-Structures)
 
 * 我的**LeetCode题解代码仓**：[Play Leetcode](https://github.com/liuyubobobo/Play-Leetcode) （注：以C++实现为主）
 
