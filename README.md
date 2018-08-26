@@ -44,6 +44,9 @@
 
 * 我的**LeetCode题解代码仓**：[Play Leetcode](https://github.com/liuyubobobo/Play-Leetcode) （注：以C++实现为主）
 
+* **LeetCode Explore题解代码仓**：[Play Leetcode Explore](https://github.com/liuyubobobo/Play-Leetcode-Explore) （注：以C++实现为主）
+    * [Leetcode Explore](https://leetcode.com/explore/) 是 Leetcode 在2017年底上线的新模块，分门别类地整理了Leetcode上的问题。如果刷Leetcode一时不知从哪里下手，可以从Leetcode Explore为指引开始：）
+
 ## 更多推荐
 
 * 感谢学习课程的大佬 [**@ShiveryMoon**](https://github.com/ShiveryMoon) 同学使用Python语言实现了课程的所有代码，甚至还有不少拓展和补充。有使用Python语言的同学，可以去大佬的代码仓观望。传送门：[https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition](https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition)
