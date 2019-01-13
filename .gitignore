@@ -19,6 +19,7 @@ Thumbs.db
 #####################
 *.gch
 *.out
+cmake-build-debug/
 
 ##########################
 # Jetbrains Ignore files #

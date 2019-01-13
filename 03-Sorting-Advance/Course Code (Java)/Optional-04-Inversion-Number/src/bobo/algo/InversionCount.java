@@ -68,7 +68,7 @@ public class InversionCount{
     // 测试 InversionCount
     public static void main(String[] args) {
 
-        int N = 1000000;
+        int N = 5;
 
         // 测试1: 测试随机数组
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);

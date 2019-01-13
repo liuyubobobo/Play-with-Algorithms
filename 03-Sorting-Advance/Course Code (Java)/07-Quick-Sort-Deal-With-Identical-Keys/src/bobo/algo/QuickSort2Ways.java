@@ -8,7 +8,8 @@ public class QuickSort2Ways {
     private QuickSort2Ways(){}
 
     // 双路快速排序的partition
-    // 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
+    // 返回p, 使得arr[l...p-1] <= arr[p] ; arr[p+1...r] >= arr[p]
+    // 双路快排处理的元素正好等于arr[p]的时候要注意，详见下面的注释：）
     private static int partition(Comparable[] arr, int l, int r){
 
         // 随机在arr[l...r]的范围中, 选择一个数值作为标定点pivot

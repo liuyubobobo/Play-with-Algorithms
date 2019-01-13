@@ -30,7 +30,8 @@ int _partition(T arr[], int l, int r){
 }
 
 // 双路快速排序的partition
-// 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
+// 返回p, 使得arr[l...p-1] <= arr[p] ; arr[p+1...r] >= arr[p]
+// 双路快排处理的元素正好等于arr[p]的时候要注意，详见下面的注释：）
 template <typename T>
 int _partition2(T arr[], int l, int r){
 
