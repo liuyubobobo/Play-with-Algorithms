@@ -68,11 +68,12 @@ int main() {
         delete sst;
 
 
+        sort( words.begin() , words.end() );
+
         // 测试3, 我们将原文本排序后插入二分搜索树, 查看其效率
         startTime = clock();
         BST<string, int> *bst2 = new BST<string, int>();
 
-        sort( words.begin() , words.end() );
         for (vector<string>::iterator iter = words.begin(); iter != words.end(); iter++) {
             int *res = (*bst2).search(*iter);
             if (res == NULL)
