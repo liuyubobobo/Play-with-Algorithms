@@ -2,8 +2,6 @@
 
 大家好， 欢迎大家来到我在[慕课网](http://www.imooc.com/)上的实战课程[《算法与数据结构精解》](http://coding.imooc.com/class/71.html)的官方代码仓。这个代码仓将不仅仅包含课程的所有源代码，还将发布课程的更新相关内容，勘误信息以及计划的更多可以丰富课程的内容，如更多分享，多多练习，等等等等。课程源码暂时只提供C++和Java两种语言的源代码。关于更多语言的支持，今后有时间，我会慢慢更新这个代码仓（不过预计会是蜗牛速了>_<）。
 
-在这里感谢 [@ShiveryMoon](https://github.com/ShiveryMoon) 同学，制作了这个课程代码的完整**Python版本**，有需要的同学请围观：[https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition](https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition)
-
 大家可以下载、运行、测试、修改。如果你发现了任何bug，或者对课程中的任何内容有意见或建议，欢迎和我联系：）
 
 **个人网站**：[liuyubobobo.com](http://liuyubobobo.com)
@@ -18,7 +16,7 @@
 
 **个人公众号：是不是很酷**：）
 
-![QRCode](src/qrcode.jpg)
+![QRCode](src/qrcode.png)
 
 ## 课程更新信息
 
