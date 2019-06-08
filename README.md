@@ -4,7 +4,7 @@
 
 大家可以下载、运行、测试、修改。如果你发现了任何bug，或者对课程中的任何内容有意见或建议，欢迎和我联系：）
 
-**个人网站**：[liuyubobobo.com](http://liuyubobobo.com)
+**个人网站**：[liuyubobobo.com](http://liuyubobobo.com) [废弃重整中...]
 
 **电子邮件**：[liuyubobobo@gmail.com](mailto:liuyubobobo@gmail.com)
 
