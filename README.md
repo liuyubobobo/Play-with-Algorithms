@@ -49,12 +49,11 @@
 
 * 感谢学习课程的大佬 [**@ShiveryMoon**](https://github.com/ShiveryMoon) 同学使用Python语言实现了课程的所有代码，甚至还有不少拓展和补充。有使用Python语言的同学，可以去大佬的代码仓观望。传送门：[https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition](https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition)
 
-* 感谢学习课程的大佬 [@摘星fy](https://github.com/kingAnyWHere)基于Canvas实现的堆和任意二分搜索树的可视化。有兴趣的同学可以去大佬的代码仓围观。
-    * 堆的可视化：[https://github.com/kingAnyWHere/MaxHeap](https://github.com/kingAnyWHere/MaxHeap)
-    * 任意二分搜索树的可视化 ：[https://github.com/kingAnyWHere/canvas-binary-search](https://github.com/kingAnyWHere/canvas-binary-search) 
-    * 以下为截图：）
+* 感谢学习课程的大佬 [**@摘星fy**](https://github.com/kingAnyWHere) 基于Canvas实现的诸多算法的可视化。有兴趣的同学可以去大佬的代码仓围观。同时，[**@摘星fy**](https://github.com/kingAnyWHere) 还基于Canvas实现了我的《玩转数据结构》和《看得见的算法》两门课程中诸多算法和数据结构的可视化内容，大家不要错过！
+
+    代码仓传送门：[**https://github.com/kingAnyWHere/codding.cn/tree/master/algo**](https://github.com/kingAnyWHere/codding.cn/tree/master/algo)
     
-![BST-Visualization](src/demo.png)
+![sort-vis](src/fy.jpg)
 
 ## 课程源码目录 
 
