@@ -222,7 +222,7 @@
 | 9-5 实现Bellman-Ford算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/05-Implementation-of-Bellman-Ford) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/05-Implementation-of-Bellman-Ford) |
 | 9-6 更多和最短路径相关的思考 | [无代码] | |
 | 本章课程最终代码 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/Chapter-09-Completed-Code) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(Java)/Chapter-09-Completed-Code) |
-| 补充1 Dijkstra算法的可视化 (Java) | [整理中] | [敬请期待] |
+| 补充1 基于最小堆的 Dijkstra 实现 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/09-Shortest-Path/Course%20Code%20(C%2B%2B)/Optional-1-Dijkstra-based-on-Min-Heap/) | [敬请期待] |
 | 补充2 SPFA算法 | [整理中] | [敬请期待] |
 | 补充3 有向无环图（DAG）的拓扑排序 | [整理中] | [敬请期待] |
 | 补充4 Floyed算法 | [整理中] | [敬请期待] |
