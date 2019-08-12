@@ -26,7 +26,7 @@ int __partition( T arr[], int l, int r ){
 
 // 求出arr[l...r]范围里第k小的数
 template <typename T>
-int __selection( T arr[], int l, int r, int k ){
+T __selection( T arr[], int l, int r, int k ){
 
     if( l == r )
         return arr[l];
@@ -48,7 +48,7 @@ int __selection( T arr[], int l, int r, int k ){
 // 注意: 在我们的算法中, k是从0开始索引的, 即最小的元素是第0小元素, 以此类推
 // 如果希望我们的算法中k的语意是从1开始的, 只需要在整个逻辑开始进行k--即可, 可以参考selection2
 template <typename T>
-int selection(T arr[], int n, int k) {
+T selection(T arr[], int n, int k) {
 
     assert( k >= 0 && k < n );
 
@@ -58,7 +58,7 @@ int selection(T arr[], int n, int k) {
 
 // 寻找arr数组中第k小的元素, k从1开始索引, 即最小元素是第1小元素, 以此类推
 template <typename T>
-int selection2(T arr[], int n, int k) {
+T selection2(T arr[], int n, int k) {
 
     return selection(arr, n, k - 1);
 }
