@@ -17,7 +17,7 @@ public class SparseGraph implements Graph {
         this.m = 0;    // 初始化没有任何边
         this.directed = directed;
         // g初始化为n个空的vector, 表示每一个g[i]都为空, 即没有任和边
-        g = (Vector<Integer>[])new Vector[n];
+        g = new Vector[n];
         for(int i = 0 ; i < n ; i ++)
             g[i] = new Vector<Integer>();
     }
