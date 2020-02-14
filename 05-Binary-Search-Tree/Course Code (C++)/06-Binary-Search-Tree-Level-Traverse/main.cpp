@@ -81,12 +81,9 @@ public:
     // 二分搜索树的层序遍历
     void levelOrder() {
 
-        queue<Node *> q;
+        if (root == NULL) return;
 
-        if (root == NULL) {
-            // 要检查空二叉搜索树的情况
-            return;
-        }
+        queue<Node *> q;
         q.push(root);
         while (!q.empty()) {
 
@@ -195,8 +192,8 @@ private:
     }
 };
 
-// 测试二分搜索树的前中后序遍历以及层序遍历
-int main01() {
+
+int main() {
 
     srand(time(NULL));
     BST<int, int> bst = BST<int, int>();
@@ -236,14 +233,5 @@ int main01() {
     bst.levelOrder();
     cout << endl;
 
-    return 0;
-}
-
-
-int main() {
-
-    BST<int, int> bst = BST<int, int>();
-
-    bst.levelOrder();
     return 0;
 }

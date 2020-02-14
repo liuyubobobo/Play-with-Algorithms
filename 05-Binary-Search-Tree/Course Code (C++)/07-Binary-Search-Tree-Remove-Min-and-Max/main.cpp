@@ -80,21 +80,23 @@ public:
     }
 
     // 二分搜索树的层序遍历
-    void levelOrder(){
+    void levelOrder() {
 
-        queue<Node*> q;
+        if (root == NULL) return;
+
+        queue<Node *> q;
         q.push(root);
-        while( !q.empty() ){
+        while (!q.empty()) {
 
             Node *node = q.front();
             q.pop();
 
-            cout<<node->key<<endl;
+            cout << node->key << endl;
 
-            if( node->left )
-                q.push( node->left );
-            if( node->right )
-                q.push( node->right );
+            if (node->left)
+                q.push(node->left);
+            if (node->right)
+                q.push(node->right);
         }
     }
 

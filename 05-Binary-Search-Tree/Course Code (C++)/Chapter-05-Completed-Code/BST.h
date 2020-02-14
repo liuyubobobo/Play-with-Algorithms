@@ -95,6 +95,8 @@ public:
     // 二分搜索树的层序遍历
     void levelOrder(){
 
+        if (root == NULL) return;
+        
         queue<Node*> q;
         q.push(root);
         while( !q.empty() ){
