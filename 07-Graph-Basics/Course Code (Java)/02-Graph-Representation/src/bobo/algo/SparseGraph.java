@@ -30,7 +30,10 @@ public class SparseGraph {
 
         assert v >= 0 && v < n ;
         assert w >= 0 && w < n ;
-
+        
+        if(hasEdge(v, w))
+            return;
+        
         g[v].add(w);
         if( v != w && !directed )
             g[w].add(v);
