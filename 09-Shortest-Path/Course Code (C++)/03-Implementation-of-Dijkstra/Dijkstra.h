@@ -79,7 +79,7 @@ public:
     ~Dijkstra(){
         delete[] distTo;
         delete[] marked;
-        delete from[0];
+        delete from[s];
     }
 
     // 返回从s点到w点的最短路径长度
