@@ -116,12 +116,7 @@
 | 补充6 堆排序可视化 (Java) | [看得见的算法](http://coding.imooc.com/class/138.html) | [第四章第11小节](http://coding.imooc.com/lesson/138.html#mid=7092) |
 | 补充7 可以空间动态扩展的堆结构 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章](https://coding.imooc.com/lesson/207.html#mid=13738) |
 | 补充8 N个元素中的前M大(或小)元素 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章 7，8小节](https://coding.imooc.com/lesson/207.html#mid=13744) |
-| 补充9 双向优先队列 | [整理中] | [敬请期待] |
-| 补充10 多叉堆 | [整理中] | [敬请期待] |
-| 补充11 斐波那契额堆 | [整理中] | [敬请期待] |
-| 补充12 索引排序 | [整理中] | [敬请期待] |
-| 补充13 添加索引，不稳定排序转换成稳定排序 | [整理中] | [敬请期待] |
-| 补充14 基于事件堆的例子碰撞检测 (Java)| [整理中] | [敬请期待] |
+| 补充9 基于索引的选择排序 | [C++源码](04-Heap/Course%20Code%20(C%2B%2B)/Optional-9-Indexed-Selection-Sorting/) | [敬请期待] |
 | **第五章 二分搜索树** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)) | [章节Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)) |
 | 5-1 二分查找法（Binary Search）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/01-Binary-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/01-Binary-Search/src/bobo/algo) |
 | 5-2 二分搜索树基础（Binary Search Tree）| [C++源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(C%2B%2B)/02-Binary-Search-Tree-Basics) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithms/tree/master/05-Binary-Search-Tree/Course%20Code%20(Java)/02-Binary-Search-Tree-Basics/src/bobo/algo) |
